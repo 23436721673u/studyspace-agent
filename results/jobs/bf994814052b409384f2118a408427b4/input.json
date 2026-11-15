@@ -1,0 +1,48 @@
+{
+  "room": {
+    "width": 6,
+    "depth": 5
+  },
+  "door": {
+    "wall": "south",
+    "offset": 2,
+    "width": 1,
+    "swing": "inward",
+    "hinge": "low"
+  },
+  "obstacles": [
+    {
+      "id": "corner-cabinet",
+      "x": 5.55,
+      "z": 4.55,
+      "width": 0.5,
+      "depth": 0.5,
+      "height": 1.8
+    }
+  ],
+  "seatTemplate": {
+    "tableWidth": 1,
+    "tableDepth": 0.6,
+    "tableHeight": 0.75,
+    "chairWidth": 0.5,
+    "chairDepth": 0.5,
+    "chairClearance": 0.6,
+    "approachWidth": 0.5
+  },
+  "targetSeats": 6,
+  "requiredSeats": 6,
+  "passageWidth": 0.8,
+  "gridSize": 0.2,
+  "tolerance": 0.000001,
+  "seed": "workbench-1791954877028",
+  "searchBudget": {
+    "maxAttempts": 12000
+  },
+  "simulatedScenario": true,
+  "scenarioLabel": "模拟场景—录屏新建repair-test六座",
+  "orientations": [
+    0,
+    90
+  ],
+  "userRequest": "模拟场景。请保留房间、门、柜体、六座目标及0.8米通道约束，检查草稿并在反馈后搜索、导出和独立验收。"
+}

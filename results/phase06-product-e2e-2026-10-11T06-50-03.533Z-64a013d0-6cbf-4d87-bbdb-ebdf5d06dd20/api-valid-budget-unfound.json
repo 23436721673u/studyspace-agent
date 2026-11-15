@@ -1,0 +1,203 @@
+{
+  "name": "api-valid-budget-unfound",
+  "jobId": "241deed3225e4f3b8fbea762b3776536",
+  "sessionKey": "agnes:local:local-dev:cli:workspace:241deed3225e4f3b8fbea762b3776536",
+  "sessionId": "agnes:local:local-dev:cli:workspace:241deed3225e4f3b8fbea762b3776536",
+  "mode": "normal",
+  "testOnly": false,
+  "simulatedScenario": true,
+  "inputHashManifest": "1ca1ebcbc62b9691444cfab118746da05f7b364599f8c17f550e10b68d8d8c7a",
+  "inputHashStored": "1ca1ebcbc62b9691444cfab118746da05f7b364599f8c17f550e10b68d8d8c7a",
+  "inputHashPosted": "1ca1ebcbc62b9691444cfab118746da05f7b364599f8c17f550e10b68d8d8c7a",
+  "inputHashMatches": true,
+  "postedInputMatches": true,
+  "postRequest": {
+    "path": "F:\\AGH\\projects\\studyspace\\results\\phase06-product-e2e-2026-10-11T06-50-03.533Z-64a013d0-6cbf-4d87-bbdb-ebdf5d06dd20\\api-valid-budget-unfound-post-request.json",
+    "sha256": "8fb354d7ef7aaf1bd72598c3467b71cf15d852f71f6c86fa6c2db750fd4d232a",
+    "bytes": 533
+  },
+  "postInput": {
+    "path": "F:\\AGH\\projects\\studyspace\\results\\phase06-product-e2e-2026-10-11T06-50-03.533Z-64a013d0-6cbf-4d87-bbdb-ebdf5d06dd20\\api-valid-budget-unfound-post-input.json",
+    "sha256": "1ca1ebcbc62b9691444cfab118746da05f7b364599f8c17f550e10b68d8d8c7a",
+    "bytes": 668
+  },
+  "expectedBusiness": "constraints-not-satisfied",
+  "actualBusiness": "not-completed",
+  "nativeStatus": "completed",
+  "nativeReason": "completed",
+  "model": {
+    "name": "gpt-6-astra",
+    "alias": "gpt-6-astra",
+    "provider": "not-independently-verified",
+    "driverProviderId": "openai",
+    "channel": "ToTokens",
+    "endpoint": "https://totokens.cc/v1",
+    "api": "Responses",
+    "snapshotVersion": null,
+    "providerVerification": "底层实际模型提供方未独立核实",
+    "usage": {
+      "totals": {
+        "input": 9101,
+        "output": 677,
+        "cacheRead": 11224,
+        "cacheWrite": 0,
+        "reasoning": 294
+      },
+      "credits": {
+        "amount": 0.255243,
+        "source": "estimated",
+        "complete": true
+      },
+      "reasoningComplete": true,
+      "billingComplete": true,
+      "cost": {
+        "usdMicros": 255243,
+        "source": "estimated",
+        "subscription": false
+      },
+      "context": {
+        "source": "estimated",
+        "tokens": 7464,
+        "window": 160000,
+        "autoCompact": true
+      },
+      "model": {
+        "route": "account-studyspace-astra-api",
+        "id": "gpt-6-astra",
+        "thinking": "medium",
+        "settings": {
+          "thinking": "medium",
+          "contextWindow": 160000
+        },
+        "maxTokens": 128000
+      },
+      "cache": {
+        "hitRate": 0.5522263222632227
+      }
+    },
+    "route": "account-studyspace-astra-api"
+  },
+  "expectedSteps": [
+    "inspect",
+    "search"
+  ],
+  "stepEvents": [
+    {
+      "time": "2026-10-11T06:53:43.797Z",
+      "step": "inspect",
+      "status": "ready",
+      "result": "inspect.json",
+      "execution": "AGH-invoked deterministic CLI",
+      "productSessionId": "agnes:local:local-dev:cli:workspace:241deed3225e4f3b8fbea762b3776536"
+    },
+    {
+      "time": "2026-10-11T06:53:53.232Z",
+      "step": "search",
+      "status": "budget-exhausted-or-candidates-ended",
+      "result": "search.json",
+      "execution": "AGH-invoked deterministic CLI",
+      "productSessionId": "agnes:local:local-dev:cli:workspace:241deed3225e4f3b8fbea762b3776536"
+    }
+  ],
+  "stepsPresent": true,
+  "nativeEventCount": 68,
+  "nativeCalls": [
+    {
+      "step": "inspect",
+      "seq": 23,
+      "time": "2026-10-11T06:53:43.353Z",
+      "sessionId": "agnes:local:local-dev:cli:workspace:241deed3225e4f3b8fbea762b3776536",
+      "toolUseId": "t0-93383338fd8b21c9058329ced451f40b"
+    },
+    {
+      "step": "search",
+      "seq": 43,
+      "time": "2026-10-11T06:53:52.771Z",
+      "sessionId": "agnes:local:local-dev:cli:workspace:241deed3225e4f3b8fbea762b3776536",
+      "toolUseId": "t1-a5da3b7f11f55c84d4551f98784282f9"
+    }
+  ],
+  "nativeResults": [
+    {
+      "seq": 29,
+      "toolUseId": "t0-93383338fd8b21c9058329ced451f40b",
+      "isError": false
+    },
+    {
+      "seq": 49,
+      "toolUseId": "t1-a5da3b7f11f55c84d4551f98784282f9",
+      "isError": false
+    }
+  ],
+  "nativePresent": true,
+  "repairFeedback": null,
+  "verify": null,
+  "search": {
+    "found": false,
+    "status": "budget-exhausted-or-candidates-ended",
+    "attempts": 1,
+    "budget": 1,
+    "maxMs": 1,
+    "elapsedMs": 0.6220999999999961,
+    "termination": "search attempt budget exhausted",
+    "note": "No candidate was found within this finite search; this is not a proof of impossibility.",
+    "baseline": {
+      "found": false,
+      "status": "budget-exhausted-or-candidates-ended",
+      "attempts": 1,
+      "budget": 1,
+      "maxMs": 1,
+      "elapsedMs": 0.4665999999999997,
+      "termination": "baseline attempt budget exhausted",
+      "validation": {
+        "status": "not-found-within-budget",
+        "finalTargetSeats": 12,
+        "finalRequiredSeats": 12
+      },
+      "note": "Baseline did not find a candidate within its finite budget; this is not a proof of impossibility."
+    },
+    "inputHash": "1ca1ebcbc62b9691444cfab118746da05f7b364599f8c17f550e10b68d8d8c7a",
+    "adjustment": null
+  },
+  "assets": [
+    {
+      "name": "scene.glb",
+      "httpStatus": 404,
+      "contentType": "application/json; charset=utf-8",
+      "missing": true,
+      "bytes": null,
+      "sha256": null
+    },
+    {
+      "name": "editable.json",
+      "httpStatus": 404,
+      "contentType": "application/json; charset=utf-8",
+      "missing": true,
+      "bytes": null,
+      "sha256": null
+    },
+    {
+      "name": "geometry-report.json",
+      "httpStatus": 404,
+      "contentType": "application/json; charset=utf-8",
+      "missing": true,
+      "bytes": null,
+      "sha256": null
+    }
+  ],
+  "assetOutcome": true,
+  "assertions": {
+    "session": true,
+    "model": true,
+    "mode": true,
+    "testMarker": true,
+    "inputUnchanged": true,
+    "expectedStatus": false,
+    "normalOrRepairCompleted": true,
+    "stepSet": true,
+    "nativeCallEvidence": true,
+    "repairFailureFeedback": true,
+    "independentFinalPass": true,
+    "assets": true
+  }
+}

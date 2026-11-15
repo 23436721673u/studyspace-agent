@@ -1,0 +1,70 @@
+{
+  "jobId": "eb20b62a0d73465f8426268db6c785b5",
+  "sessionKey": "agnes:local:local-dev:cli:workspace:eb20b62a0d73465f8426268db6c785b5",
+  "sessionId": "agnes:local:local-dev:cli:workspace:eb20b62a0d73465f8426268db6c785b5",
+  "createdAt": "2026-10-10T23:00:17.011Z",
+  "inputHash": "ee13b14aaf988b19000440c8aebb0992e67179057dc080b4014b6ccac9f1b395",
+  "mode": "normal",
+  "simulatedScenario": true,
+  "model": {
+    "name": "gpt-6-astra",
+    "alias": "gpt-6-astra",
+    "provider": "ToTokens",
+    "channel": "AGH host configured route",
+    "endpoint": "https://totokens.cc/v1",
+    "api": "Responses",
+    "snapshotVersion": null,
+    "usage": {
+      "totals": {
+        "input": 22510,
+        "output": 1090,
+        "cacheRead": 57856,
+        "cacheWrite": 0,
+        "reasoning": 229
+      },
+      "credits": {
+        "amount": 0.647662,
+        "source": "estimated",
+        "complete": true
+      },
+      "reasoningComplete": true,
+      "billingComplete": true,
+      "cost": {
+        "usdMicros": 647662,
+        "source": "estimated",
+        "subscription": false
+      },
+      "context": {
+        "source": "estimated",
+        "tokens": 19509,
+        "window": 160000,
+        "autoCompact": true
+      },
+      "model": {
+        "route": "account-studyspace-astra-api",
+        "id": "gpt-6-astra",
+        "thinking": "medium",
+        "settings": {
+          "thinking": "medium",
+          "contextWindow": 160000
+        },
+        "maxTokens": 128000
+      },
+      "cache": {
+        "hitRate": 0.7199064280914814
+      }
+    }
+  },
+  "connection": {
+    "status": "turn-ended",
+    "sessionId": "agnes:local:local-dev:cli:workspace:eb20b62a0d73465f8426268db6c785b5"
+  },
+  "native": {
+    "status": "completed",
+    "reason": "completed",
+    "stopReason": "end_turn"
+  },
+  "business": {
+    "status": "pass"
+  }
+}

@@ -1,0 +1,8 @@
+{"time":"2026-10-11T13:23:15.128Z","kind":"initialize","data":{"agnesVersion":"0.0.0","capabilities":{"loadSession":true,"promptCapabilities":{"image":true,"audio":false,"embeddedContext":true}}}}
+{"time":"2026-10-11T13:23:15.182Z","kind":"set-model","data":{"slot":"primary","result":{"effectiveFromSeq":3}}}
+{"time":"2026-10-11T13:23:15.186Z","kind":"set-model","data":{"slot":"escalation","result":{"effectiveFromSeq":4}}}
+{"time":"2026-10-11T13:23:15.191Z","kind":"set-model","data":{"slot":"fast","result":{"effectiveFromSeq":5}}}
+{"time":"2026-10-11T13:23:15.194Z","kind":"set-model","data":{"slot":"compaction","result":{"effectiveFromSeq":6}}}
+{"time":"2026-10-11T13:23:15.196Z","kind":"set-model","data":{"slot":"verifier","result":{"effectiveFromSeq":7}}}
+{"time":"2026-10-11T13:23:15.201Z","kind":"resume-decision","data":{"previousNativeTurn":null,"opState":null,"pendingInputs":[],"verifiedSteps":[],"action":"initial-prompt"}}
+{"time":"2026-10-11T13:23:27.132Z","kind":"prompt-result","data":{"stopReason":"end_turn","reason":"completed","lastSeq":27,"credits":{"used":0.15168,"source":"estimated"}}}

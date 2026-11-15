@@ -1,0 +1,602 @@
+{
+  "status": "pass",
+  "sha256": "81d13ae2587f1b7e9bfc5eff7f34ae9c67d740657134eba3ba314cb763ba55a3",
+  "bytes": 6924,
+  "simulatedScenario": true,
+  "reader": "independent-binary-vertices-v1",
+  "toleranceMetres": 0.000001,
+  "issues": [],
+  "layoutValidation": {
+    "status": "pass",
+    "source": "independent-validator",
+    "checks": {
+      "geometry": {
+        "status": "pass",
+        "doorKeepout": {
+          "x": 2.5,
+          "z": 0.5,
+          "width": 1,
+          "depth": 1,
+          "id": "door:keepout",
+          "kind": "door"
+        },
+        "doorKeepoutModel": "conservative rectangular approximation of inward swing; not an exact arc"
+      },
+      "access": {
+        "status": "pass",
+        "seatReports": [
+          {
+            "id": "rot90",
+            "status": "pass",
+            "reachable": true,
+            "path": [
+              {
+                "x": 2.5,
+                "z": 0.4
+              },
+              {
+                "x": 2.7,
+                "z": 0.4
+              },
+              {
+                "x": 2.7,
+                "z": 0.6000000000000001
+              },
+              {
+                "x": 2.7,
+                "z": 0.8
+              },
+              {
+                "x": 2.7,
+                "z": 1
+              },
+              {
+                "x": 2.7,
+                "z": 1.2000000000000002
+              },
+              {
+                "x": 2.7,
+                "z": 1.4
+              },
+              {
+                "x": 2.7,
+                "z": 1.6
+              },
+              {
+                "x": 2.7,
+                "z": 1.8000000000000003
+              },
+              {
+                "x": 2.7,
+                "z": 2
+              },
+              {
+                "x": 2.7,
+                "z": 2.2
+              },
+              {
+                "x": 2.7,
+                "z": 2.4
+              },
+              {
+                "x": 2.7,
+                "z": 2.6
+              },
+              {
+                "x": 2.7,
+                "z": 2.8000000000000003
+              },
+              {
+                "x": 2.75,
+                "z": 3
+              }
+            ],
+            "pathLength": 2.8061552812808834,
+            "visited": 196,
+            "target": {
+              "x": 2.75,
+              "z": 3
+            }
+          }
+        ],
+        "gridSize": 0.2,
+        "requiredWidth": 0.8,
+        "pathBodyRadius": 0.4
+      }
+    },
+    "issues": [],
+    "parameters": {
+      "tolerance": 0.000001,
+      "gridSize": 0.2,
+      "passageWidth": 0.8
+    }
+  },
+  "partCount": 19,
+  "triangles": 228,
+  "parts": [
+    {
+      "id": "room:floor",
+      "status": "pass",
+      "expectedCenter": [
+        3,
+        -0.05,
+        2.5
+      ],
+      "expectedSize": [
+        6,
+        0.1,
+        5
+      ],
+      "actualCenter": [
+        3,
+        -0.05,
+        2.5
+      ],
+      "actualSize": [
+        6,
+        0.1,
+        5
+      ]
+    },
+    {
+      "id": "room:south:low",
+      "status": "pass",
+      "expectedCenter": [
+        1,
+        1.4,
+        -0.06
+      ],
+      "expectedSize": [
+        2,
+        2.8,
+        0.12
+      ],
+      "actualCenter": [
+        1,
+        1.4,
+        -0.06
+      ],
+      "actualSize": [
+        2,
+        2.8,
+        0.12
+      ]
+    },
+    {
+      "id": "room:south:high",
+      "status": "pass",
+      "expectedCenter": [
+        4.5,
+        1.4,
+        -0.06
+      ],
+      "expectedSize": [
+        3,
+        2.8,
+        0.12
+      ],
+      "actualCenter": [
+        4.5,
+        1.4,
+        -0.06
+      ],
+      "actualSize": [
+        3,
+        2.8,
+        0.12
+      ]
+    },
+    {
+      "id": "room:south:lintel",
+      "status": "pass",
+      "expectedCenter": [
+        2.5,
+        2.45,
+        -0.06
+      ],
+      "expectedSize": [
+        1,
+        0.6999999999999997,
+        0.12
+      ],
+      "actualCenter": [
+        2.5,
+        2.45,
+        -0.06
+      ],
+      "actualSize": [
+        1,
+        0.6999999999999993,
+        0.12
+      ]
+    },
+    {
+      "id": "room:north:full",
+      "status": "pass",
+      "expectedCenter": [
+        3,
+        1.4,
+        5.06
+      ],
+      "expectedSize": [
+        6,
+        2.8,
+        0.12
+      ],
+      "actualCenter": [
+        3,
+        1.4,
+        5.06
+      ],
+      "actualSize": [
+        6,
+        2.8,
+        0.11999999999999922
+      ]
+    },
+    {
+      "id": "room:west:full",
+      "status": "pass",
+      "expectedCenter": [
+        -0.06,
+        1.4,
+        2.5
+      ],
+      "expectedSize": [
+        0.12,
+        2.8,
+        5
+      ],
+      "actualCenter": [
+        -0.06,
+        1.4,
+        2.5
+      ],
+      "actualSize": [
+        0.12,
+        2.8,
+        5
+      ]
+    },
+    {
+      "id": "room:east:full",
+      "status": "pass",
+      "expectedCenter": [
+        6.06,
+        1.4,
+        2.5
+      ],
+      "expectedSize": [
+        0.12,
+        2.8,
+        5
+      ],
+      "actualCenter": [
+        6.06,
+        1.4,
+        2.5
+      ],
+      "actualSize": [
+        0.11999999999999922,
+        2.8,
+        5
+      ]
+    },
+    {
+      "id": "door:leaf",
+      "status": "pass",
+      "expectedCenter": [
+        2.0175,
+        1.05,
+        0.5
+      ],
+      "expectedSize": [
+        0.035,
+        2.1,
+        1
+      ],
+      "actualCenter": [
+        2.0175,
+        1.05,
+        0.5
+      ],
+      "actualSize": [
+        0.03500000000000014,
+        2.1,
+        1
+      ]
+    },
+    {
+      "id": "rot90:table:top",
+      "status": "pass",
+      "expectedCenter": [
+        4,
+        0.7275,
+        3
+      ],
+      "expectedSize": [
+        0.6,
+        0.045,
+        1
+      ],
+      "actualCenter": [
+        4,
+        0.7275,
+        3
+      ],
+      "actualSize": [
+        0.5999999999999996,
+        0.04499999999999993,
+        1
+      ]
+    },
+    {
+      "id": "rot90:table:leg0",
+      "status": "pass",
+      "expectedCenter": [
+        3.7275,
+        0.3525,
+        3.4725
+      ],
+      "expectedSize": [
+        0.055,
+        0.705,
+        0.055
+      ],
+      "actualCenter": [
+        3.7275,
+        0.3525,
+        3.4725
+      ],
+      "actualSize": [
+        0.054999999999999716,
+        0.705,
+        0.054999999999999716
+      ]
+    },
+    {
+      "id": "rot90:table:leg1",
+      "status": "pass",
+      "expectedCenter": [
+        3.7275,
+        0.3525,
+        2.5275
+      ],
+      "expectedSize": [
+        0.055,
+        0.705,
+        0.055
+      ],
+      "actualCenter": [
+        3.7275,
+        0.3525,
+        2.5275
+      ],
+      "actualSize": [
+        0.054999999999999716,
+        0.705,
+        0.054999999999999716
+      ]
+    },
+    {
+      "id": "rot90:table:leg2",
+      "status": "pass",
+      "expectedCenter": [
+        4.2725,
+        0.3525,
+        2.5275
+      ],
+      "expectedSize": [
+        0.055,
+        0.705,
+        0.055
+      ],
+      "actualCenter": [
+        4.2725,
+        0.3525,
+        2.5275
+      ],
+      "actualSize": [
+        0.054999999999999716,
+        0.705,
+        0.054999999999999716
+      ]
+    },
+    {
+      "id": "rot90:table:leg3",
+      "status": "pass",
+      "expectedCenter": [
+        4.2725,
+        0.3525,
+        3.4725
+      ],
+      "expectedSize": [
+        0.055,
+        0.705,
+        0.055
+      ],
+      "actualCenter": [
+        4.2725,
+        0.3525,
+        3.4725
+      ],
+      "actualSize": [
+        0.054999999999999716,
+        0.705,
+        0.054999999999999716
+      ]
+    },
+    {
+      "id": "rot90:chair:seat",
+      "status": "pass",
+      "expectedCenter": [
+        3.4,
+        0.42749999999999994,
+        3
+      ],
+      "expectedSize": [
+        0.5,
+        0.045,
+        0.5
+      ],
+      "actualCenter": [
+        3.4,
+        0.42749999999999994,
+        3
+      ],
+      "actualSize": [
+        0.5,
+        0.04500000000000004,
+        0.5
+      ]
+    },
+    {
+      "id": "rot90:chair:back",
+      "status": "pass",
+      "expectedCenter": [
+        3.17,
+        0.6375,
+        3
+      ],
+      "expectedSize": [
+        0.04,
+        0.375,
+        0.5
+      ],
+      "actualCenter": [
+        3.17,
+        0.6375,
+        3
+      ],
+      "actualSize": [
+        0.040000000000000036,
+        0.375,
+        0.5
+      ]
+    },
+    {
+      "id": "rot90:chair:leg0",
+      "status": "pass",
+      "expectedCenter": [
+        3.1675,
+        0.20249999999999999,
+        3.2325
+      ],
+      "expectedSize": [
+        0.035,
+        0.40499999999999997,
+        0.035
+      ],
+      "actualCenter": [
+        3.1675,
+        0.20249999999999999,
+        3.2325
+      ],
+      "actualSize": [
+        0.03500000000000014,
+        0.40499999999999997,
+        0.03500000000000014
+      ]
+    },
+    {
+      "id": "rot90:chair:leg1",
+      "status": "pass",
+      "expectedCenter": [
+        3.1675,
+        0.20249999999999999,
+        2.7675
+      ],
+      "expectedSize": [
+        0.035,
+        0.40499999999999997,
+        0.035
+      ],
+      "actualCenter": [
+        3.1675,
+        0.20249999999999999,
+        2.7675
+      ],
+      "actualSize": [
+        0.03500000000000014,
+        0.40499999999999997,
+        0.03500000000000014
+      ]
+    },
+    {
+      "id": "rot90:chair:leg2",
+      "status": "pass",
+      "expectedCenter": [
+        3.6325,
+        0.20249999999999999,
+        2.7675
+      ],
+      "expectedSize": [
+        0.035,
+        0.40499999999999997,
+        0.035
+      ],
+      "actualCenter": [
+        3.6325,
+        0.20249999999999999,
+        2.7675
+      ],
+      "actualSize": [
+        0.03500000000000014,
+        0.40499999999999997,
+        0.03500000000000014
+      ]
+    },
+    {
+      "id": "rot90:chair:leg3",
+      "status": "pass",
+      "expectedCenter": [
+        3.6325,
+        0.20249999999999999,
+        3.2325
+      ],
+      "expectedSize": [
+        0.035,
+        0.40499999999999997,
+        0.035
+      ],
+      "actualCenter": [
+        3.6325,
+        0.20249999999999999,
+        3.2325
+      ],
+      "actualSize": [
+        0.03500000000000014,
+        0.40499999999999997,
+        0.03500000000000014
+      ]
+    }
+  ],
+  "footprints": [
+    {
+      "id": "rot90",
+      "kind": "table",
+      "status": "pass",
+      "center": [
+        4,
+        3
+      ],
+      "size": [
+        0.6,
+        1
+      ]
+    },
+    {
+      "id": "rot90",
+      "kind": "chair",
+      "status": "pass",
+      "center": [
+        3.4,
+        3
+      ],
+      "size": [
+        0.5,
+        0.5
+      ]
+    }
+  ]
+}

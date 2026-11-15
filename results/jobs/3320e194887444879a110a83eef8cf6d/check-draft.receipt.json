@@ -1,0 +1,11 @@
+{
+  "context": {
+    "inputHash": "19ee7d183c3e0cd92e370f6432efd4c1f0c281d0fc9f6e71fb71b35172ec13ed",
+    "codeHash": "88b87b7fe45970c56f9df58d3551f823eae1bcf2c643ab6aa82aa4f90a82f820",
+    "dependencies": {
+      "draft": "2f74ed8df05045f2864bfaffaf214177e560dc1fb1e02ff97b4fc0cff6b3db46"
+    }
+  },
+  "outputHash": "d2fe73ad4920eebfd3c0a43dc04451c52308b1bba17e30cb40c3ce25065d5760",
+  "assets": {}
+}

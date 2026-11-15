@@ -1,0 +1,314 @@
+{
+  "found": true,
+  "status": "found",
+  "attempts": 232,
+  "budget": 5000,
+  "layout": {
+    "layoutId": "search-fixture",
+    "seats": [
+      {
+        "id": "seat-1",
+        "x": 0.6,
+        "z": 1.8,
+        "orientation": 0
+      },
+      {
+        "id": "seat-2",
+        "x": 1.6,
+        "z": 1.8,
+        "orientation": 0
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "source": "independent-validator",
+    "checks": {
+      "geometry": {
+        "status": "pass",
+        "doorKeepout": {
+          "x": 2.4,
+          "z": 0.4,
+          "width": 0.8,
+          "depth": 0.8,
+          "id": "door:keepout",
+          "kind": "door"
+        },
+        "doorKeepoutModel": "conservative rectangular approximation of inward swing; not an exact arc"
+      },
+      "access": {
+        "status": "pass",
+        "seatReports": [
+          {
+            "id": "seat-1",
+            "status": "pass",
+            "reachable": true,
+            "path": [
+              {
+                "x": 2.4,
+                "z": 0.4
+              },
+              {
+                "x": 2.1999999999999997,
+                "z": 0.4
+              },
+              {
+                "x": 2,
+                "z": 0.4
+              },
+              {
+                "x": 1.7999999999999998,
+                "z": 0.4
+              },
+              {
+                "x": 1.5999999999999999,
+                "z": 0.4
+              },
+              {
+                "x": 1.4,
+                "z": 0.4
+              },
+              {
+                "x": 1.1999999999999997,
+                "z": 0.4
+              },
+              {
+                "x": 0.9999999999999998,
+                "z": 0.4
+              },
+              {
+                "x": 0.7999999999999998,
+                "z": 0.4
+              },
+              {
+                "x": 0.6,
+                "z": 0.5500000000000002
+              }
+            ],
+            "pathLength": 1.85,
+            "visited": 57,
+            "target": {
+              "x": 0.6,
+              "z": 0.5500000000000002
+            }
+          },
+          {
+            "id": "seat-2",
+            "status": "pass",
+            "reachable": true,
+            "path": [
+              {
+                "x": 2.4,
+                "z": 0.4
+              },
+              {
+                "x": 2.1999999999999997,
+                "z": 0.4
+              },
+              {
+                "x": 2,
+                "z": 0.4
+              },
+              {
+                "x": 1.7999999999999998,
+                "z": 0.4
+              },
+              {
+                "x": 1.6,
+                "z": 0.5500000000000002
+              }
+            ],
+            "pathLength": 0.85,
+            "visited": 17,
+            "target": {
+              "x": 1.6,
+              "z": 0.5500000000000002
+            }
+          }
+        ],
+        "gridSize": 0.2,
+        "requiredWidth": 0.8,
+        "pathBodyRadius": 0.4
+      }
+    },
+    "issues": [],
+    "parameters": {
+      "tolerance": 0.000001,
+      "gridSize": 0.2,
+      "passageWidth": 0.8
+    }
+  },
+  "termination": "validated candidate found",
+  "baseline": {
+    "found": true,
+    "status": "found",
+    "attempts": 366,
+    "budget": 5000,
+    "layout": {
+      "layoutId": "fixed-grid-baseline",
+      "seats": [
+        {
+          "id": "baseline-seat-1",
+          "x": 4.6,
+          "z": 0.6,
+          "orientation": 90
+        },
+        {
+          "id": "baseline-seat-2",
+          "x": 1.8,
+          "z": 1.4,
+          "orientation": 90
+        }
+      ]
+    },
+    "validation": {
+      "status": "pass",
+      "source": "independent-validator",
+      "checks": {
+        "geometry": {
+          "status": "pass",
+          "doorKeepout": {
+            "x": 2.4,
+            "z": 0.4,
+            "width": 0.8,
+            "depth": 0.8,
+            "id": "door:keepout",
+            "kind": "door"
+          },
+          "doorKeepoutModel": "conservative rectangular approximation of inward swing; not an exact arc"
+        },
+        "access": {
+          "status": "pass",
+          "seatReports": [
+            {
+              "id": "baseline-seat-1",
+              "status": "pass",
+              "reachable": true,
+              "path": [
+                {
+                  "x": 2.4,
+                  "z": 0.4
+                },
+                {
+                  "x": 2.6,
+                  "z": 0.4
+                },
+                {
+                  "x": 2.8,
+                  "z": 0.4
+                },
+                {
+                  "x": 3,
+                  "z": 0.4
+                },
+                {
+                  "x": 3.2,
+                  "z": 0.4
+                },
+                {
+                  "x": 3.3499999999999996,
+                  "z": 0.6
+                }
+              ],
+              "pathLength": 1.0499999999999998,
+              "visited": 15,
+              "target": {
+                "x": 3.3499999999999996,
+                "z": 0.6
+              }
+            },
+            {
+              "id": "baseline-seat-2",
+              "status": "pass",
+              "reachable": true,
+              "path": [
+                {
+                  "x": 2.4,
+                  "z": 0.4
+                },
+                {
+                  "x": 2.1999999999999997,
+                  "z": 0.4
+                },
+                {
+                  "x": 2,
+                  "z": 0.4
+                },
+                {
+                  "x": 1.7999999999999998,
+                  "z": 0.4
+                },
+                {
+                  "x": 1.5999999999999999,
+                  "z": 0.4
+                },
+                {
+                  "x": 1.4,
+                  "z": 0.4
+                },
+                {
+                  "x": 1.1999999999999997,
+                  "z": 0.4
+                },
+                {
+                  "x": 0.9999999999999998,
+                  "z": 0.4
+                },
+                {
+                  "x": 0.7999999999999998,
+                  "z": 0.4
+                },
+                {
+                  "x": 0.5999999999999999,
+                  "z": 0.4
+                },
+                {
+                  "x": 0.3999999999999999,
+                  "z": 0.4
+                },
+                {
+                  "x": 0.3999999999999999,
+                  "z": 0.6000000000000001
+                },
+                {
+                  "x": 0.3999999999999999,
+                  "z": 0.8
+                },
+                {
+                  "x": 0.3999999999999999,
+                  "z": 1
+                },
+                {
+                  "x": 0.3999999999999999,
+                  "z": 1.2000000000000002
+                },
+                {
+                  "x": 0.5500000000000002,
+                  "z": 1.4
+                }
+              ],
+              "pathLength": 3.0500000000000007,
+              "visited": 100,
+              "target": {
+                "x": 0.5500000000000002,
+                "z": 1.4
+              }
+            }
+          ],
+          "gridSize": 0.2,
+          "requiredWidth": 0.8,
+          "pathBodyRadius": 0.4
+        }
+      },
+      "issues": [],
+      "parameters": {
+        "tolerance": 0.000001,
+        "gridSize": 0.2,
+        "passageWidth": 0.8
+      }
+    },
+    "termination": "validated candidate found"
+  },
+  "inputHash": "ee13b14aaf988b19000440c8aebb0992e67179057dc080b4014b6ccac9f1b395",
+  "adjustment": null
+}

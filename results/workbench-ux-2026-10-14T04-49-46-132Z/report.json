@@ -1,0 +1,85 @@
+{
+  "started": "2026-10-14T04:49:46.133Z",
+  "mode": "UI-only; all API POST blocked before server; no product/model task created",
+  "historyJobId": "c13f1131a17f4160be0654a4d08ee475",
+  "checks": [
+    {
+      "name": "1440 desktop one furniture no horizontal overflow",
+      "status": "pass"
+    },
+    {
+      "name": "historical GET only; input snapshot 6x5; actual GLB and WebGL",
+      "status": "pass"
+    },
+    {
+      "name": "edit clears task ID, downloads and 3D",
+      "status": "pass"
+    },
+    {
+      "name": "furniture add/delete; max3; existing values preserved",
+      "status": "pass"
+    },
+    {
+      "name": "empty door blocks POST; correction permits retry (network POST blocked)",
+      "status": "pass"
+    },
+    {
+      "name": "invalid JSON then corrected; retry works without pageerror",
+      "status": "pass"
+    },
+    {
+      "name": "guide HTTP 200 and concrete test recording instructions",
+      "status": "pass"
+    },
+    {
+      "name": "390 mobile one furniture no overflow",
+      "status": "pass"
+    },
+    {
+      "name": "file:// visible warning; no POST",
+      "status": "pass"
+    },
+    {
+      "name": "no uncaught pageerror",
+      "status": "pass"
+    }
+  ],
+  "pageErrors": [],
+  "blockedPosts": [
+    {
+      "url": "http://127.0.0.1:4319/api/jobs",
+      "body": "{\"input\":{\"room\":{\"width\":6,\"depth\":5},\"door\":{\"wall\":\"south\",\"offset\":2,\"width\":1,\"swing\":\"inward\",\"hinge\":\"low\"},\"obstacles\":[{\"id\":\"corner-cabinet\",\"x\":5.55,\"z\":4.55,\"width\":0.5,\"depth\":0.5,\"height\":1.8}],\"seatTemplate\":{\"tableWidth\":1,\"tableDepth\":0.6,\"tableHeight\":0.75,\"chairWidth\":0.5,\"chairDepth\":0.5,\"chairClearance\":0.6,\"approachWidth\":0.5},\"targetSeats\":6,\"requiredSeats\":6,\"passageWidth\":0.8,\"gridSize\":0.2,\"tolerance\":0.000001,\"seed\":\"workbench-1791953387620\",\"searchBudget\":{\"maxAttempts\":12000},\"simulatedScenario\":true,\"scenarioLabel\":\"模拟场景—6座开放布局\",\"orientations\":[0,90],\"userRequest\":\"模拟场景。请保留房间、门、柜体、六座目标及0.8米通道约束，检查草稿并在反馈后搜索、导出和独立验收。\"},\"mode\":\"normal\"}",
+      "time": "2026-10-14T04:49:47.622Z"
+    },
+    {
+      "url": "http://127.0.0.1:4319/api/jobs",
+      "body": "{\"input\":{\"room\":{\"width\":6,\"depth\":5},\"door\":{\"wall\":\"south\",\"offset\":2,\"width\":1,\"swing\":\"inward\",\"hinge\":\"low\"},\"obstacles\":[],\"seatTemplate\":{\"tableWidth\":1,\"tableDepth\":0.6,\"tableHeight\":0.75,\"chairWidth\":0.5,\"chairDepth\":0.5,\"chairClearance\":0.6,\"approachWidth\":0.5},\"targetSeats\":6,\"requiredSeats\":6,\"passageWidth\":0.8,\"gridSize\":0.2,\"tolerance\":0.000001,\"seed\":\"workbench-1791953387665\",\"searchBudget\":{\"maxAttempts\":12000},\"simulatedScenario\":true,\"scenarioLabel\":\"模拟场景—6座开放布局\",\"orientations\":[0,90],\"userRequest\":\"模拟场景。请保留房间、门、柜体、六座目标及0.8米通道约束，检查草稿并在反馈后搜索、导出和独立验收。\"},\"mode\":\"normal\"}",
+      "time": "2026-10-14T04:49:47.667Z"
+    }
+  ],
+  "screenshots": [
+    "desktop.png",
+    "history-3d.png",
+    "history.png",
+    "guide.png",
+    "mobile.png",
+    "file-mode.png"
+  ],
+  "sourceSha256": {
+    "workbench.html": "cb7f11d4ac1dcd860e582cab32161b6e2aa23f4e86d33aa4ea49bc4fae36bc97",
+    "src/workbench-ui.js": "fb28c8c5712520f4b00587101efe76ccdf138fd0a02dbd5d13e09060ee4b37fe",
+    "src/task-api.mjs": "6bee16ba4945866bfdf7761be9ed6bfd79ad54bc4d968ad2a735098b213b2169",
+    "guide.html": "71809c87c6ecb3fa38dfe4b698f3967b71f1a5e7d67f176dc92533aa0746d4f6",
+    "docs/WORKBENCH_GUIDE.md": "098ff61f62a5a2fb071264da1c5da70939d287be15fb6e174b2abcd7b53cee34",
+    "工作台使用说明.txt": "b7ba6b32830c61b3463665c758d14edf5926ac8aa36e18098e52f413c6ca0156",
+    "bin/start-workbench.ps1": "a04a25b889677739ebf8aeae5183ffc3cfa56afc4a5784b5d13c780191db0819",
+    "一键打开工作台.cmd": "a71bb70f1f7de0554be3a49149ba1b6370abb5a8a866a09d518ae6a9a32a6e1f",
+    "tests/workbench-ux.mjs": "6c6671dbc176849b413907b2c49c4d729a3fb91fbf40f2de94c3a722ce71a19d"
+  },
+  "historicalGLB": {
+    "bytes": 19548,
+    "sha256": "3238c01a88aca0a502138105cd292a48aabb0e860d660004dac5f982706f064e"
+  },
+  "status": "pass",
+  "ended": "2026-10-14T04:49:48.690Z"
+}

@@ -1,0 +1,27 @@
+{
+  "found": false,
+  "status": "budget-exhausted-or-candidates-ended",
+  "attempts": 1,
+  "budget": 1,
+  "maxMs": 1,
+  "elapsedMs": 0.6220999999999961,
+  "termination": "search attempt budget exhausted",
+  "note": "No candidate was found within this finite search; this is not a proof of impossibility.",
+  "baseline": {
+    "found": false,
+    "status": "budget-exhausted-or-candidates-ended",
+    "attempts": 1,
+    "budget": 1,
+    "maxMs": 1,
+    "elapsedMs": 0.4665999999999997,
+    "termination": "baseline attempt budget exhausted",
+    "validation": {
+      "status": "not-found-within-budget",
+      "finalTargetSeats": 12,
+      "finalRequiredSeats": 12
+    },
+    "note": "Baseline did not find a candidate within its finite budget; this is not a proof of impossibility."
+  },
+  "inputHash": "1ca1ebcbc62b9691444cfab118746da05f7b364599f8c17f550e10b68d8d8c7a",
+  "adjustment": null
+}

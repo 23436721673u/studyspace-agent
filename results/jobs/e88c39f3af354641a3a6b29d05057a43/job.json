@@ -1,0 +1,31 @@
+{
+  "jobId": "e88c39f3af354641a3a6b29d05057a43",
+  "sessionKey": "agnes:local:local-dev:cli:workspace:e88c39f3af354641a3a6b29d05057a43",
+  "sessionId": "agnes:local:local-dev:cli:workspace:e88c39f3af354641a3a6b29d05057a43",
+  "createdAt": "2026-10-10T15:20:16.836Z",
+  "inputHash": "ee13b14aaf988b19000440c8aebb0992e67179057dc080b4014b6ccac9f1b395",
+  "mode": "normal",
+  "simulatedScenario": true,
+  "model": {
+    "name": "gpt-6-astra",
+    "alias": "gpt-6-astra",
+    "provider": "ToTokens",
+    "channel": "AGH host configured route",
+    "endpoint": "https://totokens.cc/v1",
+    "api": "Responses",
+    "snapshotVersion": null,
+    "usage": null
+  },
+  "connection": {
+    "status": "adapter-error",
+    "sessionId": "agnes:local:local-dev:cli:workspace:e88c39f3af354641a3a6b29d05057a43"
+  },
+  "native": {
+    "status": null,
+    "reason": null,
+    "stopReason": null
+  },
+  "business": {
+    "status": "pending"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "sessionId": "agnes:local:local-dev:cli:workspace:3b0410823dec41d48c0e43a6a5386878",
+  "seq": 128,
+  "id": "01M4K2KQHKJYZ2BT4VW5B331WR",
+  "meta": {
+    "promptTurnId": "11",
+    "eventSequence": 128,
+    "generation": 1,
+    "lane": "main",
+    "phase": "event",
+    "credits": {
+      "used": 0.18096,
+      "source": "estimated"
+    }
+  }
+}

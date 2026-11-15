@@ -1,0 +1,33 @@
+{
+  "version": "phase03-v1",
+  "createdAt": "2026-10-11T06:51:58.638Z",
+  "simulatedScenario": true,
+  "tool": {
+    "kind": "deterministic-code",
+    "name": "parametric-glb-export"
+  },
+  "status": "pass",
+  "officialValidator": "2.0.0-dev.3.10",
+  "files": {
+    "editable.json": {
+      "sha256": "d149370c8189f038d3e1664090c74f6477ff17ae3f265b27a9903ae9935c0071",
+      "bytes": 2085
+    },
+    "scene.glb": {
+      "sha256": "3238c01a88aca0a502138105cd292a48aabb0e860d660004dac5f982706f064e",
+      "bytes": 19548
+    },
+    "plan.svg": {
+      "sha256": "ac3ee557ac22fb286987f6b216654106a1e977e31a12288246fa421f409431a5",
+      "bytes": 5163
+    },
+    "geometry-report.json": {
+      "sha256": "f8ad4299e374d1fbcb318f29ecdc96624f7b3ef445e28e54ffdc19dc30c60c24",
+      "bytes": 48196
+    },
+    "gltf-validator-report.json": {
+      "sha256": "0d64e5059dad297933ee6c34e2e1378ca39357be19e79f596de71b1a9dbe1ffb",
+      "bytes": 871
+    }
+  }
+}

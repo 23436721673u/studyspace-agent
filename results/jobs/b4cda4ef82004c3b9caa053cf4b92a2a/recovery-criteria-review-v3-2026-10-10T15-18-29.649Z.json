@@ -1,0 +1,74 @@
+{
+  "test": "recovery-criteria-v3",
+  "label": "按原生seq区分业务指令和runtime context；允许终止回合后的缺失步骤续跑；不覆盖历史报告",
+  "evidence": {
+    "jobId": "b4cda4ef82004c3b9caa053cf4b92a2a",
+    "sessionId": "agnes:local:local-dev:cli:workspace:b4cda4ef82004c3b9caa053cf4b92a2a",
+    "contextNodes": [
+      {
+        "seq": 17,
+        "kind": "context"
+      }
+    ],
+    "businessInstructions": [
+      {
+        "seq": 10,
+        "commands": [
+          "inspect",
+          "search",
+          "check-search",
+          "export",
+          "verify"
+        ]
+      },
+      {
+        "seq": 72,
+        "commands": [
+          "search",
+          "check-search",
+          "export",
+          "verify"
+        ]
+      }
+    ],
+    "nativeTurnEnds": [
+      {
+        "seq": 68,
+        "reason": "completed",
+        "ts": "2026-10-10T14:24:34.415Z"
+      },
+      {
+        "seq": 169,
+        "reason": "completed",
+        "ts": "2026-10-10T14:25:27.164Z"
+      }
+    ],
+    "preResumeSteps": [
+      "inspect"
+    ],
+    "stepCounts": {
+      "inspect": 1,
+      "search": 1,
+      "check-search": 1,
+      "export": 1,
+      "verify": 1
+    },
+    "inputHash": "bdfa623dfa609b711003ae7ea159f177d8db0e08a120d7365dc5e32481ba5723",
+    "assetStatus": "pass"
+  },
+  "assertions": {
+    "runtimeContextExcluded": true,
+    "distinctBusinessInputs": true,
+    "initialTurnTerminatedBeforeResume": true,
+    "initialContainedFullPlan": true,
+    "resumeOnlyMissingSteps": true,
+    "preResumeStepsWereVerified": true,
+    "eachBusinessStepOnce": true,
+    "sameSession": true,
+    "inputHashUnchanged": true,
+    "independentAssetVerification": true,
+    "nativeFinalTurnCompleted": true
+  },
+  "status": "pass",
+  "supersedes": false
+}

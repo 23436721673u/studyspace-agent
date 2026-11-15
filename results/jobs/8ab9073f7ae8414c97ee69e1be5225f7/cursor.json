@@ -1,0 +1,19 @@
+{
+  "sessionId": "agnes:local:local-dev:cli:workspace:8ab9073f7ae8414c97ee69e1be5225f7",
+  "seq": 129,
+  "id": "01M4XGH7DBP2TF534JCK1ZQN0B",
+  "meta": {
+    "promptTurnId": "11",
+    "eventSequence": 129,
+    "generation": 1,
+    "lane": "main",
+    "phase": "terminalQuiescence",
+    "credits": {
+      "used": 0.354862,
+      "source": "estimated"
+    },
+    "turnEnd": {
+      "reason": "completed"
+    }
+  }
+}

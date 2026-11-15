@@ -1,0 +1,141 @@
+{
+  "runId": "2026-10-11T06-50-03.533Z-64a013d0-6cbf-4d87-bbdb-ebdf5d06dd20",
+  "createdAt": "2026-10-11T06:54:03.896Z",
+  "simulatedScenario": true,
+  "apiPort": 4398,
+  "node": "v24.19.0",
+  "expectedModels": {
+    "name": "gpt-6-astra",
+    "endpoint": "https://totokens.cc/v1",
+    "api": "Responses"
+  },
+  "total": 5,
+  "rows": [
+    {
+      "name": "ui-normal-compact-six",
+      "jobId": "3aae3239ed8e47b88d26414cc282b83c",
+      "sessionId": "agnes:local:local-dev:cli:workspace:3aae3239ed8e47b88d26414cc282b83c",
+      "mode": "normal",
+      "actualBusiness": "pass",
+      "nativeStatus": "completed",
+      "assertions": {
+        "session": true,
+        "completed": true,
+        "usage": true,
+        "stepCount": true,
+        "visibleSteps": true,
+        "finalPass": true,
+        "failureVisible": true,
+        "nativeVisible": true,
+        "inputUnchanged": true,
+        "postCapture": true,
+        "noPageErrors": true,
+        "finalVerify": true
+      },
+      "browserReport": "ui-normal-compact-six-browser.json"
+    },
+    {
+      "name": "ui-repair-test-compact-six",
+      "jobId": "e30277b5afe94de9904bc5e5ddd870c9",
+      "sessionId": "agnes:local:local-dev:cli:workspace:e30277b5afe94de9904bc5e5ddd870c9",
+      "mode": "repair-test",
+      "actualBusiness": "pass",
+      "nativeStatus": "completed",
+      "assertions": {
+        "session": true,
+        "completed": true,
+        "usage": true,
+        "stepCount": true,
+        "visibleSteps": true,
+        "finalPass": true,
+        "failureVisible": true,
+        "nativeVisible": true,
+        "inputUnchanged": true,
+        "postCapture": true,
+        "noPageErrors": true,
+        "finalVerify": true
+      },
+      "browserReport": "ui-repair-test-compact-six-browser.json"
+    },
+    {
+      "name": "api-boundary-door-equals-passage",
+      "jobId": "736d0edbc60847138fd356cd383104ff",
+      "sessionId": "agnes:local:local-dev:cli:workspace:736d0edbc60847138fd356cd383104ff",
+      "mode": "normal",
+      "expectedBusiness": "pass",
+      "actualBusiness": "pass",
+      "assertions": {
+        "session": true,
+        "model": true,
+        "mode": true,
+        "testMarker": true,
+        "inputUnchanged": true,
+        "expectedStatus": true,
+        "normalOrRepairCompleted": true,
+        "stepSet": true,
+        "nativeCallEvidence": true,
+        "repairFailureFeedback": true,
+        "independentFinalPass": true,
+        "assets": true
+      },
+      "reportPath": "F:\\AGH\\projects\\studyspace\\results\\phase06-product-e2e-2026-10-11T06-50-03.533Z-64a013d0-6cbf-4d87-bbdb-ebdf5d06dd20\\api-boundary-door-equals-passage.json"
+    },
+    {
+      "name": "api-valid-budget-unfound",
+      "jobId": "241deed3225e4f3b8fbea762b3776536",
+      "sessionId": "agnes:local:local-dev:cli:workspace:241deed3225e4f3b8fbea762b3776536",
+      "mode": "normal",
+      "expectedBusiness": "constraints-not-satisfied",
+      "actualBusiness": "not-completed",
+      "assertions": {
+        "session": true,
+        "model": true,
+        "mode": true,
+        "testMarker": true,
+        "inputUnchanged": true,
+        "expectedStatus": false,
+        "normalOrRepairCompleted": true,
+        "stepSet": true,
+        "nativeCallEvidence": true,
+        "repairFailureFeedback": true,
+        "independentFinalPass": true,
+        "assets": true
+      },
+      "reportPath": "F:\\AGH\\projects\\studyspace\\results\\phase06-product-e2e-2026-10-11T06-50-03.533Z-64a013d0-6cbf-4d87-bbdb-ebdf5d06dd20\\api-valid-budget-unfound.json"
+    },
+    {
+      "name": "api-illegal-input-rejected",
+      "assertions": {
+        "rejectedAtSchema": true
+      },
+      "httpStatus": 422
+    }
+  ],
+  "browserErrors": [],
+  "apiStderr": "",
+  "fatalError": {
+    "name": "Error",
+    "message": "Valid-but-unfound case classification mismatch",
+    "stack": "Error: Valid-but-unfound case classification mismatch\n    at file:///F:/AGH/projects/studyspace/tests/phase06-product-e2e.mjs:224:210"
+  },
+  "codeHashes": {
+    "workbench.html": "1af80d08009d5a96d8d443639ec7ac499e5edba037d88ce2e5dad60cc7938d57",
+    "src/task-api.mjs": "150afd9d54ce0ff5db6d4f57b7bd0c3434c2a19b199b09b9a27a574c9b2e4fc6",
+    "src/schema.mjs": "d35510d0acebf42a8f5c259544751a81b01552caab2557d780e113ac54a97260",
+    "src/search.mjs": "09f57fc568a8df41c35ac400ddc3a0eaeb178940ba51999efa2c14c7222024be",
+    "src/baseline.mjs": "de0705d1a92b07e766273d4b2c0de8486a5e1274f86983e31ab0f52822896437",
+    "src/validator.mjs": "76daa886d4f3697644cce7e32b8a32a2ae603dfb40169ee6e43e10818b367d15",
+    "src/asset-check.mjs": "30424ee5da66fe735161448aa53f7f5c10f18de2ee9a288df60d454acb7d8651",
+    "src/glb.mjs": "21f4b47b410766be8d49cf5e53b375ce2bae72f375a8e72f4af2e45b620a6769",
+    "tests/phase06-product-e2e.mjs": "62a02b260a7229204d4f1dedf6eada3b2b27c4567aedafcd1156eaae00d4ca8d"
+  },
+  "screenshots": [
+    "ui-normal-compact-six-final.png",
+    "ui-normal-compact-six-submitted.png",
+    "ui-repair-test-compact-six-final.png",
+    "ui-repair-test-compact-six-submitted.png"
+  ],
+  "passed": 4,
+  "failed": 1,
+  "status": "fail"
+}

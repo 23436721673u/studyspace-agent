@@ -1,0 +1,504 @@
+{
+  "simulatedScenario": true,
+  "tool": {
+    "kind": "deterministic-code",
+    "name": "studyspace-computation"
+  },
+  "codeVersion": "phase-02-v1",
+  "runType": "fixture-suite",
+  "count": 14,
+  "passed": 13,
+  "failed": 1,
+  "results": [
+    {
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v1",
+      "fixture": "normal-small",
+      "kind": "normal",
+      "expected": "valid-input",
+      "actual": {
+        "status": "valid-input",
+        "search": {
+          "found": false,
+          "attempts": 1392,
+          "budget": 5000
+        },
+        "baseline": {
+          "found": false,
+          "attempts": 1392,
+          "budget": 5000
+        }
+      },
+      "pass": true
+    },
+    {
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v1",
+      "fixture": "normal-obstacle",
+      "kind": "normal",
+      "expected": "valid-input",
+      "actual": {
+        "status": "valid-input",
+        "search": {
+          "found": false,
+          "attempts": 1392,
+          "budget": 5000
+        },
+        "baseline": {
+          "found": false,
+          "attempts": 1392,
+          "budget": 5000
+        }
+      },
+      "pass": true
+    },
+    {
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v1",
+      "fixture": "normal-rotation",
+      "kind": "normal",
+      "expected": "valid-input",
+      "actual": {
+        "status": "valid-input",
+        "search": {
+          "found": false,
+          "attempts": 1392,
+          "budget": 5000
+        },
+        "baseline": {
+          "found": false,
+          "attempts": 1392,
+          "budget": 5000
+        }
+      },
+      "pass": true
+    },
+    {
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v1",
+      "fixture": "normal-three-obstacles",
+      "kind": "normal",
+      "expected": "valid-input",
+      "actual": {
+        "status": "valid-input",
+        "search": {
+          "found": false,
+          "attempts": 1392,
+          "budget": 5000
+        },
+        "baseline": {
+          "found": false,
+          "attempts": 1392,
+          "budget": 5000
+        }
+      },
+      "pass": true
+    },
+    {
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v1",
+      "fixture": "boundary-one-seat",
+      "kind": "boundary",
+      "expected": "valid-input",
+      "actual": {
+        "status": "valid-input",
+        "search": {
+          "found": false,
+          "attempts": 1392,
+          "budget": 5000
+        },
+        "baseline": {
+          "found": false,
+          "attempts": 1392,
+          "budget": 5000
+        }
+      },
+      "pass": true
+    },
+    {
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v1",
+      "fixture": "boundary-three-obstacle-limit",
+      "kind": "boundary",
+      "expected": "valid-input",
+      "actual": {
+        "status": "valid-input",
+        "search": {
+          "found": false,
+          "attempts": 1392,
+          "budget": 5000
+        },
+        "baseline": {
+          "found": false,
+          "attempts": 1392,
+          "budget": 5000
+        }
+      },
+      "pass": true
+    },
+    {
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v1",
+      "fixture": "boundary-door-equals-passage",
+      "kind": "boundary",
+      "expected": "valid-input",
+      "actual": {
+        "status": "valid-input",
+        "search": {
+          "found": false,
+          "attempts": 1392,
+          "budget": 5000
+        },
+        "baseline": {
+          "found": false,
+          "attempts": 1392,
+          "budget": 5000
+        }
+      },
+      "pass": true
+    },
+    {
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v1",
+      "fixture": "boundary-twelve-seat-limit",
+      "kind": "boundary",
+      "expected": "valid-input",
+      "actual": {
+        "status": "valid-input",
+        "search": {
+          "found": false,
+          "attempts": 5000,
+          "budget": 5000
+        },
+        "baseline": {
+          "found": false,
+          "attempts": 5000,
+          "budget": 5000
+        }
+      },
+      "pass": true
+    },
+    {
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v1",
+      "fixture": "failure-negative-room",
+      "kind": "failure",
+      "expected": "schema-fail",
+      "actual": {
+        "status": "schema-fail",
+        "issues": [
+          {
+            "code": "room.dimension",
+            "path": "room.width",
+            "message": "must be a finite positive number",
+            "value": -1
+          },
+          {
+            "code": "door.bounds",
+            "path": "door",
+            "message": "door exceeds wall length",
+            "value": {
+              "wall": "south",
+              "offset": 2,
+              "width": 1,
+              "swing": "inward",
+              "hinge": "low"
+            }
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v1",
+      "fixture": "failure-door-outside",
+      "kind": "failure",
+      "expected": "schema-fail",
+      "actual": {
+        "status": "schema-fail",
+        "issues": [
+          {
+            "code": "door.bounds",
+            "path": "door",
+            "message": "door exceeds wall length",
+            "value": {
+              "wall": "south",
+              "offset": 5.5,
+              "width": 1,
+              "swing": "inward",
+              "hinge": "low"
+            }
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v1",
+      "fixture": "failure-four-obstacles",
+      "kind": "failure",
+      "expected": "schema-fail",
+      "actual": {
+        "status": "schema-fail",
+        "issues": [
+          {
+            "code": "obstacles.count",
+            "path": "obstacles",
+            "message": "maximum is 3",
+            "value": 4
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v1",
+      "fixture": "failure-illegal-orientation",
+      "kind": "failure",
+      "expected": "validation-fail",
+      "actual": {
+        "status": "fail",
+        "source": "independent-validator",
+        "checks": {
+          "input": {
+            "status": "pass",
+            "scenarioLabel": "模拟场景"
+          },
+          "geometry": {
+            "status": "fail",
+            "doorKeepout": {
+              "x": 2.5,
+              "z": 0.5,
+              "width": 1,
+              "depth": 1,
+              "id": "door:keepout",
+              "kind": "door"
+            },
+            "issueCount": 1
+          },
+          "access": {
+            "status": "fail",
+            "seatReports": [
+              {
+                "id": "bad",
+                "status": "fail",
+                "reachable": false,
+                "reason": "grid path not found at 0.2m resolution"
+              },
+              {
+                "id": "bad2",
+                "status": "fail",
+                "reachable": false,
+                "reason": "grid path not found at 0.2m resolution"
+              }
+            ],
+            "gridSize": 0.2,
+            "requiredWidth": 0.8
+          }
+        },
+        "issues": [
+          {
+            "code": "seat.orientation",
+            "objectId": "bad",
+            "message": "orientation must be 0 or 90"
+          },
+          {
+            "code": "unreachable",
+            "objectId": "bad",
+            "message": "grid path not found at 0.2m resolution"
+          },
+          {
+            "code": "unreachable",
+            "objectId": "bad2",
+            "message": "grid path not found at 0.2m resolution"
+          }
+        ],
+        "parameters": {
+          "tolerance": 0.000001,
+          "gridSize": 0.2,
+          "passageWidth": 0.8
+        }
+      },
+      "pass": true
+    },
+    {
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v1",
+      "fixture": "failure-door-too-narrow",
+      "kind": "failure",
+      "expected": "validation-fail",
+      "actual": {
+        "status": "valid-input",
+        "search": {
+          "found": false,
+          "attempts": 1392,
+          "budget": 5000
+        },
+        "baseline": {
+          "found": false,
+          "attempts": 1392,
+          "budget": 5000
+        }
+      },
+      "pass": false
+    },
+    {
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v1",
+      "fixture": "failure-out-of-bounds",
+      "kind": "failure",
+      "expected": "validation-fail",
+      "actual": {
+        "status": "fail",
+        "source": "independent-validator",
+        "checks": {
+          "input": {
+            "status": "pass",
+            "scenarioLabel": "模拟场景"
+          },
+          "geometry": {
+            "status": "fail",
+            "doorKeepout": {
+              "x": 2.5,
+              "z": 0.5,
+              "width": 1,
+              "depth": 1,
+              "id": "door:keepout",
+              "kind": "door"
+            },
+            "issueCount": 3
+          },
+          "access": {
+            "status": "fail",
+            "seatReports": [
+              {
+                "id": "edge",
+                "status": "fail",
+                "reachable": false,
+                "reason": "grid path not found at 0.2m resolution"
+              },
+              {
+                "id": "edge2",
+                "status": "fail",
+                "reachable": false,
+                "reason": "grid path not found at 0.2m resolution"
+              }
+            ],
+            "gridSize": 0.2,
+            "requiredWidth": 0.8
+          }
+        },
+        "issues": [
+          {
+            "code": "out-of-bounds",
+            "objectId": "edge:table",
+            "message": "occupancy leaves room bounds",
+            "bounds": {
+              "minX": -0.4,
+              "maxX": 0.6,
+              "minZ": -0.19999999999999998,
+              "maxZ": 0.4
+            }
+          },
+          {
+            "code": "out-of-bounds",
+            "objectId": "edge:chair",
+            "message": "occupancy leaves room bounds",
+            "bounds": {
+              "minX": -0.15,
+              "maxX": 0.35,
+              "minZ": -1.2999999999999998,
+              "maxZ": -0.7999999999999998
+            }
+          },
+          {
+            "code": "out-of-bounds",
+            "objectId": "edge:use",
+            "message": "occupancy leaves room bounds",
+            "bounds": {
+              "minX": -0.15,
+              "maxX": 0.35,
+              "minZ": -1.9,
+              "maxZ": -1.2999999999999998
+            }
+          },
+          {
+            "code": "unreachable",
+            "objectId": "edge",
+            "message": "grid path not found at 0.2m resolution"
+          },
+          {
+            "code": "unreachable",
+            "objectId": "edge2",
+            "message": "grid path not found at 0.2m resolution"
+          }
+        ],
+        "parameters": {
+          "tolerance": 0.000001,
+          "gridSize": 0.2,
+          "passageWidth": 0.8
+        }
+      },
+      "pass": true
+    }
+  ]
+}

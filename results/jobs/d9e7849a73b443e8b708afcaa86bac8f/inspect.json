@@ -1,0 +1,55 @@
+{
+  "status": "schema-fail",
+  "input": {
+    "scenarioLabel": "模拟场景",
+    "room": {
+      "width": -1,
+      "depth": 5
+    },
+    "door": {
+      "wall": "south",
+      "offset": 2,
+      "width": 1,
+      "swing": "inward",
+      "hinge": "low"
+    },
+    "obstacles": [],
+    "seatTemplate": {
+      "tableWidth": 1,
+      "tableDepth": 0.6,
+      "tableHeight": 0.75,
+      "chairWidth": 0.5,
+      "chairDepth": 0.5,
+      "chairClearance": 0.6,
+      "approachWidth": 0.5
+    },
+    "targetSeats": 2,
+    "requiredSeats": 2,
+    "passageWidth": 0.8,
+    "gridSize": 0.2,
+    "tolerance": 0.000001,
+    "seed": "fixture"
+  },
+  "inputHash": "a49021fc140d46da3059c1d789b4d28e0552d4f85d21be8eb539fad85d09c139",
+  "issues": [
+    {
+      "code": "room.dimension",
+      "path": "room.width",
+      "message": "must be a finite positive number",
+      "value": -1
+    },
+    {
+      "code": "door.bounds",
+      "path": "door",
+      "message": "door exceeds wall length",
+      "value": {
+        "wall": "south",
+        "offset": 2,
+        "width": 1,
+        "swing": "inward",
+        "hinge": "low"
+      }
+    }
+  ],
+  "mode": "normal"
+}

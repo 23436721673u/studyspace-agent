@@ -1,0 +1,23 @@
+{
+  "name": "api-illegal-input-rejected",
+  "httpStatus": 422,
+  "response": {
+    "status": "schema-fail",
+    "issues": [
+      {
+        "code": "seats.count",
+        "path": "targetSeats",
+        "message": "must be an integer from 1 to 12",
+        "value": 13
+      },
+      {
+        "code": "seats.required",
+        "path": "requiredSeats",
+        "message": "must be an integer from 1 to 12",
+        "value": 13
+      }
+    ]
+  },
+  "expected": 422,
+  "pass": true
+}

@@ -1,0 +1,87 @@
+{
+  "jobId": "9837e4c89ff347e195df9222d7812ae1",
+  "sessionKey": "agnes:local:local-dev:cli:workspace:9837e4c89ff347e195df9222d7812ae1",
+  "sessionId": "agnes:local:local-dev:cli:workspace:9837e4c89ff347e195df9222d7812ae1",
+  "createdAt": "2026-10-11T15:05:37.419Z",
+  "inputHash": "f51bd6593b76aca42c334bf598a2c5b8297ccf0098541516a7cbac0536fc717a",
+  "mode": "repair-test",
+  "testOnly": true,
+  "simulatedScenario": true,
+  "userRequest": "模拟场景。请保留房间、门、柜体、六座目标及0.8米通道约束，检查草稿并在反馈后搜索、导出和独立验收。",
+  "supportedConstraints": [
+    "room",
+    "door",
+    "obstacles",
+    "seatTemplate",
+    "targetSeats",
+    "requiredSeats",
+    "passageWidth",
+    "orientations"
+  ],
+  "unsupportedRequests": [],
+  "model": {
+    "name": "gpt-6-astra",
+    "alias": "gpt-6-astra",
+    "provider": "not-independently-verified",
+    "driverProviderId": "openai",
+    "channel": "ToTokens",
+    "endpoint": "https://totokens.cc/v1",
+    "api": "Responses",
+    "snapshotVersion": null,
+    "providerVerification": "底层实际模型提供方未独立核实",
+    "usage": {
+      "totals": {
+        "input": 38151,
+        "output": 1533,
+        "cacheRead": 64056,
+        "cacheWrite": 0,
+        "reasoning": 453
+      },
+      "credits": {
+        "amount": 1.006107,
+        "source": "estimated",
+        "complete": true
+      },
+      "reasoningComplete": true,
+      "billingComplete": true,
+      "cost": {
+        "usdMicros": 1006107,
+        "source": "estimated",
+        "subscription": false
+      },
+      "context": {
+        "source": "estimated",
+        "tokens": 28422,
+        "window": 160000,
+        "autoCompact": true
+      },
+      "model": {
+        "route": "account-studyspace-astra-api",
+        "id": "gpt-6-astra",
+        "thinking": "medium",
+        "settings": {
+          "thinking": "medium",
+          "contextWindow": 160000
+        },
+        "maxTokens": 128000
+      },
+      "cache": {
+        "hitRate": 0.6267281105990783
+      }
+    },
+    "route": "account-studyspace-astra-api"
+  },
+  "connection": {
+    "status": "turn-ended",
+    "sessionId": "agnes:local:local-dev:cli:workspace:9837e4c89ff347e195df9222d7812ae1"
+  },
+  "native": {
+    "status": "completed",
+    "reason": "completed",
+    "stopReason": "end_turn"
+  },
+  "business": {
+    "status": "pass",
+    "reason": "independent-verification-pass"
+  }
+}

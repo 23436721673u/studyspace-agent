@@ -1,0 +1,5 @@
+{"time":"2026-10-14T15:42:24.735Z","step":"inspect","status":"ready","result":"inspect.json","execution":"AGH-invoked deterministic CLI","productSessionId":"agnes:local:local-dev:cli:workspace:6919b380ebcb414e888417fc822368a7"}
+{"time":"2026-10-14T15:42:34.593Z","step":"search","status":"found","result":"search.json","execution":"AGH-invoked deterministic CLI","productSessionId":"agnes:local:local-dev:cli:workspace:6919b380ebcb414e888417fc822368a7"}
+{"time":"2026-10-14T15:42:41.012Z","step":"check-search","status":"pass","result":"check-search.json","execution":"AGH-invoked deterministic CLI","productSessionId":"agnes:local:local-dev:cli:workspace:6919b380ebcb414e888417fc822368a7"}
+{"time":"2026-10-14T15:42:49.731Z","step":"export","status":"pass","result":"export.json","execution":"AGH-invoked deterministic CLI","productSessionId":"agnes:local:local-dev:cli:workspace:6919b380ebcb414e888417fc822368a7"}
+{"time":"2026-10-14T15:42:58.580Z","step":"verify","status":"pass","result":"verify.json","execution":"AGH-invoked deterministic CLI","productSessionId":"agnes:local:local-dev:cli:workspace:6919b380ebcb414e888417fc822368a7"}

@@ -1,0 +1,63 @@
+{
+  "format": "studyspace.asset-input.v1",
+  "units": "m",
+  "simulatedScenario": true,
+  "input": {
+    "schemaVersion": "studyspace.v1",
+    "scenarioLabel": "模拟场景",
+    "userRequest": "",
+    "room": {
+      "width": 6,
+      "depth": 5
+    },
+    "door": {
+      "wall": "north",
+      "offset": 0,
+      "width": 1,
+      "swing": "inward",
+      "hinge": "high"
+    },
+    "obstacles": [],
+    "seatTemplate": {
+      "tableWidth": 1,
+      "tableDepth": 0.6,
+      "tableHeight": 0.75,
+      "chairWidth": 0.5,
+      "chairDepth": 0.5,
+      "chairClearance": 0.6,
+      "approachWidth": 0.5,
+      "entityGap": 0.05
+    },
+    "targetSeats": 1,
+    "requiredSeats": 1,
+    "orientations": [
+      0,
+      90
+    ],
+    "passageWidth": 0.8,
+    "gridSize": 0.2,
+    "tolerance": 0.000001,
+    "seed": "fixture",
+    "searchBudget": {
+      "maxAttempts": 5000,
+      "maxMs": 5000
+    }
+  },
+  "layout": {
+    "seats": [
+      {
+        "id": "rot90",
+        "x": 4,
+        "z": 3,
+        "orientation": 90
+      }
+    ]
+  },
+  "style": {
+    "roomHeight": 2.8,
+    "wallThickness": 0.12,
+    "floorThickness": 0.1,
+    "doorHeight": 2.1,
+    "doorThickness": 0.035
+  }
+}

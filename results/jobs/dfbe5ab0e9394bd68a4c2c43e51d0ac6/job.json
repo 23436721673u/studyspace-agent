@@ -1,0 +1,84 @@
+{
+  "jobId": "dfbe5ab0e9394bd68a4c2c43e51d0ac6",
+  "sessionKey": "agnes:local:local-dev:cli:workspace:dfbe5ab0e9394bd68a4c2c43e51d0ac6",
+  "sessionId": "agnes:local:local-dev:cli:workspace:dfbe5ab0e9394bd68a4c2c43e51d0ac6",
+  "createdAt": "2026-10-11T00:56:29.775Z",
+  "inputHash": "1ce74698e6e09e0e5b920f91ec552a5680320c93b07090f774a004fa518ccef1",
+  "mode": "normal",
+  "simulatedScenario": true,
+  "userRequest": "请在不改变房间、门和固定家具约束的前提下，优先生成可通行、座位编号清晰的自习布局。",
+  "supportedConstraints": [
+    "room",
+    "door",
+    "obstacles",
+    "seatTemplate",
+    "targetSeats",
+    "passageWidth",
+    "orientations"
+  ],
+  "unsupportedRequests": [],
+  "model": {
+    "name": "gpt-6-astra",
+    "alias": "gpt-6-astra",
+    "provider": "not-independently-verified",
+    "driverProviderId": "openai",
+    "channel": "ToTokens",
+    "endpoint": "https://totokens.cc/v1",
+    "api": "Responses",
+    "snapshotVersion": null,
+    "providerVerification": "底层实际模型提供方未独立核实",
+    "usage": {
+      "totals": {
+        "input": 29450,
+        "output": 1336,
+        "cacheRead": 40285,
+        "cacheWrite": 0,
+        "reasoning": 586
+      },
+      "credits": {
+        "amount": 0.7697700000000001,
+        "source": "estimated",
+        "complete": true
+      },
+      "reasoningComplete": true,
+      "billingComplete": true,
+      "cost": {
+        "usdMicros": 769770,
+        "source": "estimated",
+        "subscription": false
+      },
+      "context": {
+        "source": "estimated",
+        "tokens": 23404,
+        "window": 160000,
+        "autoCompact": true
+      },
+      "model": {
+        "route": "account-studyspace-astra-api",
+        "id": "gpt-6-astra",
+        "thinking": "medium",
+        "settings": {
+          "thinking": "medium",
+          "contextWindow": 160000
+        },
+        "maxTokens": 128000
+      },
+      "cache": {
+        "hitRate": 0.5776869577686958
+      }
+    },
+    "route": "account-studyspace-astra-api"
+  },
+  "connection": {
+    "status": "turn-ended",
+    "sessionId": "agnes:local:local-dev:cli:workspace:dfbe5ab0e9394bd68a4c2c43e51d0ac6"
+  },
+  "native": {
+    "status": "completed",
+    "reason": "completed",
+    "stopReason": "end_turn"
+  },
+  "business": {
+    "status": "pass"
+  }
+}

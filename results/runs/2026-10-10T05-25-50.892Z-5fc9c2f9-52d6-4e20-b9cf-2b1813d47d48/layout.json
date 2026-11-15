@@ -1,0 +1,41 @@
+{
+  "layoutId": "search-sample-6-seat",
+  "seats": [
+    {
+      "id": "seat-1",
+      "x": 0.8,
+      "z": 2.4,
+      "orientation": 0
+    },
+    {
+      "id": "seat-2",
+      "x": 2,
+      "z": 2.4,
+      "orientation": 0
+    },
+    {
+      "id": "seat-3",
+      "x": 3.2,
+      "z": 2.4,
+      "orientation": 0
+    },
+    {
+      "id": "seat-4",
+      "x": 5.6,
+      "z": 2.4,
+      "orientation": 0
+    },
+    {
+      "id": "seat-5",
+      "x": 6.8,
+      "z": 2.4,
+      "orientation": 0
+    },
+    {
+      "id": "seat-6",
+      "x": 8,
+      "z": 2.4,
+      "orientation": 0
+    }
+  ]
+}

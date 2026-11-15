@@ -1,0 +1,37 @@
+{
+  "status": "ready",
+  "input": {
+    "scenarioLabel": "模拟场景—边界门宽等于通道宽",
+    "room": {
+      "width": 6,
+      "depth": 5
+    },
+    "door": {
+      "wall": "south",
+      "offset": 2,
+      "width": 0.8,
+      "swing": "inward",
+      "hinge": "low"
+    },
+    "obstacles": [],
+    "seatTemplate": {
+      "tableWidth": 1,
+      "tableDepth": 0.6,
+      "tableHeight": 0.75,
+      "chairWidth": 0.5,
+      "chairDepth": 0.5,
+      "chairClearance": 0.6,
+      "approachWidth": 0.5
+    },
+    "targetSeats": 2,
+    "requiredSeats": 2,
+    "passageWidth": 0.8,
+    "gridSize": 0.2,
+    "tolerance": 0.000001,
+    "seed": "fixture",
+    "simulatedScenario": true
+  },
+  "inputHash": "ffa194b5fe6ab88ede12c9325b7be7284d22b62ee33f6dd3f515e0dd01725529",
+  "issues": [],
+  "mode": "normal"
+}

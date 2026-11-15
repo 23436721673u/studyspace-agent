@@ -1,0 +1,25 @@
+{
+  "status": "connection-unknown",
+  "sessionKey": "agnes:local:local-dev:cli:workspace:a0b411ae22004f068b985da31ae78c00",
+  "sessionId": "agnes:local:local-dev:cli:workspace:a0b411ae22004f068b985da31ae78c00",
+  "config": {
+    "configured": true,
+    "profile": "local-dev",
+    "revision": 1,
+    "provider": {
+      "id": "openai",
+      "baseUrl": "https://totokens.cc/v1",
+      "model": "gpt-6-astra",
+      "route": "account-studyspace-astra-api",
+      "credentialConfigured": true
+    }
+  },
+  "creationAttempted": true,
+  "promptHash": "631958cf5e52fb41a0e942ed669e1455d6a1adda3da021a6ed3a8bff9a78ce77",
+  "error": {
+    "name": "JsonRpcError",
+    "message": "INTERNAL_ERROR (-32603)",
+    "code": -32603,
+    "category": "adapter-or-tool"
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "testOnly": true,
+  "simulatedScenario": true,
+  "injectedFault": "vertex-deformation",
+  "input": {
+    "scenarioLabel": "模拟场景",
+    "room": {
+      "width": 6,
+      "depth": 5
+    },
+    "door": {
+      "wall": "south",
+      "offset": 2,
+      "width": 1,
+      "swing": "inward",
+      "hinge": "low"
+    },
+    "obstacles": [],
+    "seatTemplate": {
+      "tableWidth": 1,
+      "tableDepth": 0.6,
+      "tableHeight": 0.75,
+      "chairWidth": 0.5,
+      "chairDepth": 0.5,
+      "chairClearance": 0.6,
+      "approachWidth": 0.5
+    },
+    "targetSeats": 2,
+    "requiredSeats": 2,
+    "passageWidth": 0.8,
+    "gridSize": 0.2,
+    "tolerance": 0.000001,
+    "seed": "fixture"
+  },
+  "layout": {
+    "seats": [
+      {
+        "id": "manual-a",
+        "x": 1.2,
+        "z": 3.5,
+        "orientation": 0
+      },
+      {
+        "id": "manual-b",
+        "x": 4.5,
+        "z": 3.5,
+        "orientation": 0
+      }
+    ]
+  },
+  "inputHash": "168f4a866a35aa1f61dafad31eeed5dcd5d0589c29ffd17dfb4d56b6ba9945e9",
+  "outputHash": "fc663137432e9e2fbdf7f3b6410914556172d8a137edac4ed7a6320c9a59ac81",
+  "inputGlbSha256": "0053d78c1f31f617d3d7dffaedfc42151d57dbbfd35574fb3d8db7be94211f76",
+  "outputBytes": 9556,
+  "expected": "independent final asset check rejects mutated active-scene/mesh data",
+  "status": "fail",
+  "sha256": "fc663137432e9e2fbdf7f3b6410914556172d8a137edac4ed7a6320c9a59ac81",
+  "bytes": 9556,
+  "reader": "independent-binary-vertices-v1",
+  "toleranceMetres": 0.000001,
+  "issues": [
+    "triangle not on box face"
+  ],
+  "layoutValidation": {
+    "status": "pass",
+    "source": "independent-validator",
+    "checks": {
+      "seats": {
+        "status": "pass",
+        "accepted": 2,
+        "targetSeats": 2,
+        "requiredSeats": 2,
+        "semantics": "V1 targetSeats is exact; requiredSeats is a minimum and must not exceed targetSeats"
+      },
+      "geometry": {
+        "status": "pass",
+        "doorKeepout": {
+          "x": 2.5,
+          "z": 0.5,
+          "width": 1,
+          "depth": 1,
+          "id": "door:keepout",
+          "kind": "door"
+        },
+        "doorKeepoutModel": "conservative rectangular approximation of inward swing; not an exact arc"
+      },
+      "access": {
+        "status": "pass",
+        "seatReports": [
+          {
+            "id": "manual-a",
+            "status": "pass",
+            "reachable": true,
+            "path": [
+              {
+                "x": 2.5,
+                "z": 0.4
+              },
+              {
+                "x": 2.3,
+                "z": 0.4
+              },
+              {
+                "x": 2.1,
+                "z": 0.4
+              },
+              {
+                "x": 1.9,
+                "z": 0.4
+              },
+              {
+                "x": 1.7,
+                "z": 0.4
+              },
+              {
+                "x": 1.5,
+                "z": 0.4
+              },
+              {
+                "x": 1.2999999999999998,
+                "z": 0.4
+              },
+              {
+                "x": 1.2999999999999998,
+                "z": 0.6000000000000001
+              },
+              {
+                "x": 1.2999999999999998,
+                "z": 0.8
+              },
+              {
+                "x": 1.2999999999999998,
+                "z": 1
+              },
+              {
+                "x": 1.2999999999999998,
+                "z": 1.2000000000000002
+              },
+              {
+                "x": 1.2999999999999998,
+                "z": 1.4
+              },
+              {
+                "x": 1.2999999999999998,
+                "z": 1.6
+              },
+              {
+                "x": 1.2999999999999998,
+                "z": 1.8000000000000003
+              },
+              {
+                "x": 1.2999999999999998,
+                "z": 2
+              },
+              {
+                "x": 1.2,
+                "z": 2.25
+              }
+            ],
+            "pathLength": 3.0692582403567252,
+            "visited": 233,
+            "target": {
+              "x": 1.2,
+              "z": 2.25
+            }
+          },
+          {
+            "id": "manual-b",
+            "status": "pass",
+            "reachable": true,
+            "path": [
+              {
+                "x": 2.5,
+                "z": 0.4
+              },
+              {
+                "x": 2.7,
+                "z": 0.4
+              },
+              {
+                "x": 2.9,
+                "z": 0.4
+              },
+              {
+                "x": 3.1,
+                "z": 0.4
+              },
+              {
+                "x": 3.3,
+                "z": 0.4
+              },
+              {
+                "x": 3.5,
+                "z": 0.4
+              },
+              {
+                "x": 3.7,
+                "z": 0.4
+              },
+              {
+                "x": 3.9000000000000004,
+                "z": 0.4
+              },
+              {
+                "x": 4.1,
+                "z": 0.4
+              },
+              {
+                "x": 4.3,
+                "z": 0.4
+              },
+              {
+                "x": 4.5,
+                "z": 0.4
+              },
+              {
+                "x": 4.5,
+                "z": 0.6000000000000001
+              },
+              {
+                "x": 4.5,
+                "z": 0.8
+              },
+              {
+                "x": 4.5,
+                "z": 1
+              },
+              {
+                "x": 4.5,
+                "z": 1.2000000000000002
+              },
+              {
+                "x": 4.5,
+                "z": 1.4
+              },
+              {
+                "x": 4.5,
+                "z": 1.6
+              },
+              {
+                "x": 4.5,
+                "z": 1.8000000000000003
+              },
+              {
+                "x": 4.5,
+                "z": 2
+              },
+              {
+                "x": 4.5,
+                "z": 2.25
+              }
+            ],
+            "pathLength": 3.8500000000000005,
+            "visited": 303,
+            "target": {
+              "x": 4.5,
+              "z": 2.25
+            }
+          }
+        ],
+        "gridSize": 0.2,
+        "requiredWidth": 0.8,
+        "pathBodyRadius": 0.4
+      }
+    },
+    "issues": [],
+    "parameters": {
+      "tolerance": 0.000001,
+      "gridSize": 0.2,
+      "passageWidth": 0.8
+    }
+  }
+}

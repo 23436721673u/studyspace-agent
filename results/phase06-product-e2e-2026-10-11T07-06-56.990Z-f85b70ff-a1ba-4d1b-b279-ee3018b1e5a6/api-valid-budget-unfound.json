@@ -1,0 +1,256 @@
+{
+  "name": "api-valid-budget-unfound",
+  "jobId": "7f7fa22dfb1047c4a95357a1942aa83c",
+  "sessionKey": "agnes:local:local-dev:cli:workspace:7f7fa22dfb1047c4a95357a1942aa83c",
+  "sessionId": "agnes:local:local-dev:cli:workspace:7f7fa22dfb1047c4a95357a1942aa83c",
+  "mode": "normal",
+  "testOnly": false,
+  "simulatedScenario": true,
+  "inputHashManifest": "1ca1ebcbc62b9691444cfab118746da05f7b364599f8c17f550e10b68d8d8c7a",
+  "inputHashStored": "1ca1ebcbc62b9691444cfab118746da05f7b364599f8c17f550e10b68d8d8c7a",
+  "inputHashPosted": "1ca1ebcbc62b9691444cfab118746da05f7b364599f8c17f550e10b68d8d8c7a",
+  "inputHashMatches": true,
+  "postedInputMatches": true,
+  "postRequest": {
+    "path": "F:\\AGH\\projects\\studyspace\\results\\phase06-product-e2e-2026-10-11T07-06-56.990Z-f85b70ff-a1ba-4d1b-b279-ee3018b1e5a6\\api-valid-budget-unfound-post-request.json",
+    "sha256": "8fb354d7ef7aaf1bd72598c3467b71cf15d852f71f6c86fa6c2db750fd4d232a",
+    "bytes": 533
+  },
+  "postInput": {
+    "path": "F:\\AGH\\projects\\studyspace\\results\\phase06-product-e2e-2026-10-11T07-06-56.990Z-f85b70ff-a1ba-4d1b-b279-ee3018b1e5a6\\api-valid-budget-unfound-post-input.json",
+    "sha256": "1ca1ebcbc62b9691444cfab118746da05f7b364599f8c17f550e10b68d8d8c7a",
+    "bytes": 668
+  },
+  "expectedBusiness": "constraints-not-satisfied",
+  "actualBusiness": "constraints-not-satisfied",
+  "nativeStatus": "completed",
+  "nativeReason": "completed",
+  "model": {
+    "name": "gpt-6-astra",
+    "alias": "gpt-6-astra",
+    "provider": "not-independently-verified",
+    "driverProviderId": "openai",
+    "channel": "ToTokens",
+    "endpoint": "https://totokens.cc/v1",
+    "api": "Responses",
+    "snapshotVersion": null,
+    "providerVerification": "底层实际模型提供方未独立核实",
+    "usage": {
+      "totals": {
+        "input": 11755,
+        "output": 488,
+        "cacheRead": 20992,
+        "cacheWrite": 0,
+        "reasoning": 0
+      },
+      "credits": {
+        "amount": 0.31368399999999996,
+        "source": "estimated",
+        "complete": true
+      },
+      "reasoningComplete": true,
+      "billingComplete": true,
+      "cost": {
+        "usdMicros": 313684,
+        "source": "estimated",
+        "subscription": false
+      },
+      "context": {
+        "source": "estimated",
+        "tokens": 11629,
+        "window": 160000,
+        "autoCompact": true
+      },
+      "model": {
+        "route": "account-studyspace-astra-api",
+        "id": "gpt-6-astra",
+        "thinking": "medium",
+        "settings": {
+          "thinking": "medium",
+          "contextWindow": 160000
+        },
+        "maxTokens": 128000
+      },
+      "cache": {
+        "hitRate": 0.6410358200751214
+      }
+    },
+    "route": "account-studyspace-astra-api"
+  },
+  "expectedSteps": [
+    "inspect",
+    "search"
+  ],
+  "stepEvents": [
+    {
+      "time": "2026-10-11T07:07:06.124Z",
+      "step": "inspect",
+      "status": "ready",
+      "result": "inspect.json",
+      "execution": "AGH-invoked deterministic CLI",
+      "productSessionId": "agnes:local:local-dev:cli:workspace:7f7fa22dfb1047c4a95357a1942aa83c"
+    },
+    {
+      "time": "2026-10-11T07:07:11.670Z",
+      "step": "search",
+      "status": "budget-exhausted-or-candidates-ended",
+      "result": "search.json",
+      "execution": "AGH-invoked deterministic CLI",
+      "productSessionId": "agnes:local:local-dev:cli:workspace:7f7fa22dfb1047c4a95357a1942aa83c"
+    }
+  ],
+  "stepsPresent": true,
+  "nativeEventCount": 68,
+  "nativeCalls": [
+    {
+      "step": "inspect",
+      "seq": 23,
+      "time": "2026-10-11T07:07:05.695Z",
+      "sessionId": "agnes:local:local-dev:cli:workspace:7f7fa22dfb1047c4a95357a1942aa83c",
+      "toolUseId": "t0-9266e5d5d5ca3346bea4b7dbdd2ba6f2"
+    },
+    {
+      "step": "search",
+      "seq": 42,
+      "time": "2026-10-11T07:07:11.216Z",
+      "sessionId": "agnes:local:local-dev:cli:workspace:7f7fa22dfb1047c4a95357a1942aa83c",
+      "toolUseId": "t1-5f458f90dd470dc7044495526c87f9e3"
+    }
+  ],
+  "nativeResults": [
+    {
+      "seq": 29,
+      "toolUseId": "t0-9266e5d5d5ca3346bea4b7dbdd2ba6f2",
+      "isError": false
+    },
+    {
+      "seq": 48,
+      "toolUseId": "t1-5f458f90dd470dc7044495526c87f9e3",
+      "isError": false
+    }
+  ],
+  "nativePresent": true,
+  "repairFeedback": null,
+  "verify": null,
+  "search": {
+    "found": false,
+    "status": "budget-exhausted-or-candidates-ended",
+    "attempts": 1,
+    "budget": 1,
+    "maxMs": 1,
+    "elapsedMs": 0.7850999999999999,
+    "termination": "search attempt budget exhausted",
+    "note": "No candidate was found within this finite search; this is not a proof of impossibility.",
+    "baseline": {
+      "found": false,
+      "status": "budget-exhausted-or-candidates-ended",
+      "attempts": 1,
+      "budget": 1,
+      "maxMs": 1,
+      "elapsedMs": 0.5203999999999951,
+      "termination": "baseline attempt budget exhausted",
+      "validation": {
+        "status": "not-found-within-budget",
+        "finalTargetSeats": 12,
+        "finalRequiredSeats": 12
+      },
+      "note": "Baseline did not find a candidate within its finite budget; this is not a proof of impossibility."
+    },
+    "inputHash": "1ca1ebcbc62b9691444cfab118746da05f7b364599f8c17f550e10b68d8d8c7a",
+    "adjustment": null
+  },
+  "assets": [
+    {
+      "name": "scene.glb",
+      "httpStatus": 404,
+      "contentType": "application/json; charset=utf-8",
+      "missing": true,
+      "bytes": null,
+      "sha256": null
+    },
+    {
+      "name": "editable.json",
+      "httpStatus": 404,
+      "contentType": "application/json; charset=utf-8",
+      "missing": true,
+      "bytes": null,
+      "sha256": null
+    },
+    {
+      "name": "geometry-report.json",
+      "httpStatus": 404,
+      "contentType": "application/json; charset=utf-8",
+      "missing": true,
+      "bytes": null,
+      "sha256": null
+    }
+  ],
+  "assetOutcome": true,
+  "businessReason": "finite-search-not-found-within-budget",
+  "outcomeClassification": {
+    "status": "constraints-not-satisfied",
+    "reason": "finite-search-not-found-within-budget",
+    "searchStatus": "budget-exhausted-or-candidates-ended",
+    "proof": "not-proof-of-impossibility"
+  },
+  "outcomeRuleChecks": {
+    "finiteSearch": {
+      "status": "constraints-not-satisfied",
+      "reason": "finite-search-not-found-within-budget",
+      "searchStatus": "budget-exhausted-or-candidates-ended",
+      "proof": "not-proof-of-impossibility"
+    },
+    "schemaFailure": {
+      "status": "constraints-not-satisfied",
+      "reason": "schema-fail"
+    },
+    "incomplete": {
+      "status": "not-completed",
+      "reason": "required-artifact-missing-or-incomplete"
+    }
+  },
+  "assertions": {
+    "session": true,
+    "model": true,
+    "mode": true,
+    "testMarker": true,
+    "inputUnchanged": true,
+    "expectedStatus": true,
+    "classificationConsistent": true,
+    "finiteSearchRule": true,
+    "schemaFailureRule": true,
+    "incompleteRule": true,
+    "normalOrRepairCompleted": true,
+    "stepSet": true,
+    "nativeCallEvidence": true,
+    "repairFailureFeedback": true,
+    "independentFinalPass": true,
+    "boundedSearchNotFound": true,
+    "assets": true,
+    "recoveryClassification": true
+  },
+  "recovery": {
+    "httpStatus": 202,
+    "response": {
+      "jobId": "7f7fa22dfb1047c4a95357a1942aa83c",
+      "sessionId": "agnes:local:local-dev:cli:workspace:7f7fa22dfb1047c4a95357a1942aa83c",
+      "status": "recovering"
+    },
+    "jobBusiness": {
+      "status": "constraints-not-satisfied",
+      "reason": "finite-search-not-found-within-budget"
+    },
+    "outcome": {
+      "time": "2026-10-11T07:07:22.701Z",
+      "kind": "terminal-business-outcome",
+      "data": {
+        "path": "recovery-short-circuit",
+        "status": "constraints-not-satisfied",
+        "reason": "finite-search-not-found-within-budget",
+        "searchStatus": "budget-exhausted-or-candidates-ended",
+        "proof": "not-proof-of-impossibility"
+      }
+    },
+    "recoveryOutcomeCount": 1
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "format": "studyspace.asset-input.v1",
+  "units": "m",
+  "simulatedScenario": true,
+  "input": {
+    "schemaVersion": "studyspace.v1",
+    "scenarioLabel": "模拟场景—6座开放布局",
+    "userRequest": "",
+    "room": {
+      "width": 10,
+      "depth": 7
+    },
+    "door": {
+      "wall": "south",
+      "offset": 4,
+      "width": 1,
+      "swing": "inward",
+      "hinge": "low"
+    },
+    "obstacles": [],
+    "seatTemplate": {
+      "tableWidth": 1,
+      "tableDepth": 0.6,
+      "tableHeight": 0.75,
+      "chairWidth": 0.5,
+      "chairDepth": 0.5,
+      "chairClearance": 0.6,
+      "approachWidth": 0.5,
+      "entityGap": 0.05
+    },
+    "targetSeats": 6,
+    "requiredSeats": 6,
+    "orientations": [
+      0,
+      90
+    ],
+    "passageWidth": 0.8,
+    "gridSize": 0.4,
+    "tolerance": 0.000001,
+    "seed": "sample-6-seat",
+    "searchBudget": {
+      "maxAttempts": 12000
+    }
+  },
+  "layout": {
+    "layoutId": "search-sample-6-seat",
+    "seats": [
+      {
+        "id": "seat-1",
+        "x": 0.8,
+        "z": 2,
+        "orientation": 0
+      },
+      {
+        "id": "seat-2",
+        "x": 2,
+        "z": 2,
+        "orientation": 0
+      },
+      {
+        "id": "seat-3",
+        "x": 3.2,
+        "z": 2,
+        "orientation": 0
+      },
+      {
+        "id": "seat-4",
+        "x": 5.6,
+        "z": 2,
+        "orientation": 0
+      },
+      {
+        "id": "seat-5",
+        "x": 6.8,
+        "z": 2,
+        "orientation": 0
+      },
+      {
+        "id": "seat-6",
+        "x": 8,
+        "z": 2,
+        "orientation": 0
+      }
+    ]
+  },
+  "style": {
+    "roomHeight": 2.8,
+    "wallThickness": 0.12,
+    "floorThickness": 0.1,
+    "doorHeight": 2.1,
+    "doorThickness": 0.035
+  }
+}

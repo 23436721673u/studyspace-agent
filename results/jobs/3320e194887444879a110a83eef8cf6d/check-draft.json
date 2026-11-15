@@ -1,0 +1,330 @@
+{
+  "status": "fail",
+  "source": "independent-validator",
+  "checks": {
+    "seats": {
+      "status": "pass",
+      "accepted": 6,
+      "targetSeats": 6,
+      "requiredSeats": 6,
+      "semantics": "V1 targetSeats is exact; requiredSeats is a minimum and must not exceed targetSeats"
+    },
+    "geometry": {
+      "status": "fail",
+      "doorKeepout": {
+        "x": 2.5,
+        "z": 0.5,
+        "width": 1,
+        "depth": 1,
+        "id": "door:keepout",
+        "kind": "door"
+      },
+      "doorKeepoutModel": "conservative rectangular approximation of inward swing; not an exact arc"
+    },
+    "access": {
+      "status": "fail",
+      "seatReports": [
+        {
+          "id": "draft-1",
+          "status": "fail",
+          "reachable": false,
+          "reason": "target body intersects furniture or boundary",
+          "target": {
+            "x": -2,
+            "z": -3.25
+          }
+        },
+        {
+          "id": "draft-2",
+          "status": "fail",
+          "reachable": false,
+          "reason": "target body intersects furniture or boundary",
+          "target": {
+            "x": -3,
+            "z": -3.25
+          }
+        },
+        {
+          "id": "draft-3",
+          "status": "fail",
+          "reachable": false,
+          "reason": "target body intersects furniture or boundary",
+          "target": {
+            "x": -4,
+            "z": -3.25
+          }
+        },
+        {
+          "id": "draft-4",
+          "status": "fail",
+          "reachable": false,
+          "reason": "target body intersects furniture or boundary",
+          "target": {
+            "x": -5,
+            "z": -3.25
+          }
+        },
+        {
+          "id": "draft-5",
+          "status": "fail",
+          "reachable": false,
+          "reason": "target body intersects furniture or boundary",
+          "target": {
+            "x": -6,
+            "z": -3.25
+          }
+        },
+        {
+          "id": "draft-6",
+          "status": "fail",
+          "reachable": false,
+          "reason": "target body intersects furniture or boundary",
+          "target": {
+            "x": -7,
+            "z": -3.25
+          }
+        }
+      ],
+      "gridSize": 0.2,
+      "requiredWidth": 0.8,
+      "pathBodyRadius": 0.4
+    }
+  },
+  "issues": [
+    {
+      "code": "out-of-bounds",
+      "objectId": "draft-1:table",
+      "message": "occupancy leaves room bounds",
+      "bounds": {
+        "minX": -2.5,
+        "maxX": -1.5,
+        "minZ": -2.3,
+        "maxZ": -1.7
+      }
+    },
+    {
+      "code": "out-of-bounds",
+      "objectId": "draft-1:chair",
+      "message": "occupancy leaves room bounds",
+      "bounds": {
+        "minX": -2.25,
+        "maxX": -1.75,
+        "minZ": -2.85,
+        "maxZ": -2.35
+      }
+    },
+    {
+      "code": "out-of-bounds",
+      "objectId": "draft-1:use",
+      "message": "occupancy leaves room bounds",
+      "bounds": {
+        "minX": -2.4,
+        "maxX": -1.6,
+        "minZ": -3.65,
+        "maxZ": -2.85
+      }
+    },
+    {
+      "code": "out-of-bounds",
+      "objectId": "draft-2:table",
+      "message": "occupancy leaves room bounds",
+      "bounds": {
+        "minX": -3.5,
+        "maxX": -2.5,
+        "minZ": -2.3,
+        "maxZ": -1.7
+      }
+    },
+    {
+      "code": "out-of-bounds",
+      "objectId": "draft-2:chair",
+      "message": "occupancy leaves room bounds",
+      "bounds": {
+        "minX": -3.25,
+        "maxX": -2.75,
+        "minZ": -2.85,
+        "maxZ": -2.35
+      }
+    },
+    {
+      "code": "out-of-bounds",
+      "objectId": "draft-2:use",
+      "message": "occupancy leaves room bounds",
+      "bounds": {
+        "minX": -3.4,
+        "maxX": -2.6,
+        "minZ": -3.65,
+        "maxZ": -2.85
+      }
+    },
+    {
+      "code": "out-of-bounds",
+      "objectId": "draft-3:table",
+      "message": "occupancy leaves room bounds",
+      "bounds": {
+        "minX": -4.5,
+        "maxX": -3.5,
+        "minZ": -2.3,
+        "maxZ": -1.7
+      }
+    },
+    {
+      "code": "out-of-bounds",
+      "objectId": "draft-3:chair",
+      "message": "occupancy leaves room bounds",
+      "bounds": {
+        "minX": -4.25,
+        "maxX": -3.75,
+        "minZ": -2.85,
+        "maxZ": -2.35
+      }
+    },
+    {
+      "code": "out-of-bounds",
+      "objectId": "draft-3:use",
+      "message": "occupancy leaves room bounds",
+      "bounds": {
+        "minX": -4.4,
+        "maxX": -3.6,
+        "minZ": -3.65,
+        "maxZ": -2.85
+      }
+    },
+    {
+      "code": "out-of-bounds",
+      "objectId": "draft-4:table",
+      "message": "occupancy leaves room bounds",
+      "bounds": {
+        "minX": -5.5,
+        "maxX": -4.5,
+        "minZ": -2.3,
+        "maxZ": -1.7
+      }
+    },
+    {
+      "code": "out-of-bounds",
+      "objectId": "draft-4:chair",
+      "message": "occupancy leaves room bounds",
+      "bounds": {
+        "minX": -5.25,
+        "maxX": -4.75,
+        "minZ": -2.85,
+        "maxZ": -2.35
+      }
+    },
+    {
+      "code": "out-of-bounds",
+      "objectId": "draft-4:use",
+      "message": "occupancy leaves room bounds",
+      "bounds": {
+        "minX": -5.4,
+        "maxX": -4.6,
+        "minZ": -3.65,
+        "maxZ": -2.85
+      }
+    },
+    {
+      "code": "out-of-bounds",
+      "objectId": "draft-5:table",
+      "message": "occupancy leaves room bounds",
+      "bounds": {
+        "minX": -6.5,
+        "maxX": -5.5,
+        "minZ": -2.3,
+        "maxZ": -1.7
+      }
+    },
+    {
+      "code": "out-of-bounds",
+      "objectId": "draft-5:chair",
+      "message": "occupancy leaves room bounds",
+      "bounds": {
+        "minX": -6.25,
+        "maxX": -5.75,
+        "minZ": -2.85,
+        "maxZ": -2.35
+      }
+    },
+    {
+      "code": "out-of-bounds",
+      "objectId": "draft-5:use",
+      "message": "occupancy leaves room bounds",
+      "bounds": {
+        "minX": -6.4,
+        "maxX": -5.6,
+        "minZ": -3.65,
+        "maxZ": -2.85
+      }
+    },
+    {
+      "code": "out-of-bounds",
+      "objectId": "draft-6:table",
+      "message": "occupancy leaves room bounds",
+      "bounds": {
+        "minX": -7.5,
+        "maxX": -6.5,
+        "minZ": -2.3,
+        "maxZ": -1.7
+      }
+    },
+    {
+      "code": "out-of-bounds",
+      "objectId": "draft-6:chair",
+      "message": "occupancy leaves room bounds",
+      "bounds": {
+        "minX": -7.25,
+        "maxX": -6.75,
+        "minZ": -2.85,
+        "maxZ": -2.35
+      }
+    },
+    {
+      "code": "out-of-bounds",
+      "objectId": "draft-6:use",
+      "message": "occupancy leaves room bounds",
+      "bounds": {
+        "minX": -7.4,
+        "maxX": -6.6,
+        "minZ": -3.65,
+        "maxZ": -2.85
+      }
+    },
+    {
+      "code": "unreachable",
+      "objectId": "draft-1",
+      "message": "target body intersects furniture or boundary"
+    },
+    {
+      "code": "unreachable",
+      "objectId": "draft-2",
+      "message": "target body intersects furniture or boundary"
+    },
+    {
+      "code": "unreachable",
+      "objectId": "draft-3",
+      "message": "target body intersects furniture or boundary"
+    },
+    {
+      "code": "unreachable",
+      "objectId": "draft-4",
+      "message": "target body intersects furniture or boundary"
+    },
+    {
+      "code": "unreachable",
+      "objectId": "draft-5",
+      "message": "target body intersects furniture or boundary"
+    },
+    {
+      "code": "unreachable",
+      "objectId": "draft-6",
+      "message": "target body intersects furniture or boundary"
+    }
+  ],
+  "parameters": {
+    "tolerance": 0.000001,
+    "gridSize": 0.2,
+    "passageWidth": 0.8
+  },
+  "inputHash": "19ee7d183c3e0cd92e370f6432efd4c1f0c281d0fc9f6e71fb71b35172ec13ed",
+  "layoutHash": "ca6f2ed54a6d0c20473a4041bc67830a8be65cb071cacabfd53cf224aad4dad4"
+}

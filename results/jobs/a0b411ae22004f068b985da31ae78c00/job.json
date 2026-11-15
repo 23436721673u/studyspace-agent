@@ -1,0 +1,47 @@
+{
+  "jobId": "a0b411ae22004f068b985da31ae78c00",
+  "sessionKey": "agnes:local:local-dev:cli:workspace:a0b411ae22004f068b985da31ae78c00",
+  "sessionId": "agnes:local:local-dev:cli:workspace:a0b411ae22004f068b985da31ae78c00",
+  "createdAt": "2026-10-14T15:41:13.912Z",
+  "inputHash": "7dbd6a8031e04e556788a40f4ed9314c952fbb3fdd6fbecb6078c05d14151e36",
+  "mode": "normal",
+  "testOnly": false,
+  "simulatedScenario": true,
+  "userRequest": "模拟场景。请保留房间、门、柜体、六座目标及0.8米通道约束，检查草稿并在反馈后搜索、导出和独立验收。",
+  "supportedConstraints": [
+    "room",
+    "door",
+    "obstacles",
+    "seatTemplate",
+    "targetSeats",
+    "requiredSeats",
+    "passageWidth",
+    "orientations"
+  ],
+  "unsupportedRequests": [],
+  "model": {
+    "name": "gpt-6-astra",
+    "alias": "gpt-6-astra",
+    "provider": "not-independently-verified",
+    "driverProviderId": "openai",
+    "channel": "ToTokens",
+    "endpoint": "https://totokens.cc/v1",
+    "api": "Responses",
+    "snapshotVersion": null,
+    "providerVerification": "底层实际模型提供方未独立核实",
+    "usage": null,
+    "route": "account-studyspace-astra-api"
+  },
+  "connection": {
+    "status": "connection-unknown",
+    "sessionId": "agnes:local:local-dev:cli:workspace:a0b411ae22004f068b985da31ae78c00"
+  },
+  "native": {
+    "status": null,
+    "reason": null,
+    "stopReason": null
+  },
+  "business": {
+    "status": "pending"
+  }
+}

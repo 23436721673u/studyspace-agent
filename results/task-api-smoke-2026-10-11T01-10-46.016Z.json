@@ -1,0 +1,167 @@
+{
+  "test": "task-api-smoke",
+  "label": "HTTP end-to-end test with a real AGH task",
+  "startedAt": "2026-10-11T01:10:07.369Z",
+  "port": 4397,
+  "assertions": {
+    "malformed-json": true,
+    "null-body": true,
+    "null-input": true,
+    "missing-recovery-id": true,
+    "path-recovery-id": true,
+    "nonhex-recovery-id": true,
+    "created": true,
+    "hasRealSession": true,
+    "modelObserved": true,
+    "snapshotNotClaimed": true,
+    "independentVerificationPass": true,
+    "nativeStateRecorded": true,
+    "nativeCompleted": true
+  },
+  "invalidInputs": [
+    {
+      "name": "malformed-json",
+      "status": 400,
+      "expected": 400,
+      "data": {
+        "error": {
+          "code": "invalid-json",
+          "message": "Expected property name or '}' in JSON at position 1 (line 1 column 2)"
+        }
+      }
+    },
+    {
+      "name": "null-body",
+      "status": 422,
+      "expected": 422,
+      "data": {
+        "status": "schema-fail",
+        "issues": [
+          {
+            "code": "request.type",
+            "path": "",
+            "message": "request body must be an object with input"
+          }
+        ]
+      }
+    },
+    {
+      "name": "null-input",
+      "status": 422,
+      "expected": 422,
+      "data": {
+        "status": "schema-fail",
+        "issues": [
+          {
+            "code": "input.type",
+            "path": "",
+            "message": "input must be an object"
+          }
+        ]
+      }
+    },
+    {
+      "name": "missing-recovery-id",
+      "status": 422,
+      "expected": 422,
+      "data": {
+        "error": {
+          "code": "invalid-job-id",
+          "message": "id must be 32 hexadecimal characters"
+        }
+      }
+    },
+    {
+      "name": "path-recovery-id",
+      "status": 422,
+      "expected": 422,
+      "data": {
+        "error": {
+          "code": "invalid-job-id",
+          "message": "id must be 32 hexadecimal characters"
+        }
+      }
+    },
+    {
+      "name": "nonhex-recovery-id",
+      "status": 422,
+      "expected": 422,
+      "data": {
+        "error": {
+          "code": "invalid-job-id",
+          "message": "id must be 32 hexadecimal characters"
+        }
+      }
+    }
+  ],
+  "jobId": "b8d5a7b65543418486085b7501a6d60a",
+  "sessionKey": "agnes:local:local-dev:cli:workspace:b8d5a7b65543418486085b7501a6d60a",
+  "httpAccepted": 202,
+  "connection": "turn-ended",
+  "sessionId": "agnes:local:local-dev:cli:workspace:b8d5a7b65543418486085b7501a6d60a",
+  "businessStatus": "pass",
+  "native": {
+    "status": "completed",
+    "reason": "completed",
+    "stopReason": "end_turn"
+  },
+  "model": {
+    "name": "gpt-6-astra",
+    "alias": "gpt-6-astra",
+    "provider": "not-independently-verified",
+    "driverProviderId": "openai",
+    "channel": "ToTokens",
+    "endpoint": "https://totokens.cc/v1",
+    "api": "Responses",
+    "snapshotVersion": null,
+    "providerVerification": "底层实际模型提供方未独立核实",
+    "usage": {
+      "totals": {
+        "input": 23023,
+        "output": 1161,
+        "cacheRead": 57856,
+        "cacheWrite": 0,
+        "reasoning": 191
+      },
+      "credits": {
+        "amount": 0.663247,
+        "source": "estimated",
+        "complete": true
+      },
+      "reasoningComplete": true,
+      "billingComplete": true,
+      "cost": {
+        "usdMicros": 663247,
+        "source": "estimated",
+        "subscription": false
+      },
+      "context": {
+        "source": "estimated",
+        "tokens": 19634,
+        "window": 160000,
+        "autoCompact": true
+      },
+      "model": {
+        "route": "account-studyspace-astra-api",
+        "id": "gpt-6-astra",
+        "thinking": "medium",
+        "settings": {
+          "thinking": "medium",
+          "contextWindow": 160000
+        },
+        "maxTokens": 128000
+      },
+      "cache": {
+        "hitRate": 0.7153401995573635
+      }
+    },
+    "route": "account-studyspace-astra-api"
+  },
+  "serverExit": {
+    "code": null,
+    "signal": "SIGTERM"
+  },
+  "stderr": "",
+  "finishedAt": "2026-10-11T01:10:46.016Z",
+  "status": "pass"
+}

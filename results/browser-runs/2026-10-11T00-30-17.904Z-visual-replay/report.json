@@ -1,0 +1,103 @@
+{
+  "mode": "replay of the new real six-seat task; no generation",
+  "jobId": "4a024c78093e46dab1faaed0c166e99b",
+  "checks": [
+    {
+      "name": "six finite chair rectangles rendered",
+      "pass": true,
+      "detail": {
+        "chairs": [
+          {
+            "name": "fillRect",
+            "args": [
+              149.2428571428571,
+              109.44285714285715,
+              26.714285714285715,
+              26.714285714285715
+            ],
+            "color": "#277b80"
+          },
+          {
+            "name": "fillRect",
+            "args": [
+              213.35714285714283,
+              109.44285714285715,
+              26.714285714285715,
+              26.714285714285715
+            ],
+            "color": "#277b80"
+          },
+          {
+            "name": "fillRect",
+            "args": [
+              277.4714285714286,
+              109.44285714285715,
+              26.714285714285715,
+              26.714285714285715
+            ],
+            "color": "#277b80"
+          },
+          {
+            "name": "fillRect",
+            "args": [
+              405.7,
+              109.44285714285715,
+              26.714285714285715,
+              26.714285714285715
+            ],
+            "color": "#277b80"
+          },
+          {
+            "name": "fillRect",
+            "args": [
+              469.81428571428575,
+              109.44285714285715,
+              26.714285714285715,
+              26.714285714285715
+            ],
+            "color": "#277b80"
+          },
+          {
+            "name": "fillRect",
+            "args": [
+              533.9285714285713,
+              109.44285714285715,
+              26.714285714285715,
+              26.714285714285715
+            ],
+            "color": "#277b80"
+          }
+        ]
+      }
+    },
+    {
+      "name": "actual path segments drawn",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "six seat labels rendered",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "selection highlights list",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "errors": [
+    {
+      "test": "page.waitForFunction: Timeout 30000ms exceeded.\n    at F:\\AGH\\projects\\studyspace\\tests\\visual-replay.mjs:19:116"
+    }
+  ],
+  "screenshots": [
+    "2d-six-chairs-paths.png"
+  ],
+  "server": {
+    "base": "http://127.0.0.1:4398",
+    "ownership": "test child",
+    "external4319Untouched": true
+  },
+  "pass": false
+}

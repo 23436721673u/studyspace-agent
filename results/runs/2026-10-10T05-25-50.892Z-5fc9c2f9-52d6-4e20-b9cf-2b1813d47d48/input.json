@@ -1,0 +1,33 @@
+{
+  "scenarioLabel": "模拟场景—6座开放布局",
+  "room": {
+    "width": 10,
+    "depth": 7
+  },
+  "door": {
+    "wall": "south",
+    "offset": 4,
+    "width": 1,
+    "swing": "inward",
+    "hinge": "low"
+  },
+  "obstacles": [],
+  "seatTemplate": {
+    "tableWidth": 1,
+    "tableDepth": 0.6,
+    "tableHeight": 0.75,
+    "chairWidth": 0.5,
+    "chairDepth": 0.5,
+    "chairClearance": 0.6,
+    "approachWidth": 0.5
+  },
+  "targetSeats": 6,
+  "requiredSeats": 6,
+  "passageWidth": 0.8,
+  "gridSize": 0.4,
+  "tolerance": 0.000001,
+  "seed": "sample-6-seat",
+  "searchBudget": {
+    "maxAttempts": 12000
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "jobId": "d9e7849a73b443e8b708afcaa86bac8f",
+  "sessionKey": "agnes:local:local-dev:cli:workspace:d9e7849a73b443e8b708afcaa86bac8f",
+  "sessionId": null,
+  "createdAt": "2026-10-10T14:06:57.678Z",
+  "inputHash": "a49021fc140d46da3059c1d789b4d28e0552d4f85d21be8eb539fad85d09c139",
+  "mode": "normal",
+  "simulatedScenario": true,
+  "model": {
+    "name": "gpt-6-astra",
+    "route": "account-studyspace-astra-api",
+    "channel": "ToTokens",
+    "endpoint": "https://totokens.cc/v1",
+    "api": "Responses",
+    "version": "not-observed",
+    "usage": null
+  },
+  "connection": {
+    "status": "not-connected",
+    "reason": "Awaiting product session creation; live session identity is in connection.json"
+  }
+}

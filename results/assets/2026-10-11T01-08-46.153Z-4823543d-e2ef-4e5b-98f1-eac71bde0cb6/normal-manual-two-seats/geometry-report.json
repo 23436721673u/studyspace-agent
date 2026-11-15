@@ -1,0 +1,1214 @@
+{
+  "status": "pass",
+  "sha256": "0053d78c1f31f617d3d7dffaedfc42151d57dbbfd35574fb3d8db7be94211f76",
+  "bytes": 9556,
+  "simulatedScenario": true,
+  "reader": "independent-binary-vertices-v1",
+  "toleranceMetres": 0.000001,
+  "issues": [],
+  "layoutValidation": {
+    "status": "pass",
+    "source": "independent-validator",
+    "checks": {
+      "geometry": {
+        "status": "pass",
+        "doorKeepout": {
+          "x": 2.5,
+          "z": 0.5,
+          "width": 1,
+          "depth": 1,
+          "id": "door:keepout",
+          "kind": "door"
+        },
+        "doorKeepoutModel": "conservative rectangular approximation of inward swing; not an exact arc"
+      },
+      "access": {
+        "status": "pass",
+        "seatReports": [
+          {
+            "id": "manual-a",
+            "status": "pass",
+            "reachable": true,
+            "path": [
+              {
+                "x": 2.5,
+                "z": 0.4
+              },
+              {
+                "x": 2.3,
+                "z": 0.4
+              },
+              {
+                "x": 2.1,
+                "z": 0.4
+              },
+              {
+                "x": 1.9,
+                "z": 0.4
+              },
+              {
+                "x": 1.7,
+                "z": 0.4
+              },
+              {
+                "x": 1.5,
+                "z": 0.4
+              },
+              {
+                "x": 1.2999999999999998,
+                "z": 0.4
+              },
+              {
+                "x": 1.2999999999999998,
+                "z": 0.6000000000000001
+              },
+              {
+                "x": 1.2999999999999998,
+                "z": 0.8
+              },
+              {
+                "x": 1.2999999999999998,
+                "z": 1
+              },
+              {
+                "x": 1.2999999999999998,
+                "z": 1.2000000000000002
+              },
+              {
+                "x": 1.2999999999999998,
+                "z": 1.4
+              },
+              {
+                "x": 1.2999999999999998,
+                "z": 1.6
+              },
+              {
+                "x": 1.2999999999999998,
+                "z": 1.8000000000000003
+              },
+              {
+                "x": 1.2999999999999998,
+                "z": 2
+              },
+              {
+                "x": 1.2,
+                "z": 2.25
+              }
+            ],
+            "pathLength": 3.0692582403567252,
+            "visited": 233,
+            "target": {
+              "x": 1.2,
+              "z": 2.25
+            }
+          },
+          {
+            "id": "manual-b",
+            "status": "pass",
+            "reachable": true,
+            "path": [
+              {
+                "x": 2.5,
+                "z": 0.4
+              },
+              {
+                "x": 2.7,
+                "z": 0.4
+              },
+              {
+                "x": 2.9,
+                "z": 0.4
+              },
+              {
+                "x": 3.1,
+                "z": 0.4
+              },
+              {
+                "x": 3.3,
+                "z": 0.4
+              },
+              {
+                "x": 3.5,
+                "z": 0.4
+              },
+              {
+                "x": 3.7,
+                "z": 0.4
+              },
+              {
+                "x": 3.9000000000000004,
+                "z": 0.4
+              },
+              {
+                "x": 4.1,
+                "z": 0.4
+              },
+              {
+                "x": 4.3,
+                "z": 0.4
+              },
+              {
+                "x": 4.5,
+                "z": 0.4
+              },
+              {
+                "x": 4.5,
+                "z": 0.6000000000000001
+              },
+              {
+                "x": 4.5,
+                "z": 0.8
+              },
+              {
+                "x": 4.5,
+                "z": 1
+              },
+              {
+                "x": 4.5,
+                "z": 1.2000000000000002
+              },
+              {
+                "x": 4.5,
+                "z": 1.4
+              },
+              {
+                "x": 4.5,
+                "z": 1.6
+              },
+              {
+                "x": 4.5,
+                "z": 1.8000000000000003
+              },
+              {
+                "x": 4.5,
+                "z": 2
+              },
+              {
+                "x": 4.5,
+                "z": 2.25
+              }
+            ],
+            "pathLength": 3.8500000000000005,
+            "visited": 303,
+            "target": {
+              "x": 4.5,
+              "z": 2.25
+            }
+          }
+        ],
+        "gridSize": 0.2,
+        "requiredWidth": 0.8,
+        "pathBodyRadius": 0.4
+      }
+    },
+    "issues": [],
+    "parameters": {
+      "tolerance": 0.000001,
+      "gridSize": 0.2,
+      "passageWidth": 0.8
+    }
+  },
+  "partCount": 30,
+  "triangles": 360,
+  "parts": [
+    {
+      "id": "room:floor",
+      "status": "pass",
+      "expectedCenter": [
+        3,
+        -0.05,
+        2.5
+      ],
+      "expectedSize": [
+        6,
+        0.1,
+        5
+      ],
+      "actualCenter": [
+        3,
+        -0.05,
+        2.5
+      ],
+      "actualSize": [
+        6,
+        0.1,
+        5
+      ]
+    },
+    {
+      "id": "room:south:low",
+      "status": "pass",
+      "expectedCenter": [
+        1,
+        1.4,
+        -0.06
+      ],
+      "expectedSize": [
+        2,
+        2.8,
+        0.12
+      ],
+      "actualCenter": [
+        1,
+        1.4,
+        -0.06
+      ],
+      "actualSize": [
+        2,
+        2.8,
+        0.12
+      ]
+    },
+    {
+      "id": "room:south:high",
+      "status": "pass",
+      "expectedCenter": [
+        4.5,
+        1.4,
+        -0.06
+      ],
+      "expectedSize": [
+        3,
+        2.8,
+        0.12
+      ],
+      "actualCenter": [
+        4.5,
+        1.4,
+        -0.06
+      ],
+      "actualSize": [
+        3,
+        2.8,
+        0.12
+      ]
+    },
+    {
+      "id": "room:south:lintel",
+      "status": "pass",
+      "expectedCenter": [
+        2.5,
+        2.45,
+        -0.06
+      ],
+      "expectedSize": [
+        1,
+        0.6999999999999997,
+        0.12
+      ],
+      "actualCenter": [
+        2.5,
+        2.45,
+        -0.06
+      ],
+      "actualSize": [
+        1,
+        0.6999999999999993,
+        0.12
+      ]
+    },
+    {
+      "id": "room:north:full",
+      "status": "pass",
+      "expectedCenter": [
+        3,
+        1.4,
+        5.06
+      ],
+      "expectedSize": [
+        6,
+        2.8,
+        0.12
+      ],
+      "actualCenter": [
+        3,
+        1.4,
+        5.06
+      ],
+      "actualSize": [
+        6,
+        2.8,
+        0.11999999999999922
+      ]
+    },
+    {
+      "id": "room:west:full",
+      "status": "pass",
+      "expectedCenter": [
+        -0.06,
+        1.4,
+        2.5
+      ],
+      "expectedSize": [
+        0.12,
+        2.8,
+        5
+      ],
+      "actualCenter": [
+        -0.06,
+        1.4,
+        2.5
+      ],
+      "actualSize": [
+        0.12,
+        2.8,
+        5
+      ]
+    },
+    {
+      "id": "room:east:full",
+      "status": "pass",
+      "expectedCenter": [
+        6.06,
+        1.4,
+        2.5
+      ],
+      "expectedSize": [
+        0.12,
+        2.8,
+        5
+      ],
+      "actualCenter": [
+        6.06,
+        1.4,
+        2.5
+      ],
+      "actualSize": [
+        0.11999999999999922,
+        2.8,
+        5
+      ]
+    },
+    {
+      "id": "door:leaf",
+      "status": "pass",
+      "expectedCenter": [
+        2.0175,
+        1.05,
+        0.5
+      ],
+      "expectedSize": [
+        0.035,
+        2.1,
+        1
+      ],
+      "actualCenter": [
+        2.0175,
+        1.05,
+        0.5
+      ],
+      "actualSize": [
+        0.03500000000000014,
+        2.1,
+        1
+      ]
+    },
+    {
+      "id": "manual-a:table:top",
+      "status": "pass",
+      "expectedCenter": [
+        1.2,
+        0.7275,
+        3.5
+      ],
+      "expectedSize": [
+        1,
+        0.045,
+        0.6
+      ],
+      "actualCenter": [
+        1.2,
+        0.7275,
+        3.5
+      ],
+      "actualSize": [
+        1,
+        0.04499999999999993,
+        0.5999999999999996
+      ]
+    },
+    {
+      "id": "manual-a:table:leg0",
+      "status": "pass",
+      "expectedCenter": [
+        0.7275,
+        0.3525,
+        3.2275
+      ],
+      "expectedSize": [
+        0.055,
+        0.705,
+        0.055
+      ],
+      "actualCenter": [
+        0.7275,
+        0.3525,
+        3.2275
+      ],
+      "actualSize": [
+        0.05499999999999994,
+        0.705,
+        0.054999999999999716
+      ]
+    },
+    {
+      "id": "manual-a:table:leg1",
+      "status": "pass",
+      "expectedCenter": [
+        1.6724999999999999,
+        0.3525,
+        3.2275
+      ],
+      "expectedSize": [
+        0.055,
+        0.705,
+        0.055
+      ],
+      "actualCenter": [
+        1.6724999999999999,
+        0.3525,
+        3.2275
+      ],
+      "actualSize": [
+        0.05500000000000016,
+        0.705,
+        0.054999999999999716
+      ]
+    },
+    {
+      "id": "manual-a:table:leg2",
+      "status": "pass",
+      "expectedCenter": [
+        1.6724999999999999,
+        0.3525,
+        3.7725
+      ],
+      "expectedSize": [
+        0.055,
+        0.705,
+        0.055
+      ],
+      "actualCenter": [
+        1.6724999999999999,
+        0.3525,
+        3.7725
+      ],
+      "actualSize": [
+        0.05500000000000016,
+        0.705,
+        0.054999999999999716
+      ]
+    },
+    {
+      "id": "manual-a:table:leg3",
+      "status": "pass",
+      "expectedCenter": [
+        0.7275,
+        0.3525,
+        3.7725
+      ],
+      "expectedSize": [
+        0.055,
+        0.705,
+        0.055
+      ],
+      "actualCenter": [
+        0.7275,
+        0.3525,
+        3.7725
+      ],
+      "actualSize": [
+        0.05499999999999994,
+        0.705,
+        0.054999999999999716
+      ]
+    },
+    {
+      "id": "manual-a:chair:seat",
+      "status": "pass",
+      "expectedCenter": [
+        1.2,
+        0.42749999999999994,
+        2.9
+      ],
+      "expectedSize": [
+        0.5,
+        0.045,
+        0.5
+      ],
+      "actualCenter": [
+        1.2,
+        0.42749999999999994,
+        2.9
+      ],
+      "actualSize": [
+        0.5,
+        0.04500000000000004,
+        0.5
+      ]
+    },
+    {
+      "id": "manual-a:chair:back",
+      "status": "pass",
+      "expectedCenter": [
+        1.2,
+        0.6375,
+        2.67
+      ],
+      "expectedSize": [
+        0.5,
+        0.375,
+        0.04
+      ],
+      "actualCenter": [
+        1.2,
+        0.6375,
+        2.67
+      ],
+      "actualSize": [
+        0.5,
+        0.375,
+        0.040000000000000036
+      ]
+    },
+    {
+      "id": "manual-a:chair:leg0",
+      "status": "pass",
+      "expectedCenter": [
+        0.9675,
+        0.20249999999999999,
+        2.6675
+      ],
+      "expectedSize": [
+        0.035,
+        0.40499999999999997,
+        0.035
+      ],
+      "actualCenter": [
+        0.9675,
+        0.20249999999999999,
+        2.6675
+      ],
+      "actualSize": [
+        0.03499999999999992,
+        0.40499999999999997,
+        0.03500000000000014
+      ]
+    },
+    {
+      "id": "manual-a:chair:leg1",
+      "status": "pass",
+      "expectedCenter": [
+        1.4324999999999999,
+        0.20249999999999999,
+        2.6675
+      ],
+      "expectedSize": [
+        0.035,
+        0.40499999999999997,
+        0.035
+      ],
+      "actualCenter": [
+        1.4324999999999999,
+        0.20249999999999999,
+        2.6675
+      ],
+      "actualSize": [
+        0.03500000000000014,
+        0.40499999999999997,
+        0.03500000000000014
+      ]
+    },
+    {
+      "id": "manual-a:chair:leg2",
+      "status": "pass",
+      "expectedCenter": [
+        1.4324999999999999,
+        0.20249999999999999,
+        3.1325
+      ],
+      "expectedSize": [
+        0.035,
+        0.40499999999999997,
+        0.035
+      ],
+      "actualCenter": [
+        1.4324999999999999,
+        0.20249999999999999,
+        3.1325
+      ],
+      "actualSize": [
+        0.03500000000000014,
+        0.40499999999999997,
+        0.03500000000000014
+      ]
+    },
+    {
+      "id": "manual-a:chair:leg3",
+      "status": "pass",
+      "expectedCenter": [
+        0.9675,
+        0.20249999999999999,
+        3.1325
+      ],
+      "expectedSize": [
+        0.035,
+        0.40499999999999997,
+        0.035
+      ],
+      "actualCenter": [
+        0.9675,
+        0.20249999999999999,
+        3.1325
+      ],
+      "actualSize": [
+        0.03499999999999992,
+        0.40499999999999997,
+        0.03500000000000014
+      ]
+    },
+    {
+      "id": "manual-b:table:top",
+      "status": "pass",
+      "expectedCenter": [
+        4.5,
+        0.7275,
+        3.5
+      ],
+      "expectedSize": [
+        1,
+        0.045,
+        0.6
+      ],
+      "actualCenter": [
+        4.5,
+        0.7275,
+        3.5
+      ],
+      "actualSize": [
+        1,
+        0.04499999999999993,
+        0.5999999999999996
+      ]
+    },
+    {
+      "id": "manual-b:table:leg0",
+      "status": "pass",
+      "expectedCenter": [
+        4.0275,
+        0.3525,
+        3.2275
+      ],
+      "expectedSize": [
+        0.055,
+        0.705,
+        0.055
+      ],
+      "actualCenter": [
+        4.0275,
+        0.3525,
+        3.2275
+      ],
+      "actualSize": [
+        0.054999999999999716,
+        0.705,
+        0.054999999999999716
+      ]
+    },
+    {
+      "id": "manual-b:table:leg1",
+      "status": "pass",
+      "expectedCenter": [
+        4.9725,
+        0.3525,
+        3.2275
+      ],
+      "expectedSize": [
+        0.055,
+        0.705,
+        0.055
+      ],
+      "actualCenter": [
+        4.9725,
+        0.3525,
+        3.2275
+      ],
+      "actualSize": [
+        0.054999999999999716,
+        0.705,
+        0.054999999999999716
+      ]
+    },
+    {
+      "id": "manual-b:table:leg2",
+      "status": "pass",
+      "expectedCenter": [
+        4.9725,
+        0.3525,
+        3.7725
+      ],
+      "expectedSize": [
+        0.055,
+        0.705,
+        0.055
+      ],
+      "actualCenter": [
+        4.9725,
+        0.3525,
+        3.7725
+      ],
+      "actualSize": [
+        0.054999999999999716,
+        0.705,
+        0.054999999999999716
+      ]
+    },
+    {
+      "id": "manual-b:table:leg3",
+      "status": "pass",
+      "expectedCenter": [
+        4.0275,
+        0.3525,
+        3.7725
+      ],
+      "expectedSize": [
+        0.055,
+        0.705,
+        0.055
+      ],
+      "actualCenter": [
+        4.0275,
+        0.3525,
+        3.7725
+      ],
+      "actualSize": [
+        0.054999999999999716,
+        0.705,
+        0.054999999999999716
+      ]
+    },
+    {
+      "id": "manual-b:chair:seat",
+      "status": "pass",
+      "expectedCenter": [
+        4.5,
+        0.42749999999999994,
+        2.9
+      ],
+      "expectedSize": [
+        0.5,
+        0.045,
+        0.5
+      ],
+      "actualCenter": [
+        4.5,
+        0.42749999999999994,
+        2.9
+      ],
+      "actualSize": [
+        0.5,
+        0.04500000000000004,
+        0.5
+      ]
+    },
+    {
+      "id": "manual-b:chair:back",
+      "status": "pass",
+      "expectedCenter": [
+        4.5,
+        0.6375,
+        2.67
+      ],
+      "expectedSize": [
+        0.5,
+        0.375,
+        0.04
+      ],
+      "actualCenter": [
+        4.5,
+        0.6375,
+        2.67
+      ],
+      "actualSize": [
+        0.5,
+        0.375,
+        0.040000000000000036
+      ]
+    },
+    {
+      "id": "manual-b:chair:leg0",
+      "status": "pass",
+      "expectedCenter": [
+        4.2675,
+        0.20249999999999999,
+        2.6675
+      ],
+      "expectedSize": [
+        0.035,
+        0.40499999999999997,
+        0.035
+      ],
+      "actualCenter": [
+        4.2675,
+        0.20249999999999999,
+        2.6675
+      ],
+      "actualSize": [
+        0.03500000000000014,
+        0.40499999999999997,
+        0.03500000000000014
+      ]
+    },
+    {
+      "id": "manual-b:chair:leg1",
+      "status": "pass",
+      "expectedCenter": [
+        4.7325,
+        0.20249999999999999,
+        2.6675
+      ],
+      "expectedSize": [
+        0.035,
+        0.40499999999999997,
+        0.035
+      ],
+      "actualCenter": [
+        4.7325,
+        0.20249999999999999,
+        2.6675
+      ],
+      "actualSize": [
+        0.03500000000000014,
+        0.40499999999999997,
+        0.03500000000000014
+      ]
+    },
+    {
+      "id": "manual-b:chair:leg2",
+      "status": "pass",
+      "expectedCenter": [
+        4.7325,
+        0.20249999999999999,
+        3.1325
+      ],
+      "expectedSize": [
+        0.035,
+        0.40499999999999997,
+        0.035
+      ],
+      "actualCenter": [
+        4.7325,
+        0.20249999999999999,
+        3.1325
+      ],
+      "actualSize": [
+        0.03500000000000014,
+        0.40499999999999997,
+        0.03500000000000014
+      ]
+    },
+    {
+      "id": "manual-b:chair:leg3",
+      "status": "pass",
+      "expectedCenter": [
+        4.2675,
+        0.20249999999999999,
+        3.1325
+      ],
+      "expectedSize": [
+        0.035,
+        0.40499999999999997,
+        0.035
+      ],
+      "actualCenter": [
+        4.2675,
+        0.20249999999999999,
+        3.1325
+      ],
+      "actualSize": [
+        0.03500000000000014,
+        0.40499999999999997,
+        0.03500000000000014
+      ]
+    }
+  ],
+  "footprints": [
+    {
+      "id": "manual-a",
+      "kind": "table",
+      "status": "pass",
+      "center": [
+        1.2,
+        3.5
+      ],
+      "size": [
+        1,
+        0.6
+      ]
+    },
+    {
+      "id": "manual-a",
+      "kind": "chair",
+      "status": "pass",
+      "center": [
+        1.2,
+        2.9
+      ],
+      "size": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "manual-b",
+      "kind": "table",
+      "status": "pass",
+      "center": [
+        4.5,
+        3.5
+      ],
+      "size": [
+        1,
+        0.6
+      ]
+    },
+    {
+      "id": "manual-b",
+      "kind": "chair",
+      "status": "pass",
+      "center": [
+        4.5,
+        2.9
+      ],
+      "size": [
+        0.5,
+        0.5
+      ]
+    }
+  ],
+  "structuralChecks": [
+    {
+      "id": "room:floor",
+      "status": "pass",
+      "expectedCenter": [
+        3,
+        -0.05,
+        2.5
+      ],
+      "expectedSize": [
+        6,
+        0.1,
+        5
+      ],
+      "actualCenter": [
+        3,
+        -0.05,
+        2.5
+      ],
+      "actualSize": [
+        6,
+        0.1,
+        5
+      ]
+    },
+    {
+      "id": "room:south:low",
+      "status": "pass",
+      "expectedCenter": [
+        1,
+        1.4,
+        -0.06
+      ],
+      "expectedSize": [
+        2,
+        2.8,
+        0.12
+      ],
+      "actualCenter": [
+        1,
+        1.4,
+        -0.06
+      ],
+      "actualSize": [
+        2,
+        2.8,
+        0.12
+      ]
+    },
+    {
+      "id": "room:south:high",
+      "status": "pass",
+      "expectedCenter": [
+        4.5,
+        1.4,
+        -0.06
+      ],
+      "expectedSize": [
+        3,
+        2.8,
+        0.12
+      ],
+      "actualCenter": [
+        4.5,
+        1.4,
+        -0.06
+      ],
+      "actualSize": [
+        3,
+        2.8,
+        0.12
+      ]
+    },
+    {
+      "id": "room:south:lintel",
+      "status": "pass",
+      "expectedCenter": [
+        2.5,
+        2.45,
+        -0.06
+      ],
+      "expectedSize": [
+        1,
+        0.6999999999999997,
+        0.12
+      ],
+      "actualCenter": [
+        2.5,
+        2.45,
+        -0.06
+      ],
+      "actualSize": [
+        1,
+        0.6999999999999993,
+        0.12
+      ]
+    },
+    {
+      "id": "room:north:full",
+      "status": "pass",
+      "expectedCenter": [
+        3,
+        1.4,
+        5.06
+      ],
+      "expectedSize": [
+        6,
+        2.8,
+        0.12
+      ],
+      "actualCenter": [
+        3,
+        1.4,
+        5.06
+      ],
+      "actualSize": [
+        6,
+        2.8,
+        0.11999999999999922
+      ]
+    },
+    {
+      "id": "room:west:full",
+      "status": "pass",
+      "expectedCenter": [
+        -0.06,
+        1.4,
+        2.5
+      ],
+      "expectedSize": [
+        0.12,
+        2.8,
+        5
+      ],
+      "actualCenter": [
+        -0.06,
+        1.4,
+        2.5
+      ],
+      "actualSize": [
+        0.12,
+        2.8,
+        5
+      ]
+    },
+    {
+      "id": "room:east:full",
+      "status": "pass",
+      "expectedCenter": [
+        6.06,
+        1.4,
+        2.5
+      ],
+      "expectedSize": [
+        0.12,
+        2.8,
+        5
+      ],
+      "actualCenter": [
+        6.06,
+        1.4,
+        2.5
+      ],
+      "actualSize": [
+        0.11999999999999922,
+        2.8,
+        5
+      ]
+    },
+    {
+      "id": "door:leaf",
+      "status": "pass",
+      "expectedCenter": [
+        2.0175,
+        1.05,
+        0.5
+      ],
+      "expectedSize": [
+        0.035,
+        2.1,
+        1
+      ],
+      "actualCenter": [
+        2.0175,
+        1.05,
+        0.5
+      ],
+      "actualSize": [
+        0.03500000000000014,
+        2.1,
+        1
+      ]
+    },
+    {
+      "id": "door:opening",
+      "status": "pass",
+      "min": [
+        2,
+        0,
+        -0.12
+      ],
+      "max": [
+        3,
+        2.1,
+        0
+      ],
+      "intruders": []
+    },
+    {
+      "id": "manual-a:vertical",
+      "status": "pass",
+      "tableTop": 0.75,
+      "expectedTableTop": 0.75,
+      "tableGround": 0,
+      "chairGround": 0
+    },
+    {
+      "id": "manual-b:vertical",
+      "status": "pass",
+      "tableTop": 0.75,
+      "expectedTableTop": 0.75,
+      "tableGround": 0,
+      "chairGround": 0
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{"time":"2026-10-10T15:20:16.965Z","kind":"initialize","data":{"agnesVersion":"0.0.0","capabilities":{"loadSession":true,"promptCapabilities":{"image":true,"audio":false,"embeddedContext":true}}}}
+{"time":"2026-10-10T15:20:17.008Z","kind":"set-model","data":{"slot":"primary","result":{"effectiveFromSeq":3}}}
+{"time":"2026-10-10T15:20:17.010Z","kind":"set-model","data":{"slot":"escalation","result":{"effectiveFromSeq":4}}}
+{"time":"2026-10-10T15:20:17.013Z","kind":"set-model","data":{"slot":"fast","result":{"effectiveFromSeq":5}}}
+{"time":"2026-10-10T15:20:17.016Z","kind":"set-model","data":{"slot":"compaction","result":{"effectiveFromSeq":6}}}
+{"time":"2026-10-10T15:20:17.019Z","kind":"set-model","data":{"slot":"verifier","result":{"effectiveFromSeq":7}}}
+{"time":"2026-10-10T15:20:17.022Z","kind":"resume-decision","data":{"previousNativeTurn":null,"opState":null,"pendingInputs":[],"verifiedSteps":[],"action":"initial-prompt"}}
+{"time":"2026-10-10T15:20:17.025Z","kind":"error","data":{"name":"ReferenceError","message":"createHash is not defined","code":null,"category":"adapter-or-tool"}}

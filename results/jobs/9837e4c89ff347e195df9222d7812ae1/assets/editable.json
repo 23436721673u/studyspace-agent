@@ -1,0 +1,103 @@
+{
+  "format": "studyspace.asset-input.v1",
+  "units": "m",
+  "simulatedScenario": true,
+  "input": {
+    "schemaVersion": "studyspace.v1",
+    "scenarioLabel": "模拟场景—连续录屏新建repair-test六座",
+    "userRequest": "模拟场景。请保留房间、门、柜体、六座目标及0.8米通道约束，检查草稿并在反馈后搜索、导出和独立验收。",
+    "room": {
+      "width": 6,
+      "depth": 5
+    },
+    "door": {
+      "wall": "south",
+      "offset": 2,
+      "width": 1,
+      "swing": "inward",
+      "hinge": "low"
+    },
+    "obstacles": [
+      {
+        "id": "corner-cabinet",
+        "x": 5.55,
+        "z": 4.55,
+        "width": 0.5,
+        "depth": 0.5,
+        "height": 1.8
+      }
+    ],
+    "seatTemplate": {
+      "tableWidth": 1,
+      "tableDepth": 0.6,
+      "tableHeight": 0.75,
+      "chairWidth": 0.5,
+      "chairDepth": 0.5,
+      "chairClearance": 0.6,
+      "approachWidth": 0.5,
+      "entityGap": 0.05
+    },
+    "targetSeats": 6,
+    "requiredSeats": 6,
+    "orientations": [
+      0,
+      90
+    ],
+    "passageWidth": 0.8,
+    "gridSize": 0.2,
+    "tolerance": 0.000001,
+    "seed": "workbench-1791731137411",
+    "searchBudget": {
+      "maxAttempts": 12000,
+      "maxMs": 5000
+    }
+  },
+  "layout": {
+    "layoutId": "search-workbench-1791731137411",
+    "seats": [
+      {
+        "id": "seat-1",
+        "x": 0.6,
+        "z": 1.8,
+        "orientation": 0
+      },
+      {
+        "id": "seat-2",
+        "x": 1.6,
+        "z": 1.8,
+        "orientation": 0
+      },
+      {
+        "id": "seat-3",
+        "x": 3.4,
+        "z": 1.8,
+        "orientation": 0
+      },
+      {
+        "id": "seat-4",
+        "x": 4.4,
+        "z": 1.8,
+        "orientation": 0
+      },
+      {
+        "id": "seat-5",
+        "x": 5.4,
+        "z": 1.8,
+        "orientation": 0
+      },
+      {
+        "id": "seat-6",
+        "x": 0.6,
+        "z": 4,
+        "orientation": 0
+      }
+    ]
+  },
+  "style": {
+    "roomHeight": 2.8,
+    "wallThickness": 0.12,
+    "floorThickness": 0.1,
+    "doorHeight": 2.1,
+    "doorThickness": 0.035
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "jobId": "81f121b22f464616a7d98aa3e95212e4",
+  "sessionKey": "agnes:local:local-dev:cli:workspace:81f121b22f464616a7d98aa3e95212e4",
+  "sessionId": null,
+  "createdAt": "2026-10-10T13:30:08.342Z",
+  "inputHash": "bdfa623dfa609b711003ae7ea159f177d8db0e08a120d7365dc5e32481ba5723",
+  "mode": "repair-test",
+  "simulatedScenario": true,
+  "model": {
+    "name": "gpt-6-astra",
+    "route": "account-studyspace-astra-api",
+    "channel": "ToTokens",
+    "endpoint": "https://totokens.cc/v1",
+    "api": "Responses",
+    "version": "not-observed",
+    "usage": null
+  },
+  "connection": {
+    "status": "not-connected",
+    "reason": "SDK access blocked; no product AGH session created"
+  }
+}

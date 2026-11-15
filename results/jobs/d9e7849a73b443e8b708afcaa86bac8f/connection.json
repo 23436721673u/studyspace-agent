@@ -1,0 +1,267 @@
+{
+  "status": "turn-ended",
+  "sessionKey": "agnes:local:local-dev:cli:workspace:d9e7849a73b443e8b708afcaa86bac8f",
+  "sessionId": "agnes:local:local-dev:cli:workspace:d9e7849a73b443e8b708afcaa86bac8f",
+  "turnResult": {
+    "stopReason": "end_turn",
+    "reason": "completed",
+    "lastSeq": 49,
+    "credits": {
+      "used": 0.083624,
+      "source": "estimated"
+    }
+  },
+  "usage": {
+    "totals": {
+      "input": 8169,
+      "output": 1215,
+      "cacheRead": 5497,
+      "cacheWrite": 0,
+      "reasoning": 919
+    },
+    "credits": {
+      "amount": 0.26549900000000004,
+      "source": "estimated",
+      "complete": true
+    },
+    "reasoningComplete": true,
+    "billingComplete": true,
+    "cost": {
+      "usdMicros": 265499,
+      "source": "estimated",
+      "subscription": false
+    },
+    "context": {
+      "source": "estimated",
+      "tokens": 7902,
+      "window": 160000,
+      "autoCompact": true
+    },
+    "model": {
+      "route": "account-studyspace-astra-api",
+      "id": "gpt-6-astra",
+      "thinking": "medium",
+      "settings": {
+        "thinking": "medium",
+        "contextWindow": 160000
+      },
+      "maxTokens": 128000
+    },
+    "cache": {
+      "hitRate": 0.40223913361627395
+    }
+  },
+  "turns": [
+    {
+      "id": "turn:1",
+      "turn": 1,
+      "startSeq": 11,
+      "startedAt": "2026-10-10T14:20:49.625Z",
+      "status": "completed",
+      "nodeIds": [
+        "01M4K3072S7NTNV1PPZNHBZ2Y3",
+        "01M4K30738PE210DQWPXH83QVH",
+        "01M4K3073C5C31VADSCGPJQMPQ",
+        "01M4K30FKBWG9EX705AKQJCV9Z",
+        "01M4K30RY7VFVFEE65R3CBP4A4",
+        "01M4K30RY7VFVFEE65R3CBP4A5",
+        "01M4K30RYGJA7S81AJSHMR63E2",
+        "01M4K30SCGVCNBCQW752TVZ7AR",
+        "01M4K30Z80PD30SN2J3JVVNF93",
+        "01M4K31515V0BBA815VHR7E60C"
+      ],
+      "usage": {
+        "totals": {
+          "input": 8169,
+          "output": 1215,
+          "cacheRead": 5497,
+          "cacheWrite": 0,
+          "reasoning": 919
+        },
+        "credits": {
+          "amount": 0.26549900000000004,
+          "source": "estimated",
+          "complete": true
+        },
+        "cost": {
+          "usdMicros": 265499,
+          "source": "estimated",
+          "subscription": false
+        },
+        "reasoningComplete": true,
+        "billingComplete": true,
+        "calls": [
+          {
+            "id": "e-cc9f3284b781b2a9a66d7ee1f055dab1",
+            "seq": 25,
+            "purpose": "inference",
+            "model": "gpt-6-astra",
+            "creditSource": "estimated",
+            "tokens": {
+              "input": 6210,
+              "output": 769,
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "reasoning": 633
+            },
+            "credits": 0.181875,
+            "billing": {
+              "usdMicros": 181875,
+              "source": "estimated",
+              "subscription": false
+            },
+            "timing": {
+              "ttftMs": 8702,
+              "durationMs": 18266
+            }
+          },
+          {
+            "id": "e-a05f755d4f1e50101914bb37f636a48c",
+            "seq": 45,
+            "purpose": "inference",
+            "model": "gpt-6-astra",
+            "creditSource": "estimated",
+            "tokens": {
+              "input": 1959,
+              "output": 446,
+              "cacheRead": 5497,
+              "cacheWrite": 0,
+              "reasoning": 286
+            },
+            "credits": 0.083624,
+            "billing": {
+              "usdMicros": 83624,
+              "source": "estimated",
+              "subscription": false
+            },
+            "timing": {
+              "ttftMs": 5996,
+              "durationMs": 11921
+            }
+          }
+        ]
+      },
+      "inherited": false,
+      "forkable": true,
+      "trace": {
+        "id": "turn:1",
+        "kind": "turn",
+        "name": "Turn 1",
+        "status": "completed",
+        "startSeq": 11,
+        "startedAt": "2026-10-10T14:20:49.625Z",
+        "children": [
+          {
+            "id": "span:step:1:1",
+            "kind": "step",
+            "name": "Step 1",
+            "status": "completed",
+            "startSeq": 16,
+            "startedAt": "2026-10-10T14:20:49.643Z",
+            "children": [
+              {
+                "id": "span:generation:e-cc9f3284b781b2a9a66d7ee1f055dab1",
+                "kind": "generation",
+                "name": "gpt-6-astra",
+                "status": "completed",
+                "startSeq": 19,
+                "startedAt": "2026-10-10T14:20:49.644Z",
+                "children": [
+                  {
+                    "id": "span:tool:t0-c5afa7bab6a54084d9ad27b075470bc2",
+                    "kind": "tool",
+                    "name": "shell",
+                    "status": "completed",
+                    "startSeq": 24,
+                    "startedAt": "2026-10-10T14:21:07.911Z",
+                    "children": [
+                      {
+                        "id": "span:approval:r-550793dc9c1cf5e56621c52ade7edad9",
+                        "kind": "approval",
+                        "name": "approval",
+                        "status": "completed",
+                        "startSeq": 27,
+                        "startedAt": "2026-10-10T14:21:07.920Z",
+                        "children": [],
+                        "endSeq": 28,
+                        "endedAt": "2026-10-10T14:21:07.920Z",
+                        "durationMs": 0
+                      }
+                    ],
+                    "toolUseId": "t0-c5afa7bab6a54084d9ad27b075470bc2",
+                    "nodeIds": [
+                      "01M4K30RY7VFVFEE65R3CBP4A4"
+                    ],
+                    "effectId": "e-e0a8f355fa1ce6d7cf96e4eb4b1cfae5",
+                    "endSeq": 30,
+                    "endedAt": "2026-10-10T14:21:08.353Z",
+                    "durationMs": 442
+                  }
+                ],
+                "effectId": "e-cc9f3284b781b2a9a66d7ee1f055dab1",
+                "purpose": "inference",
+                "nodeIds": [
+                  "01M4K30FKBWG9EX705AKQJCV9Z"
+                ],
+                "model": "gpt-6-astra",
+                "callSeq": 25,
+                "ttftMs": 8702,
+                "endSeq": 25,
+                "endedAt": "2026-10-10T14:21:07.911Z",
+                "durationMs": 18266
+              }
+            ],
+            "endSeq": 34,
+            "endedAt": "2026-10-10T14:21:08.354Z",
+            "durationMs": 18711
+          },
+          {
+            "id": "span:step:1:2",
+            "kind": "step",
+            "name": "Step 2",
+            "status": "completed",
+            "startSeq": 38,
+            "startedAt": "2026-10-10T14:21:08.371Z",
+            "children": [
+              {
+                "id": "span:generation:e-a05f755d4f1e50101914bb37f636a48c",
+                "kind": "generation",
+                "name": "gpt-6-astra",
+                "status": "completed",
+                "startSeq": 40,
+                "startedAt": "2026-10-10T14:21:08.371Z",
+                "children": [],
+                "effectId": "e-a05f755d4f1e50101914bb37f636a48c",
+                "purpose": "inference",
+                "nodeIds": [
+                  "01M4K30Z80PD30SN2J3JVVNF93"
+                ],
+                "model": "gpt-6-astra",
+                "callSeq": 45,
+                "ttftMs": 5996,
+                "endSeq": 45,
+                "endedAt": "2026-10-10T14:21:20.293Z",
+                "durationMs": 11921
+              }
+            ],
+            "endSeq": 47,
+            "endedAt": "2026-10-10T14:21:20.293Z",
+            "durationMs": 11922
+          }
+        ],
+        "endSeq": 49,
+        "endedAt": "2026-10-10T14:21:20.297Z",
+        "durationMs": 30672
+      },
+      "finalModel": "gpt-6-astra",
+      "endSeq": 49,
+      "endedAt": "2026-10-10T14:21:20.297Z",
+      "durationMs": 30672,
+      "reason": "completed",
+      "finalAssistantId": "01M4K30Z80PD30SN2J3JVVNF93"
+    }
+  ],
+  "nativeStatus": "completed",
+  "nativeReason": "completed",
+  "businessStatus": "constraints-not-satisfied"
+}

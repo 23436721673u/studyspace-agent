@@ -1,0 +1,18 @@
+{
+  "purpose": "无密钥运行配置参考；程序不会自动读取此JSON。请在启动node src/task-api.mjs的终端中手动设置环境变量。",
+  "environmentExample": {
+    "AGH_URL": "http://127.0.0.1:4177",
+    "STUDYSPACE_PORT": "4319"
+  },
+  "alternativeEnvironment": {
+    "STUDYSPACE_AGH_URL": "http://127.0.0.1:4177"
+  },
+  "notes": [
+    "AGH_URL优先于STUDYSPACE_AGH_URL；两者均未设置时默认http://127.0.0.1:4177。",
+    "STUDYSPACE_PORT未设置时默认4319，产品HTTP服务只监听127.0.0.1。",
+    "AGH适配器只接受localhost或127.0.0.1的本地WebSocket连接，使用standard-windows及PowerShell命令。",
+    "AGH服务须独立安装配置；本文件不创建profile、route或模型配置。",
+    "在宿主中配置gpt-6-astra与ToTokens https://totokens.cc/v1 Responses；密钥仅由宿主安全配置管理。",
+    "不要在本文件、项目源码或提交材料中填写任何API密钥。"
+  ]
+}

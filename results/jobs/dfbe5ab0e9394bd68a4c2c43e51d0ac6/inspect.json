@@ -1,0 +1,45 @@
+{
+  "status": "ready",
+  "input": {
+    "room": {
+      "width": 10,
+      "depth": 7
+    },
+    "door": {
+      "wall": "south",
+      "offset": 4,
+      "width": 1,
+      "swing": "inward",
+      "hinge": "low"
+    },
+    "obstacles": [],
+    "seatTemplate": {
+      "tableWidth": 1,
+      "tableDepth": 0.6,
+      "tableHeight": 0.75,
+      "chairWidth": 0.5,
+      "chairDepth": 0.5,
+      "chairClearance": 0.6,
+      "approachWidth": 0.5
+    },
+    "targetSeats": 6,
+    "requiredSeats": 6,
+    "passageWidth": 0.8,
+    "gridSize": 0.4,
+    "tolerance": 0.000001,
+    "seed": "workbench-1791680189770",
+    "searchBudget": {
+      "maxAttempts": 12000
+    },
+    "simulatedScenario": true,
+    "scenarioLabel": "模拟场景—6座开放布局",
+    "orientations": [
+      0,
+      90
+    ],
+    "userRequest": "请在不改变房间、门和固定家具约束的前提下，优先生成可通行、座位编号清晰的自习布局。"
+  },
+  "inputHash": "1ce74698e6e09e0e5b920f91ec552a5680320c93b07090f774a004fa518ccef1",
+  "issues": [],
+  "mode": "normal"
+}

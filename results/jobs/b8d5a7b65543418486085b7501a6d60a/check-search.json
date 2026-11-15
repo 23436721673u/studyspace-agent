@@ -1,0 +1,120 @@
+{
+  "status": "pass",
+  "source": "independent-validator",
+  "checks": {
+    "geometry": {
+      "status": "pass",
+      "doorKeepout": {
+        "x": 2.4,
+        "z": 0.4,
+        "width": 0.8,
+        "depth": 0.8,
+        "id": "door:keepout",
+        "kind": "door"
+      },
+      "doorKeepoutModel": "conservative rectangular approximation of inward swing; not an exact arc"
+    },
+    "access": {
+      "status": "pass",
+      "seatReports": [
+        {
+          "id": "seat-1",
+          "status": "pass",
+          "reachable": true,
+          "path": [
+            {
+              "x": 2.4,
+              "z": 0.4
+            },
+            {
+              "x": 2.1999999999999997,
+              "z": 0.4
+            },
+            {
+              "x": 2,
+              "z": 0.4
+            },
+            {
+              "x": 1.7999999999999998,
+              "z": 0.4
+            },
+            {
+              "x": 1.5999999999999999,
+              "z": 0.4
+            },
+            {
+              "x": 1.4,
+              "z": 0.4
+            },
+            {
+              "x": 1.1999999999999997,
+              "z": 0.4
+            },
+            {
+              "x": 0.9999999999999998,
+              "z": 0.4
+            },
+            {
+              "x": 0.7999999999999998,
+              "z": 0.4
+            },
+            {
+              "x": 0.6,
+              "z": 0.5500000000000002
+            }
+          ],
+          "pathLength": 1.85,
+          "visited": 57,
+          "target": {
+            "x": 0.6,
+            "z": 0.5500000000000002
+          }
+        },
+        {
+          "id": "seat-2",
+          "status": "pass",
+          "reachable": true,
+          "path": [
+            {
+              "x": 2.4,
+              "z": 0.4
+            },
+            {
+              "x": 2.1999999999999997,
+              "z": 0.4
+            },
+            {
+              "x": 2,
+              "z": 0.4
+            },
+            {
+              "x": 1.7999999999999998,
+              "z": 0.4
+            },
+            {
+              "x": 1.6,
+              "z": 0.5500000000000002
+            }
+          ],
+          "pathLength": 0.85,
+          "visited": 17,
+          "target": {
+            "x": 1.6,
+            "z": 0.5500000000000002
+          }
+        }
+      ],
+      "gridSize": 0.2,
+      "requiredWidth": 0.8,
+      "pathBodyRadius": 0.4
+    }
+  },
+  "issues": [],
+  "parameters": {
+    "tolerance": 0.000001,
+    "gridSize": 0.2,
+    "passageWidth": 0.8
+  },
+  "inputHash": "ee13b14aaf988b19000440c8aebb0992e67179057dc080b4014b6ccac9f1b395",
+  "layoutHash": "a2e2fd37c85e75074a9878fbf089a4c8b98299e5a6a7f3deb19fba5c16a23d7a"
+}

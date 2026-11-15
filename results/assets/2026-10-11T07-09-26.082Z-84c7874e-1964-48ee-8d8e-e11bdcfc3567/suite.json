@@ -1,0 +1,224 @@
+{
+  "runId": "2026-10-11T07-09-26.082Z-84c7874e-1964-48ee-8d8e-e11bdcfc3567",
+  "createdAt": "2026-10-11T07:09:26.249Z",
+  "simulatedScenario": true,
+  "toolKind": "deterministic-code",
+  "node": "v24.19.0",
+  "codeHashes": {
+    "src/scene.mjs": "53f9f9288dc044337a63f70fc1f56f9021400cb8a9ea976f1d3b57083eff9223",
+    "src/glb.mjs": "21f4b47b410766be8d49cf5e53b375ce2bae72f375a8e72f4af2e45b620a6769",
+    "src/asset-check.mjs": "30424ee5da66fe735161448aa53f7f5c10f18de2ee9a288df60d454acb7d8651",
+    "src/asset-oracle.mjs": "028ba81b0a4ed1c38fe13f6d82ee80d6abd238f6bbd1e78a4a8ccdfc0d4fd6ed",
+    "src/export-assets.mjs": "b830e4c288ffafa4320a1fe0ad44ec0fe5854d8a9c237d165bbe8a92fedcfd92",
+    "src/plan-svg.mjs": "8b53f9fbbb546b3961059633ac53b9e89fc7cdeec0b256794ecb1c356c9da978",
+    "tests/assets.mjs": "0346e81469d4a23bd24a0915d83dbd0c0b1357567c6692a5f7a0b9bf78a92a4a",
+    "pnpm-lock.yaml": "6a3cc72a4e100c45645209d199c87e8c4a7be160f5eb8eacd45d4da14a905c0d"
+  },
+  "total": 21,
+  "passed": 15,
+  "failed": 6,
+  "rows": [
+    {
+      "name": "normal-manual-two-seats",
+      "category": "normal",
+      "expected": "pass",
+      "pass": true,
+      "dir": "F:\\AGH\\projects\\studyspace\\results\\assets\\2026-10-11T07-09-26.082Z-84c7874e-1964-48ee-8d8e-e11bdcfc3567\\normal-manual-two-seats",
+      "status": "pass",
+      "parts": 30,
+      "triangles": 360,
+      "sha256": "0053d78c1f31f617d3d7dffaedfc42151d57dbbfd35574fb3d8db7be94211f76",
+      "officialErrors": 0,
+      "officialWarnings": 0
+    },
+    {
+      "name": "normal-rotation-90",
+      "pass": false,
+      "error": "Error: schema rejected: [{\"code\":\"seats.relation\",\"path\":\"requiredSeats\",\"message\":\"V1 hard target requires requiredSeats <= targetSeats\",\"value\":{\"requiredSeats\":2,\"targetSeats\":1}}]\n    at exportAssets (file:///F:/AGH/projects/studyspace/src/export-assets.mjs:12:63)\n    at file:///F:/AGH/projects/studyspace/tests/assets.mjs:16:46"
+    },
+    {
+      "name": "normal-90-cabinet",
+      "pass": false,
+      "error": "Error: schema rejected: [{\"code\":\"seats.relation\",\"path\":\"requiredSeats\",\"message\":\"V1 hard target requires requiredSeats <= targetSeats\",\"value\":{\"requiredSeats\":2,\"targetSeats\":1}}]\n    at exportAssets (file:///F:/AGH/projects/studyspace/src/export-assets.mjs:12:63)\n    at file:///F:/AGH/projects/studyspace/tests/assets.mjs:16:46"
+    },
+    {
+      "name": "normal-mixed",
+      "category": "normal",
+      "expected": "pass",
+      "pass": true,
+      "dir": "F:\\AGH\\projects\\studyspace\\results\\assets\\2026-10-11T07-09-26.082Z-84c7874e-1964-48ee-8d8e-e11bdcfc3567\\normal-mixed",
+      "status": "pass",
+      "parts": 30,
+      "triangles": 360,
+      "sha256": "f1397fb6b7ada2e24eae5f257ea1ce3143a58003e61aa434a609d7d42794c56f",
+      "officialErrors": 0,
+      "officialWarnings": 0
+    },
+    {
+      "name": "normal-six-seat",
+      "category": "normal",
+      "expected": "pass",
+      "pass": true,
+      "dir": "F:\\AGH\\projects\\studyspace\\results\\assets\\2026-10-11T07-09-26.082Z-84c7874e-1964-48ee-8d8e-e11bdcfc3567\\normal-six-seat",
+      "status": "pass",
+      "parts": 74,
+      "triangles": 888,
+      "sha256": "c55d86ca22d91bfb2538c909c658783af5c4a99aa693252126e616576ebcce39",
+      "officialErrors": 0,
+      "officialWarnings": 0
+    },
+    {
+      "name": "boundary-door-corner",
+      "pass": false,
+      "error": "Error: schema rejected: [{\"code\":\"seats.relation\",\"path\":\"requiredSeats\",\"message\":\"V1 hard target requires requiredSeats <= targetSeats\",\"value\":{\"requiredSeats\":2,\"targetSeats\":1}}]\n    at exportAssets (file:///F:/AGH/projects/studyspace/src/export-assets.mjs:12:63)\n    at file:///F:/AGH/projects/studyspace/tests/assets.mjs:16:46"
+    },
+    {
+      "name": "normal-door-north-high",
+      "pass": false,
+      "error": "Error: schema rejected: [{\"code\":\"seats.relation\",\"path\":\"requiredSeats\",\"message\":\"V1 hard target requires requiredSeats <= targetSeats\",\"value\":{\"requiredSeats\":2,\"targetSeats\":1}}]\n    at exportAssets (file:///F:/AGH/projects/studyspace/src/export-assets.mjs:12:63)\n    at file:///F:/AGH/projects/studyspace/tests/assets.mjs:16:46"
+    },
+    {
+      "name": "normal-door-west-high",
+      "pass": false,
+      "error": "Error: schema rejected: [{\"code\":\"seats.relation\",\"path\":\"requiredSeats\",\"message\":\"V1 hard target requires requiredSeats <= targetSeats\",\"value\":{\"requiredSeats\":2,\"targetSeats\":1}}]\n    at exportAssets (file:///F:/AGH/projects/studyspace/src/export-assets.mjs:12:63)\n    at file:///F:/AGH/projects/studyspace/tests/assets.mjs:16:46"
+    },
+    {
+      "name": "normal-door-east-high",
+      "pass": false,
+      "error": "Error: schema rejected: [{\"code\":\"seats.relation\",\"path\":\"requiredSeats\",\"message\":\"V1 hard target requires requiredSeats <= targetSeats\",\"value\":{\"requiredSeats\":2,\"targetSeats\":1}}]\n    at exportAssets (file:///F:/AGH/projects/studyspace/src/export-assets.mjs:12:63)\n    at file:///F:/AGH/projects/studyspace/tests/assets.mjs:16:46"
+    },
+    {
+      "name": "delete-object",
+      "category": "failure-injection",
+      "inputHash": "168f4a866a35aa1f61dafad31eeed5dcd5d0589c29ffd17dfb4d56b6ba9945e9",
+      "outputHash": "04a0bd8a8c18ac8d7a3997c2e212000c23bc9ad2302d16d3e24bfcc5ea88afc8",
+      "actual": "fail",
+      "issues": [
+        "entity count/ID mismatch",
+        "part mismatch: manual-b:chair:leg3"
+      ],
+      "pass": true
+    },
+    {
+      "name": "move-object",
+      "category": "failure-injection",
+      "inputHash": "168f4a866a35aa1f61dafad31eeed5dcd5d0589c29ffd17dfb4d56b6ba9945e9",
+      "outputHash": "8e60cddf3c667897bac6092f1c2cd200d3ced67457908949c892d5cec27d793d",
+      "actual": "fail",
+      "issues": [
+        "part mismatch: manual-a:table:top",
+        "footprint mismatch: manual-a/table"
+      ],
+      "pass": true
+    },
+    {
+      "name": "resize-object",
+      "category": "failure-injection",
+      "inputHash": "168f4a866a35aa1f61dafad31eeed5dcd5d0589c29ffd17dfb4d56b6ba9945e9",
+      "outputHash": "29ec4aa7ac6bc6eafb290851738943a1b5ac2bbae9f2642f370134f0e89d0d77",
+      "actual": "fail",
+      "issues": [
+        "part mismatch: manual-a:chair:seat",
+        "footprint mismatch: manual-a/chair"
+      ],
+      "pass": true
+    },
+    {
+      "name": "duplicate-face",
+      "category": "failure-injection",
+      "inputHash": "168f4a866a35aa1f61dafad31eeed5dcd5d0589c29ffd17dfb4d56b6ba9945e9",
+      "outputHash": "888555c401c9ce7acdc721d1a80f31750c229c3c44b08a05b2decf1573ee10d5",
+      "actual": "fail",
+      "issues": [
+        "duplicate face triangle"
+      ],
+      "pass": true
+    },
+    {
+      "name": "bad-index",
+      "category": "failure-injection",
+      "inputHash": "168f4a866a35aa1f61dafad31eeed5dcd5d0589c29ffd17dfb4d56b6ba9945e9",
+      "outputHash": "717f7b7adb90b3608a90d00a78ce4972f38debff35ce44e2be2794f79cc27001",
+      "actual": "fail",
+      "issues": [
+        "box topology invalid"
+      ],
+      "pass": true
+    },
+    {
+      "name": "vertex-deformation",
+      "category": "failure-injection",
+      "inputHash": "168f4a866a35aa1f61dafad31eeed5dcd5d0589c29ffd17dfb4d56b6ba9945e9",
+      "outputHash": "fc663137432e9e2fbdf7f3b6410914556172d8a137edac4ed7a6320c9a59ac81",
+      "actual": "fail",
+      "issues": [
+        "triangle not on box face"
+      ],
+      "pass": true
+    },
+    {
+      "name": "hidden-unreferenced-node",
+      "category": "failure-injection",
+      "inputHash": "168f4a866a35aa1f61dafad31eeed5dcd5d0589c29ffd17dfb4d56b6ba9945e9",
+      "outputHash": "4fa35315b7b67dc366daed10f6de4fa3cfa225b9d4032213f52d528f4f02ed55",
+      "actual": "fail",
+      "issues": [
+        "scene node coverage invalid"
+      ],
+      "pass": true
+    },
+    {
+      "name": "duplicate-active-scene-node-reference",
+      "category": "failure-injection",
+      "inputHash": "168f4a866a35aa1f61dafad31eeed5dcd5d0589c29ffd17dfb4d56b6ba9945e9",
+      "outputHash": "b3dfa019bd3569dae44133709f70e3d6081b679bb321f6b25453591c1cb9003c",
+      "actual": "fail",
+      "issues": [
+        "scene node coverage invalid"
+      ],
+      "pass": true
+    },
+    {
+      "name": "degenerate-triangle-topology",
+      "category": "failure-injection",
+      "inputHash": "168f4a866a35aa1f61dafad31eeed5dcd5d0589c29ffd17dfb4d56b6ba9945e9",
+      "outputHash": "06eb1d567d498247fc38b49bf133802ab2df811f62bbe82484e5927781215a5a",
+      "actual": "fail",
+      "issues": [
+        "degenerate/reversed face"
+      ],
+      "pass": true
+    },
+    {
+      "name": "nonfinite-vertex-bytes",
+      "category": "failure-injection",
+      "inputHash": "168f4a866a35aa1f61dafad31eeed5dcd5d0589c29ffd17dfb4d56b6ba9945e9",
+      "outputHash": "458489a39be1307f2b3392158fc06302c64a729040c4ae21bcb68ed0cc0de41b",
+      "actual": "fail",
+      "issues": [
+        "nonfinite vertex"
+      ],
+      "pass": true
+    },
+    {
+      "name": "truncated",
+      "category": "failure-injection",
+      "expected": "fail",
+      "actual": "fail",
+      "issues": [
+        "GLB header/length invalid"
+      ],
+      "pass": true
+    },
+    {
+      "name": "corrupt-header",
+      "category": "failure-injection",
+      "expected": "fail",
+      "actual": "fail",
+      "issues": [
+        "GLB header/length invalid"
+      ],
+      "pass": true
+    }
+  ]
+}

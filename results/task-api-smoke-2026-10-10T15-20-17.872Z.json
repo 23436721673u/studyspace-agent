@@ -1,0 +1,125 @@
+{
+  "test": "task-api-smoke",
+  "label": "HTTP end-to-end test with a real AGH task",
+  "startedAt": "2026-10-10T15:20:16.576Z",
+  "port": 4397,
+  "assertions": {
+    "malformed-json": true,
+    "null-body": true,
+    "null-input": true,
+    "missing-recovery-id": true,
+    "path-recovery-id": true,
+    "nonhex-recovery-id": true,
+    "created": true,
+    "hasRealSession": true,
+    "modelObserved": false,
+    "snapshotNotClaimed": true,
+    "independentVerificationPass": false,
+    "nativeStateRecorded": false,
+    "nativeCompleted": false
+  },
+  "invalidInputs": [
+    {
+      "name": "malformed-json",
+      "status": 400,
+      "expected": 400,
+      "data": {
+        "error": {
+          "code": "invalid-json",
+          "message": "Expected property name or '}' in JSON at position 1 (line 1 column 2)"
+        }
+      }
+    },
+    {
+      "name": "null-body",
+      "status": 422,
+      "expected": 422,
+      "data": {
+        "status": "schema-fail",
+        "issues": [
+          {
+            "code": "request.type",
+            "path": "",
+            "message": "request body must be an object with input"
+          }
+        ]
+      }
+    },
+    {
+      "name": "null-input",
+      "status": 422,
+      "expected": 422,
+      "data": {
+        "status": "schema-fail",
+        "issues": [
+          {
+            "code": "input.type",
+            "path": "",
+            "message": "input must be an object"
+          }
+        ]
+      }
+    },
+    {
+      "name": "missing-recovery-id",
+      "status": 422,
+      "expected": 422,
+      "data": {
+        "error": {
+          "code": "invalid-job-id",
+          "message": "id must be 32 hexadecimal characters"
+        }
+      }
+    },
+    {
+      "name": "path-recovery-id",
+      "status": 422,
+      "expected": 422,
+      "data": {
+        "error": {
+          "code": "invalid-job-id",
+          "message": "id must be 32 hexadecimal characters"
+        }
+      }
+    },
+    {
+      "name": "nonhex-recovery-id",
+      "status": 422,
+      "expected": 422,
+      "data": {
+        "error": {
+          "code": "invalid-job-id",
+          "message": "id must be 32 hexadecimal characters"
+        }
+      }
+    }
+  ],
+  "jobId": "e88c39f3af354641a3a6b29d05057a43",
+  "sessionKey": "agnes:local:local-dev:cli:workspace:e88c39f3af354641a3a6b29d05057a43",
+  "httpAccepted": 202,
+  "connection": "adapter-error",
+  "sessionId": "agnes:local:local-dev:cli:workspace:e88c39f3af354641a3a6b29d05057a43",
+  "businessStatus": "pending",
+  "native": {
+    "status": null,
+    "reason": null,
+    "stopReason": null
+  },
+  "model": {
+    "name": "gpt-6-astra",
+    "alias": "gpt-6-astra",
+    "provider": "ToTokens",
+    "channel": "AGH host configured route",
+    "endpoint": "https://totokens.cc/v1",
+    "api": "Responses",
+    "snapshotVersion": null,
+    "usage": null
+  },
+  "serverExit": {
+    "code": null,
+    "signal": "SIGTERM"
+  },
+  "stderr": "",
+  "finishedAt": "2026-10-10T15:20:17.872Z",
+  "status": "fail"
+}

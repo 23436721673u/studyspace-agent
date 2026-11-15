@@ -1,0 +1,25 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {createReadStream} from 'node:fs';
+import {createInterface} from 'node:readline';
+import {resolve} from 'node:path';
+import {createHash} from 'node:crypto';
+const root=resolve(import.meta.dirname,'..'),id='b4cda4ef82004c3b9caa053cf4b92a2a',dir=resolve(root,'results/jobs',id),read=async n=>JSON.parse(await readFile(resolve(dir,n),'utf8'));
+const [ui,native,steps,job,connection]=await Promise.all(['final-ui.json','agh-events.jsonl','events.jsonl','job.json','connection.json'].map(async(n,i)=>i===1?readFile(resolve(dir,n),'utf8'):i===2?readFile(resolve(dir,n),'utf8'):read(n)));
+const userNodes=ui.nodes.filter(n=>n.kind==='user');
+const business=userNodes.map(n=>({seq:n.seq,text:(n.content??[]).filter(c=>c.type==='text').map(c=>c.text).join('\n')})).filter(x=>x.text.includes(`job=${id}`));
+const runtimeContextNodes=ui.nodes.filter(n=>n.kind==='context'&&(n.text??'').startsWith('[runtime context]'));
+const commands=['inspect','search','check-search','export','verify'];
+const stepsLog=steps.trim().split(/\r?\n/).filter(Boolean).map(JSON.parse);
+const counts=Object.fromEntries(commands.map(s=>[s,stepsLog.filter(x=>x.step===s&&x.status!=='tool-error').length]));
+const nativeTurnEnds=[],nativeEvents=[];for await(const line of createInterface({input:createReadStream(resolve(dir,'agh-events.jsonl'))})){const e=JSON.parse(line);if(e.type==='turn/end')nativeTurnEnds.push({seq:e.seq,reason:e.data?.reason,ts:e.ts});if(e.seq===72&&e.type==='user/message')nativeEvents.push({seq:e.seq,type:e.type,ts:e.ts});}
+const turnEnds=nativeTurnEnds;
+const ordered=business.sort((a,b)=>a.seq-b.seq),initial=ordered[0],resume=ordered[1];
+const extract=txt=>commands.filter(s=>new RegExp(`bin/job\\.mjs[' ]+${s}\\s+${id}`).test(txt));
+const initialCommands=extract(initial?.text??''),resumeCommands=extract(resume?.text??'');
+const inputHash=createHash('sha256').update(await readFile(resolve(dir,'input.json'))).digest('hex');
+const verify=await read('verify.json');
+const resumeSeq=resume?.seq,sessionKey=`agnes:local:local-dev:cli:workspace:${id}`,resumeEvent=nativeEvents.find(e=>e.type==='user/message'&&e.seq===resumeSeq);
+const preResumeSteps=stepsLog.filter(e=>resumeEvent&&Date.parse(e.time)<Date.parse(resumeEvent.ts)).map(e=>e.step);
+const assertions={runtimeContextExcluded:runtimeContextNodes.some(n=>n.seq===17)&&business.every(x=>x.seq!==17),distinctBusinessInputs:business.length===2&&ordered[0].seq===10&&ordered[1].seq===72,initialTurnTerminatedBeforeResume:!!resumeEvent&&turnEnds.some(e=>e.reason==='completed'&&e.seq===68&&e.seq<resumeSeq&&Date.parse(e.ts)<Date.parse(resumeEvent.ts)),initialContainedFullPlan:commands.every(s=>initialCommands.includes(s)),resumeOnlyMissingSteps:resumeCommands.join(',')==='search,check-search,export,verify',preResumeStepsWereVerified:preResumeSteps.includes('inspect')&&preResumeSteps.every(s=>s==='inspect'),eachBusinessStepOnce:commands.every(s=>counts[s]===1),sameSession:connection.sessionId===sessionKey&&ui.sessionId===sessionKey,inputHashUnchanged:inputHash===job.inputHash,independentAssetVerification:verify.status==='pass',nativeFinalTurnCompleted:turnEnds.at(-1)?.reason==='completed'};
+const report={test:'recovery-criteria-v3',label:'按原生seq区分业务指令和runtime context；允许终止回合后的缺失步骤续跑；不覆盖历史报告',evidence:{jobId:id,sessionId:connection.sessionId,contextNodes:runtimeContextNodes.map(n=>({seq:n.seq,kind:n.kind})),businessInstructions:ordered.map(x=>({seq:x.seq,commands:extract(x.text)})),nativeTurnEnds:turnEnds,preResumeSteps,stepCounts:counts,inputHash,assetStatus:verify.status},assertions,status:Object.values(assertions).every(Boolean)?'pass':'fail',supersedes:false};
+const stamp=new Date().toISOString().replaceAll(':','-');const reportPath=resolve(dir,`recovery-criteria-review-v3-${stamp}.json`);await writeFile(reportPath,JSON.stringify(report,null,2),{flag:'wx'});console.log(JSON.stringify({reportPath,...report}));if(report.status!=='pass')process.exitCode=1;

@@ -1,0 +1,1297 @@
+{
+  "runId": "2026-10-10T05-55-14.606Z-cd1b59f8-ca9b-42ad-b4e4-41238c36daa5",
+  "simulatedScenario": true,
+  "tool": {
+    "kind": "deterministic-code",
+    "name": "studyspace-computation"
+  },
+  "codeVersion": "phase-02-v3",
+  "runType": "fixture-suite",
+  "count": 19,
+  "passed": 19,
+  "failed": 0,
+  "results": [
+    {
+      "runId": "2026-10-10T05-55-14.606Z-cd1b59f8-ca9b-42ad-b4e4-41238c36daa5",
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v3",
+      "fixture": "normal-manual-two-seats",
+      "kind": "normal",
+      "expected": "layout-pass",
+      "actual": {
+        "status": "pass",
+        "validation": {
+          "status": "pass",
+          "source": "independent-validator",
+          "checks": {
+            "geometry": {
+              "status": "pass",
+              "doorKeepout": {
+                "x": 2.5,
+                "z": 0.5,
+                "width": 1,
+                "depth": 1,
+                "id": "door:keepout",
+                "kind": "door"
+              },
+              "doorKeepoutModel": "conservative rectangular approximation of inward swing; not an exact arc"
+            },
+            "access": {
+              "status": "pass",
+              "seatReports": [
+                {
+                  "id": "manual-a",
+                  "status": "pass",
+                  "reachable": true,
+                  "path": [
+                    {
+                      "x": 2.5,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 2.3,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 2.1,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 1.9,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 1.7,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 1.5,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 1.2999999999999998,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 1.2999999999999998,
+                      "z": 0.6000000000000001
+                    },
+                    {
+                      "x": 1.2999999999999998,
+                      "z": 0.8
+                    },
+                    {
+                      "x": 1.2999999999999998,
+                      "z": 1
+                    },
+                    {
+                      "x": 1.2999999999999998,
+                      "z": 1.2000000000000002
+                    },
+                    {
+                      "x": 1.2999999999999998,
+                      "z": 1.4
+                    },
+                    {
+                      "x": 1.2999999999999998,
+                      "z": 1.6
+                    },
+                    {
+                      "x": 1.2999999999999998,
+                      "z": 1.8000000000000003
+                    },
+                    {
+                      "x": 1.2999999999999998,
+                      "z": 2
+                    },
+                    {
+                      "x": 1.2,
+                      "z": 2.25
+                    }
+                  ],
+                  "pathLength": 3.0692582403567252,
+                  "visited": 233,
+                  "target": {
+                    "x": 1.2,
+                    "z": 2.25
+                  }
+                },
+                {
+                  "id": "manual-b",
+                  "status": "pass",
+                  "reachable": true,
+                  "path": [
+                    {
+                      "x": 2.5,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 2.7,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 2.9,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 3.1,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 3.3,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 3.5,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 3.7,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 3.9000000000000004,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 4.1,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 4.3,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 4.5,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 4.5,
+                      "z": 0.6000000000000001
+                    },
+                    {
+                      "x": 4.5,
+                      "z": 0.8
+                    },
+                    {
+                      "x": 4.5,
+                      "z": 1
+                    },
+                    {
+                      "x": 4.5,
+                      "z": 1.2000000000000002
+                    },
+                    {
+                      "x": 4.5,
+                      "z": 1.4
+                    },
+                    {
+                      "x": 4.5,
+                      "z": 1.6
+                    },
+                    {
+                      "x": 4.5,
+                      "z": 1.8000000000000003
+                    },
+                    {
+                      "x": 4.5,
+                      "z": 2
+                    },
+                    {
+                      "x": 4.5,
+                      "z": 2.25
+                    }
+                  ],
+                  "pathLength": 3.8500000000000005,
+                  "visited": 303,
+                  "target": {
+                    "x": 4.5,
+                    "z": 2.25
+                  }
+                }
+              ],
+              "gridSize": 0.2,
+              "requiredWidth": 0.8,
+              "pathBodyRadius": 0.4
+            }
+          },
+          "issues": [],
+          "parameters": {
+            "tolerance": 0.000001,
+            "gridSize": 0.2,
+            "passageWidth": 0.8
+          }
+        }
+      },
+      "pass": true
+    },
+    {
+      "runId": "2026-10-10T05-55-14.606Z-cd1b59f8-ca9b-42ad-b4e4-41238c36daa5",
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v3",
+      "fixture": "normal-small",
+      "kind": "normal",
+      "expected": "search-pass",
+      "actual": {
+        "status": "search-pass",
+        "search": {
+          "found": true,
+          "attempts": 232,
+          "budget": 5000,
+          "validation": "pass"
+        },
+        "baseline": {
+          "found": true,
+          "attempts": 424,
+          "budget": 5000,
+          "validation": "pass"
+        },
+        "seats": 2
+      },
+      "pass": true
+    },
+    {
+      "runId": "2026-10-10T05-55-14.606Z-cd1b59f8-ca9b-42ad-b4e4-41238c36daa5",
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v3",
+      "fixture": "baseline-open-two-seat",
+      "kind": "baseline",
+      "expected": "baseline-pass",
+      "actual": {
+        "status": "baseline-pass",
+        "search": null,
+        "baseline": {
+          "found": true,
+          "attempts": 424,
+          "budget": 5000,
+          "validation": "pass"
+        },
+        "seats": 2
+      },
+      "pass": true
+    },
+    {
+      "runId": "2026-10-10T05-55-14.606Z-cd1b59f8-ca9b-42ad-b4e4-41238c36daa5",
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v3",
+      "fixture": "normal-obstacle",
+      "kind": "normal",
+      "expected": "search-pass",
+      "actual": {
+        "status": "search-pass",
+        "search": {
+          "found": true,
+          "attempts": 232,
+          "budget": 5000,
+          "validation": "pass"
+        },
+        "baseline": {
+          "found": true,
+          "attempts": 424,
+          "budget": 5000,
+          "validation": "pass"
+        },
+        "seats": 2
+      },
+      "pass": true
+    },
+    {
+      "runId": "2026-10-10T05-55-14.606Z-cd1b59f8-ca9b-42ad-b4e4-41238c36daa5",
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v3",
+      "fixture": "normal-rotation-90",
+      "kind": "normal",
+      "expected": "layout-pass",
+      "actual": {
+        "status": "pass",
+        "validation": {
+          "status": "pass",
+          "source": "independent-validator",
+          "checks": {
+            "geometry": {
+              "status": "pass",
+              "doorKeepout": {
+                "x": 2.5,
+                "z": 0.5,
+                "width": 1,
+                "depth": 1,
+                "id": "door:keepout",
+                "kind": "door"
+              },
+              "doorKeepoutModel": "conservative rectangular approximation of inward swing; not an exact arc"
+            },
+            "access": {
+              "status": "pass",
+              "seatReports": [
+                {
+                  "id": "rot90",
+                  "status": "pass",
+                  "reachable": true,
+                  "path": [
+                    {
+                      "x": 2.5,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 2.7,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 2.7,
+                      "z": 0.6000000000000001
+                    },
+                    {
+                      "x": 2.7,
+                      "z": 0.8
+                    },
+                    {
+                      "x": 2.7,
+                      "z": 1
+                    },
+                    {
+                      "x": 2.7,
+                      "z": 1.2000000000000002
+                    },
+                    {
+                      "x": 2.7,
+                      "z": 1.4
+                    },
+                    {
+                      "x": 2.7,
+                      "z": 1.6
+                    },
+                    {
+                      "x": 2.7,
+                      "z": 1.8000000000000003
+                    },
+                    {
+                      "x": 2.7,
+                      "z": 2
+                    },
+                    {
+                      "x": 2.7,
+                      "z": 2.2
+                    },
+                    {
+                      "x": 2.7,
+                      "z": 2.4
+                    },
+                    {
+                      "x": 2.7,
+                      "z": 2.6
+                    },
+                    {
+                      "x": 2.7,
+                      "z": 2.8000000000000003
+                    },
+                    {
+                      "x": 2.75,
+                      "z": 3
+                    }
+                  ],
+                  "pathLength": 2.8061552812808834,
+                  "visited": 196,
+                  "target": {
+                    "x": 2.75,
+                    "z": 3
+                  }
+                }
+              ],
+              "gridSize": 0.2,
+              "requiredWidth": 0.8,
+              "pathBodyRadius": 0.4
+            }
+          },
+          "issues": [],
+          "parameters": {
+            "tolerance": 0.000001,
+            "gridSize": 0.2,
+            "passageWidth": 0.8
+          }
+        }
+      },
+      "pass": true
+    },
+    {
+      "runId": "2026-10-10T05-55-14.606Z-cd1b59f8-ca9b-42ad-b4e4-41238c36daa5",
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v3",
+      "fixture": "normal-three-obstacles",
+      "kind": "normal",
+      "expected": "search-pass",
+      "actual": {
+        "status": "search-pass",
+        "search": {
+          "found": true,
+          "attempts": 232,
+          "budget": 5000,
+          "validation": "pass"
+        },
+        "baseline": {
+          "found": true,
+          "attempts": 424,
+          "budget": 5000,
+          "validation": "pass"
+        },
+        "seats": 2
+      },
+      "pass": true
+    },
+    {
+      "runId": "2026-10-10T05-55-14.606Z-cd1b59f8-ca9b-42ad-b4e4-41238c36daa5",
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v3",
+      "fixture": "boundary-one-seat",
+      "kind": "boundary",
+      "expected": "search-pass",
+      "actual": {
+        "status": "search-pass",
+        "search": {
+          "found": true,
+          "attempts": 227,
+          "budget": 5000,
+          "validation": "pass"
+        },
+        "baseline": {
+          "found": true,
+          "attempts": 164,
+          "budget": 5000,
+          "validation": "pass"
+        },
+        "seats": 1
+      },
+      "pass": true
+    },
+    {
+      "runId": "2026-10-10T05-55-14.606Z-cd1b59f8-ca9b-42ad-b4e4-41238c36daa5",
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v3",
+      "fixture": "boundary-three-obstacle-limit",
+      "kind": "boundary",
+      "expected": "search-pass",
+      "actual": {
+        "status": "search-pass",
+        "search": {
+          "found": true,
+          "attempts": 232,
+          "budget": 5000,
+          "validation": "pass"
+        },
+        "baseline": {
+          "found": true,
+          "attempts": 424,
+          "budget": 5000,
+          "validation": "pass"
+        },
+        "seats": 2
+      },
+      "pass": true
+    },
+    {
+      "runId": "2026-10-10T05-55-14.606Z-cd1b59f8-ca9b-42ad-b4e4-41238c36daa5",
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v3",
+      "fixture": "boundary-door-equals-passage",
+      "kind": "boundary",
+      "expected": "search-pass",
+      "actual": {
+        "status": "search-pass",
+        "search": {
+          "found": true,
+          "attempts": 232,
+          "budget": 5000,
+          "validation": "pass"
+        },
+        "baseline": {
+          "found": true,
+          "attempts": 366,
+          "budget": 5000,
+          "validation": "pass"
+        },
+        "seats": 2
+      },
+      "pass": true
+    },
+    {
+      "runId": "2026-10-10T05-55-14.606Z-cd1b59f8-ca9b-42ad-b4e4-41238c36daa5",
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v3",
+      "fixture": "boundary-door-offset-zero",
+      "kind": "boundary",
+      "expected": "search-pass",
+      "actual": {
+        "status": "search-pass",
+        "search": {
+          "found": true,
+          "attempts": 236,
+          "budget": 5000,
+          "validation": "pass"
+        },
+        "baseline": {
+          "found": true,
+          "attempts": 164,
+          "budget": 5000,
+          "validation": "pass"
+        },
+        "seats": 2
+      },
+      "pass": true
+    },
+    {
+      "runId": "2026-10-10T05-55-14.606Z-cd1b59f8-ca9b-42ad-b4e4-41238c36daa5",
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v3",
+      "fixture": "failure-negative-room",
+      "kind": "failure",
+      "expected": "schema-fail",
+      "actual": {
+        "status": "schema-fail",
+        "issues": [
+          {
+            "code": "room.dimension",
+            "path": "room.width",
+            "message": "must be a finite positive number",
+            "value": -1
+          },
+          {
+            "code": "door.bounds",
+            "path": "door",
+            "message": "door exceeds wall length",
+            "value": {
+              "wall": "south",
+              "offset": 2,
+              "width": 1,
+              "swing": "inward",
+              "hinge": "low"
+            }
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "runId": "2026-10-10T05-55-14.606Z-cd1b59f8-ca9b-42ad-b4e4-41238c36daa5",
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v3",
+      "fixture": "failure-door-outside",
+      "kind": "failure",
+      "expected": "schema-fail",
+      "actual": {
+        "status": "schema-fail",
+        "issues": [
+          {
+            "code": "door.bounds",
+            "path": "door",
+            "message": "door exceeds wall length",
+            "value": {
+              "wall": "south",
+              "offset": 5.5,
+              "width": 1,
+              "swing": "inward",
+              "hinge": "low"
+            }
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "runId": "2026-10-10T05-55-14.606Z-cd1b59f8-ca9b-42ad-b4e4-41238c36daa5",
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v3",
+      "fixture": "failure-four-obstacles",
+      "kind": "failure",
+      "expected": "schema-fail",
+      "actual": {
+        "status": "schema-fail",
+        "issues": [
+          {
+            "code": "obstacles.count",
+            "path": "obstacles",
+            "message": "maximum is 3",
+            "value": 4
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "runId": "2026-10-10T05-55-14.606Z-cd1b59f8-ca9b-42ad-b4e4-41238c36daa5",
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v3",
+      "fixture": "failure-illegal-orientation",
+      "kind": "failure",
+      "expected": "layout-fail",
+      "actual": {
+        "status": "fail",
+        "validation": {
+          "status": "fail",
+          "source": "independent-validator",
+          "checks": {
+            "geometry": {
+              "status": "pass",
+              "doorKeepout": {
+                "x": 2.5,
+                "z": 0.5,
+                "width": 1,
+                "depth": 1,
+                "id": "door:keepout",
+                "kind": "door"
+              },
+              "doorKeepoutModel": "conservative rectangular approximation of inward swing; not an exact arc"
+            },
+            "access": {
+              "status": "pass",
+              "seatReports": [
+                {
+                  "id": "bad2",
+                  "status": "pass",
+                  "reachable": true,
+                  "path": [
+                    {
+                      "x": 2.5,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 2.7,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 2.9,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 3.1,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 3.3,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 3.5,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 3.7,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 3.9000000000000004,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 3.9000000000000004,
+                      "z": 0.6000000000000001
+                    },
+                    {
+                      "x": 3.9000000000000004,
+                      "z": 0.8
+                    },
+                    {
+                      "x": 3.9000000000000004,
+                      "z": 1
+                    },
+                    {
+                      "x": 3.9000000000000004,
+                      "z": 1.2000000000000002
+                    },
+                    {
+                      "x": 3.9000000000000004,
+                      "z": 1.4
+                    },
+                    {
+                      "x": 3.9000000000000004,
+                      "z": 1.6
+                    },
+                    {
+                      "x": 4,
+                      "z": 1.75
+                    }
+                  ],
+                  "pathLength": 2.7802775637731996,
+                  "visited": 194,
+                  "target": {
+                    "x": 4,
+                    "z": 1.75
+                  }
+                }
+              ],
+              "gridSize": 0.2,
+              "requiredWidth": 0.8,
+              "pathBodyRadius": 0.4
+            }
+          },
+          "issues": [
+            {
+              "code": "seat.orientation",
+              "objectId": "bad",
+              "message": "orientation must be 0 or 90"
+            }
+          ],
+          "parameters": {
+            "tolerance": 0.000001,
+            "gridSize": 0.2,
+            "passageWidth": 0.8
+          }
+        }
+      },
+      "pass": true
+    },
+    {
+      "runId": "2026-10-10T05-55-14.606Z-cd1b59f8-ca9b-42ad-b4e4-41238c36daa5",
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v3",
+      "fixture": "failure-door-too-narrow",
+      "kind": "failure",
+      "expected": "layout-fail",
+      "actual": {
+        "status": "fail",
+        "validation": {
+          "status": "fail",
+          "source": "independent-validator",
+          "checks": {
+            "geometry": {
+              "status": "pass",
+              "doorKeepout": {
+                "x": 2.25,
+                "z": 0.25,
+                "width": 0.5,
+                "depth": 0.5,
+                "id": "door:keepout",
+                "kind": "door"
+              },
+              "doorKeepoutModel": "conservative rectangular approximation of inward swing; not an exact arc"
+            },
+            "access": {
+              "status": "fail",
+              "seatReports": [
+                {
+                  "id": "a",
+                  "status": "pass",
+                  "reachable": true,
+                  "path": [
+                    {
+                      "x": 2.25,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 2.45,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 2.65,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 2.85,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 3.05,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 3.25,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 3.45,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 3.6500000000000004,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 3.85,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 3.85,
+                      "z": 0.6000000000000001
+                    },
+                    {
+                      "x": 3.85,
+                      "z": 0.8
+                    },
+                    {
+                      "x": 3.85,
+                      "z": 1
+                    },
+                    {
+                      "x": 3.85,
+                      "z": 1.2000000000000002
+                    },
+                    {
+                      "x": 3.85,
+                      "z": 1.4
+                    },
+                    {
+                      "x": 3.85,
+                      "z": 1.6
+                    },
+                    {
+                      "x": 4,
+                      "z": 1.75
+                    }
+                  ],
+                  "pathLength": 3.0121320343559645,
+                  "visited": 214,
+                  "target": {
+                    "x": 4,
+                    "z": 1.75
+                  }
+                },
+                {
+                  "id": "b",
+                  "status": "pass",
+                  "reachable": true,
+                  "path": [
+                    {
+                      "x": 2.25,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 2.45,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 2.65,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 2.85,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 3.05,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 3.25,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 3.45,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 3.6500000000000004,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 3.85,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 4.05,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 4.25,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 4.45,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 4.65,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 4.85,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 4.85,
+                      "z": 0.6000000000000001
+                    },
+                    {
+                      "x": 4.85,
+                      "z": 0.8
+                    },
+                    {
+                      "x": 4.85,
+                      "z": 1
+                    },
+                    {
+                      "x": 4.85,
+                      "z": 1.2000000000000002
+                    },
+                    {
+                      "x": 4.85,
+                      "z": 1.4
+                    },
+                    {
+                      "x": 4.85,
+                      "z": 1.6
+                    },
+                    {
+                      "x": 5,
+                      "z": 1.75
+                    }
+                  ],
+                  "pathLength": 4.0121320343559645,
+                  "visited": 309,
+                  "target": {
+                    "x": 5,
+                    "z": 1.75
+                  }
+                }
+              ],
+              "gridSize": 0.2,
+              "requiredWidth": 0.8,
+              "pathBodyRadius": 0.4
+            }
+          },
+          "issues": [
+            {
+              "code": "door-width",
+              "objectId": "door",
+              "message": "door width is less than required passage width",
+              "doorWidth": 0.5,
+              "passageWidth": 0.8
+            }
+          ],
+          "parameters": {
+            "tolerance": 0.000001,
+            "gridSize": 0.2,
+            "passageWidth": 0.8
+          }
+        }
+      },
+      "pass": true
+    },
+    {
+      "runId": "2026-10-10T05-55-14.606Z-cd1b59f8-ca9b-42ad-b4e4-41238c36daa5",
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v3",
+      "fixture": "failure-out-of-bounds",
+      "kind": "failure",
+      "expected": "layout-fail",
+      "actual": {
+        "status": "fail",
+        "validation": {
+          "status": "fail",
+          "source": "independent-validator",
+          "checks": {
+            "geometry": {
+              "status": "fail",
+              "doorKeepout": {
+                "x": 2.5,
+                "z": 0.5,
+                "width": 1,
+                "depth": 1,
+                "id": "door:keepout",
+                "kind": "door"
+              },
+              "doorKeepoutModel": "conservative rectangular approximation of inward swing; not an exact arc"
+            },
+            "access": {
+              "status": "fail",
+              "seatReports": [
+                {
+                  "id": "edge",
+                  "status": "fail",
+                  "reachable": false,
+                  "reason": "target body intersects furniture or boundary",
+                  "target": {
+                    "x": 0.1,
+                    "z": -1.15
+                  }
+                },
+                {
+                  "id": "edge2",
+                  "status": "pass",
+                  "reachable": true,
+                  "path": [
+                    {
+                      "x": 2.5,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 2.7,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 2.9,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 3.1,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 3.3,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 3.5,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 3.7,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 3.9000000000000004,
+                      "z": 0.4
+                    },
+                    {
+                      "x": 3.9000000000000004,
+                      "z": 0.6000000000000001
+                    },
+                    {
+                      "x": 3.9000000000000004,
+                      "z": 0.8
+                    },
+                    {
+                      "x": 3.9000000000000004,
+                      "z": 1
+                    },
+                    {
+                      "x": 3.9000000000000004,
+                      "z": 1.2000000000000002
+                    },
+                    {
+                      "x": 3.9000000000000004,
+                      "z": 1.4
+                    },
+                    {
+                      "x": 3.9000000000000004,
+                      "z": 1.6
+                    },
+                    {
+                      "x": 3.9000000000000004,
+                      "z": 1.8000000000000003
+                    },
+                    {
+                      "x": 3.9000000000000004,
+                      "z": 2
+                    },
+                    {
+                      "x": 3.9000000000000004,
+                      "z": 2.2
+                    },
+                    {
+                      "x": 3.9000000000000004,
+                      "z": 2.4
+                    },
+                    {
+                      "x": 3.9000000000000004,
+                      "z": 2.6
+                    },
+                    {
+                      "x": 4,
+                      "z": 2.75
+                    }
+                  ],
+                  "pathLength": 3.7802775637731996,
+                  "visited": 318,
+                  "target": {
+                    "x": 4,
+                    "z": 2.75
+                  }
+                }
+              ],
+              "gridSize": 0.2,
+              "requiredWidth": 0.8,
+              "pathBodyRadius": 0.4
+            }
+          },
+          "issues": [
+            {
+              "code": "out-of-bounds",
+              "objectId": "edge:table",
+              "message": "occupancy leaves room bounds",
+              "bounds": {
+                "minX": -0.4,
+                "maxX": 0.6,
+                "minZ": -0.19999999999999998,
+                "maxZ": 0.4
+              }
+            },
+            {
+              "code": "out-of-bounds",
+              "objectId": "edge:chair",
+              "message": "occupancy leaves room bounds",
+              "bounds": {
+                "minX": -0.15,
+                "maxX": 0.35,
+                "minZ": -0.75,
+                "maxZ": -0.25
+              }
+            },
+            {
+              "code": "out-of-bounds",
+              "objectId": "edge:use",
+              "message": "occupancy leaves room bounds",
+              "bounds": {
+                "minX": -0.30000000000000004,
+                "maxX": 0.5,
+                "minZ": -1.5499999999999998,
+                "maxZ": -0.7499999999999999
+              }
+            },
+            {
+              "code": "unreachable",
+              "objectId": "edge",
+              "message": "target body intersects furniture or boundary"
+            }
+          ],
+          "parameters": {
+            "tolerance": 0.000001,
+            "gridSize": 0.2,
+            "passageWidth": 0.8
+          }
+        }
+      },
+      "pass": true
+    },
+    {
+      "runId": "2026-10-10T05-55-14.606Z-cd1b59f8-ca9b-42ad-b4e4-41238c36daa5",
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v3",
+      "fixture": "failure-hinge",
+      "kind": "failure",
+      "expected": "schema-fail",
+      "actual": {
+        "status": "schema-fail",
+        "issues": [
+          {
+            "code": "door.hinge",
+            "path": "door.hinge",
+            "message": "must be low or high",
+            "value": "bad"
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "runId": "2026-10-10T05-55-14.606Z-cd1b59f8-ca9b-42ad-b4e4-41238c36daa5",
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v3",
+      "fixture": "failure-obstacle-outside",
+      "kind": "failure",
+      "expected": "schema-fail",
+      "actual": {
+        "status": "schema-fail",
+        "issues": [
+          {
+            "code": "obstacle.bounds",
+            "path": "wall",
+            "message": "obstacle exceeds room bounds",
+            "value": {
+              "id": "wall",
+              "x": 0,
+              "z": 3,
+              "width": 2,
+              "depth": 1,
+              "height": 1
+            }
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "runId": "2026-10-10T05-55-14.606Z-cd1b59f8-ca9b-42ad-b4e4-41238c36daa5",
+      "simulatedScenario": true,
+      "tool": {
+        "kind": "deterministic-code",
+        "name": "studyspace-computation"
+      },
+      "codeVersion": "phase-02-v3",
+      "fixture": "failure-null-obstacle",
+      "kind": "failure",
+      "expected": "schema-fail",
+      "actual": {
+        "status": "schema-fail",
+        "issues": [
+          {
+            "code": "obstacle.type",
+            "path": "obstacles[0]",
+            "message": "obstacle must be an object",
+            "value": null
+          }
+        ]
+      },
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "os": [
+    "win32"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "dist": {
+    "shasum": "17e8699b5798d4c60e36e2d6326a8ebe5e95a2c5",
+    "tarball": "https://registry.npmjs.org/@ffmpeg-installer/win32-x64/-/win32-x64-4.1.0.tgz",
+    "fileCount": 3,
+    "integrity": "sha512-Drt5u2vzDnIONf4ZEkKtFlbvwj6rI3kxw1Ck9fpudmtgaZIHD4ucsWB2lCZBXRxJgXR+2IMSti+4rtM4C4rXgg==",
+    "signatures": [
+      {
+        "sig": "MEUCIHuvaTYdniSqqmNQW7g9oVmo+dwvCxlK8fYgj6fF4b0/AiEA2rM7X0/z34odVu0yaCgy18s4Uk4T7sJlqI11pSHUuo0=",
+        "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+      }
+    ],
+    "unpackedSize": 64459466,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcF/HoCRA9TVsSAnZWagAAIb8P/198ig2lXriNIsmtVnp+\n3Cjx4INrBRcdg+SiWCb5Kq8suEaQpGNiYxFAUfc1BFemBlQcpXnr6pt1KNbz\nsF+MWw7XZ44fWDI2un3h0OzVJjSrwPd/S72/66SZVleuWe0rJY/vskEDx/Px\nhNmVmJ9MhyM9qBoOKp8mt0yAs8WWOeLjah4I1iGsuBrhjutW0+Lx3Hpb18E3\n6ruMD/jgj7abC6KNKypKN7W6dM9FPbnXw6uz7m5ETIflmkOsGwdxctjMwtCb\nLFGU3b+K1waf6nQcl2lxpSTzBln43bSuTegrB4VqKOAw3iLgex1eq74YLWF8\n88OfbM/Zpq4Kl/ojiAlDMQ03t5wUZsL3AMOE0JxoOljsBRnDpklIjSbldkuy\ncwQlnaRG8ADZP/i+cizUMH0gqrUajHiC0rGzphe1i1+Mw8U26jZhoa2LHf87\nCFhYGswM60OezYHq/TCFL9a3araX9awUnfVAkJNkwvS/RMp9hbdZ+l7eACgW\n7vNX+K8bElRc+ItiQ3FR1GDkGja5G+XoDpXDAjot5Vd9BKBD+yToOrZ3Y9O4\ndPA9xptydHaixiRueBP0tUOByvMJ79+PDJeB5dVCQl+R5MqED9wAfXv7sgnZ\n3uSwW33W87aL3uI1qJxF+4t6j11U8dck9sId42c6FzJmys0qVTUWEpmk5Tqp\nu2a8\r\n=2Xlk\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "name": "@ffmpeg-installer/win32-x64",
+  "author": {
+    "name": "Kristoffer Lundén",
+    "email": "kristoffer.lunden@gmail.com"
+  },
+  "ffmpeg": "20181217-f22fcd4",
+  "license": "GPLv3",
+  "scripts": {
+    "test": "file ffmpeg.exe | grep -qF \"PE32+\"",
+    "upload": "npm --userconfig=../../.npmrc publish --access public",
+    "prepublishOnly": "npm test"
+  },
+  "_npmUser": {
+    "name": "ffmpeg-installer",
+    "email": "kristoffer.lunden@gmail.com"
+  },
+  "homepage": "https://ffmpeg.zeranoe.com/builds/win64/static/",
+  "keywords": [
+    "ffmpeg",
+    "binary",
+    "win32",
+    "x64"
+  ],
+  "_npmVersion": "6.4.1",
+  "description": "Windows FFmpeg binary used by ffmpeg-installer",
+  "directories": {},
+  "maintainers": [
+    {
+      "name": "ffmpeg-installer",
+      "email": "kristoffer.lunden@gmail.com"
+    }
+  ],
+  "_nodeVersion": "9.11.1",
+  "_hasShrinkwrap": false,
+  "_npmOperationalInternal": {
+    "tmp": "tmp/win32-x64_4.1.0_1545073126809_0.8065159522334697",
+    "host": "s3://npm-registry-packages"
+  },
+  "_id": "@ffmpeg-installer/win32-x64@4.1.0",
+  "version": "4.1.0"
+}

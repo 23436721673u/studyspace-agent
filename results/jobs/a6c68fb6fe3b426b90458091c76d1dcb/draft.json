@@ -1,0 +1,44 @@
+{
+  "status": "test-injection",
+  "label": "测试：刻意放置越界座位，以验证失败反馈修复",
+  "layout": {
+    "seats": [
+      {
+        "id": "draft-1",
+        "x": -2,
+        "z": -2,
+        "orientation": 0
+      },
+      {
+        "id": "draft-2",
+        "x": -3,
+        "z": -2,
+        "orientation": 0
+      },
+      {
+        "id": "draft-3",
+        "x": -4,
+        "z": -2,
+        "orientation": 0
+      },
+      {
+        "id": "draft-4",
+        "x": -5,
+        "z": -2,
+        "orientation": 0
+      },
+      {
+        "id": "draft-5",
+        "x": -6,
+        "z": -2,
+        "orientation": 0
+      },
+      {
+        "id": "draft-6",
+        "x": -7,
+        "z": -2,
+        "orientation": 0
+      }
+    ]
+  }
+}

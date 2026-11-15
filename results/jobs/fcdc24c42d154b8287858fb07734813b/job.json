@@ -1,0 +1,92 @@
+{
+  "jobId": "fcdc24c42d154b8287858fb07734813b",
+  "sessionKey": "agnes:local:local-dev:cli:workspace:fcdc24c42d154b8287858fb07734813b",
+  "sessionId": "agnes:local:local-dev:cli:workspace:fcdc24c42d154b8287858fb07734813b",
+  "createdAt": "2026-10-14T15:35:53.143Z",
+  "inputHash": "f60f353f18906f4e1e932a582951ecbd09fa424e19b6ba0b15ae5aa5b579b046",
+  "mode": "normal",
+  "testOnly": false,
+  "simulatedScenario": true,
+  "userRequest": "模拟场景。请保留房间、门、柜体、六座目标及0.8米通道约束，检查草稿并在反馈后搜索、导出和独立验收。",
+  "supportedConstraints": [
+    "room",
+    "door",
+    "obstacles",
+    "seatTemplate",
+    "targetSeats",
+    "requiredSeats",
+    "passageWidth",
+    "orientations"
+  ],
+  "unsupportedRequests": [],
+  "model": {
+    "name": "gpt-6-astra",
+    "alias": "gpt-6-astra",
+    "provider": "not-independently-verified",
+    "driverProviderId": "openai",
+    "channel": "ToTokens",
+    "endpoint": "https://totokens.cc/v1",
+    "api": "Responses",
+    "snapshotVersion": null,
+    "providerVerification": "底层实际模型提供方未独立核实",
+    "usage": {
+      "totals": {
+        "input": 45671,
+        "output": 1464,
+        "cacheRead": 55040,
+        "cacheWrite": 0,
+        "reasoning": 126
+      },
+      "credits": {
+        "amount": 1.1333,
+        "source": "estimated",
+        "complete": true
+      },
+      "reasoningComplete": true,
+      "billingComplete": true,
+      "cost": {
+        "usdMicros": 1133300,
+        "source": "estimated",
+        "subscription": false
+      },
+      "context": {
+        "source": "estimated",
+        "tokens": 30283,
+        "window": 160000,
+        "autoCompact": true
+      },
+      "model": {
+        "route": "account-studyspace-astra-api",
+        "id": "gpt-6-astra",
+        "thinking": "medium",
+        "settings": {
+          "thinking": "medium",
+          "contextWindow": 160000
+        },
+        "maxTokens": 128000
+      },
+      "cache": {
+        "hitRate": 0.5465142834447081,
+        "lastInvalidation": {
+          "seq": 83,
+          "reprocessedTokens": 17025,
+          "cause": "history-changed"
+        }
+      }
+    },
+    "route": "account-studyspace-astra-api"
+  },
+  "connection": {
+    "status": "turn-ended",
+    "sessionId": "agnes:local:local-dev:cli:workspace:fcdc24c42d154b8287858fb07734813b"
+  },
+  "native": {
+    "status": "completed",
+    "reason": "completed",
+    "stopReason": "end_turn"
+  },
+  "business": {
+    "status": "pass",
+    "reason": "independent-verification-pass"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "label": "测试：只终止本测试创建的适配器子进程，不取消宿主任务",
+  "jobId": "b4cda4ef82004c3b9caa053cf4b92a2a",
+  "events": [
+    {
+      "time": "2026-10-10T14:24:12.062Z",
+      "type": "started",
+      "pid": 18976
+    },
+    {
+      "time": "2026-10-10T14:24:19.729Z",
+      "type": "adapter-terminated",
+      "pid": 18976,
+      "sessionId": "agnes:local:local-dev:cli:workspace:b4cda4ef82004c3b9caa053cf4b92a2a",
+      "result": {
+        "code": null,
+        "signal": "SIGTERM",
+        "output": ""
+      }
+    },
+    {
+      "time": "2026-10-10T14:24:19.738Z",
+      "type": "recovery-started",
+      "pid": 57628
+    },
+    {
+      "time": "2026-10-10T14:25:27.190Z",
+      "type": "recovery-exited",
+      "code": 0,
+      "signal": null,
+      "output": "{\"status\":\"turn-ended\",\"sessionId\":\"agnes:local:local-dev:cli:workspace:b4cda4ef82004c3b9caa053cf4b92a2a\",\"businessStatus\":\"pass\",\"usage\":{\"input\":29939,\"output\":1775,\"cacheRead\":90624,\"cacheWrite\":0,\"reasoning\":203}}\n"
+    },
+    {
+      "time": "2026-10-10T14:25:27.193Z",
+      "type": "assertions",
+      "assertions": {
+        "sameSession": true,
+        "inputUnchanged": true,
+        "stepsNotRepeated": true,
+        "uniqueNativeEvents": true,
+        "assetVerified": true,
+        "oneUserMessage": false
+      },
+      "counts": {
+        "inspect": 1,
+        "search": 1,
+        "check-search": 1,
+        "export": 1,
+        "verify": 1
+      },
+      "nativeReason": "completed",
+      "businessStatus": "pass"
+    }
+  ]
+}

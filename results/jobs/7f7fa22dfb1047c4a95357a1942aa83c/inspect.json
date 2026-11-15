@@ -1,0 +1,41 @@
+{
+  "status": "ready",
+  "input": {
+    "scenarioLabel": "模拟场景—有效输入有限预算未找到",
+    "room": {
+      "width": 6,
+      "depth": 5
+    },
+    "door": {
+      "wall": "south",
+      "offset": 2,
+      "width": 1,
+      "swing": "inward",
+      "hinge": "low"
+    },
+    "obstacles": [],
+    "seatTemplate": {
+      "tableWidth": 1,
+      "tableDepth": 0.6,
+      "tableHeight": 0.75,
+      "chairWidth": 0.5,
+      "chairDepth": 0.5,
+      "chairClearance": 0.6,
+      "approachWidth": 0.5
+    },
+    "targetSeats": 12,
+    "requiredSeats": 12,
+    "passageWidth": 0.8,
+    "gridSize": 0.2,
+    "tolerance": 0.000001,
+    "seed": "fixture",
+    "simulatedScenario": true,
+    "searchBudget": {
+      "maxAttempts": 1,
+      "maxMs": 1
+    }
+  },
+  "inputHash": "1ca1ebcbc62b9691444cfab118746da05f7b364599f8c17f550e10b68d8d8c7a",
+  "issues": [],
+  "mode": "normal"
+}

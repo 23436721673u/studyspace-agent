@@ -1,0 +1,19 @@
+{
+  "context": {
+    "inputHash": "5eecacdc51f153cd6861ad247a8e5388ae70a32ba5db9b8c27de91e210a02f4c",
+    "codeHash": "adfce2b8b55f04c2dcccdda1b06a243cf0ce3ded7f47a87cf8f679a853788439",
+    "dependencies": {
+      "export": "424219f711e9e1e5588a5ac113a07f694a9fbdd3d542d011372cec5a0645be48",
+      "search": "88a9d243f1c0b4c6d03d861ab42940de2310a2f2a1a82d4b34f281d7b9cd865c"
+    }
+  },
+  "outputHash": "ba05f82722a7d556b50f5cbddec7c94cc29b9461df3be03a8768d883bef66478",
+  "assets": {
+    "editable.json": "13d7f7a945c0e0fe159e4357b378c80840fcb5e36ea2af0fbc7e5bdb6ad6f6ac",
+    "geometry-report.json": "f8ad4299e374d1fbcb318f29ecdc96624f7b3ef445e28e54ffdc19dc30c60c24",
+    "gltf-validator-report.json": "37ba503164ef47469cb52e648c2f0dca26c3d808f504abff03b3b035b6cfcb54",
+    "manifest.json": "8b5b82a61deecea95d0f4e64a27f877009b24edc8eeb9d46634bb43014bd9ce6",
+    "plan.svg": "ac3ee557ac22fb286987f6b216654106a1e977e31a12288246fa421f409431a5",
+    "scene.glb": "3238c01a88aca0a502138105cd292a48aabb0e860d660004dac5f982706f064e"
+  }
+}

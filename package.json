@@ -1,0 +1,21 @@
+{
+  "name": "studyspace-assets",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node bin/studyspace.mjs run-tests",
+    "test:assets": "node tests/assets.mjs",
+    "api": "node src/task-api.mjs",
+    "test:recovery-criteria": "node tests/recovery-criteria.mjs",
+    "test:task-api": "node tests/task-api-smoke.mjs"
+  },
+  "dependencies": {
+    "gltf-validator": "2.0.0-dev.3.10",
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "ffmpeg-static": "5.2.0",
+    "playwright": "1.56.1"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "context": {
+    "inputHash": "bdfa623dfa609b711003ae7ea159f177d8db0e08a120d7365dc5e32481ba5723",
+    "codeHash": "0bad0869f3cc07fc15ca8219198c23f385327d11124ccae472243c92a9203b65",
+    "dependencies": {
+      "inspect": "c3b95f067265e50e1cdc4a39cfeb33fe5421b21a388546caffbbeb0ab2a6d629",
+      "check-draft": "68045e296d708b2adf79a1043715a937eb96f9e8eeea350a2cac16a4833bf399"
+    }
+  },
+  "outputHash": "c32b494011cc57764fd9b8bc9b089a74e5f8ca94f53f9f6c2f51e9875916bf77",
+  "assets": {}
+}

@@ -1,0 +1,1910 @@
+{
+  "name": "api-boundary-door-equals-passage",
+  "jobId": "736d0edbc60847138fd356cd383104ff",
+  "sessionKey": "agnes:local:local-dev:cli:workspace:736d0edbc60847138fd356cd383104ff",
+  "sessionId": "agnes:local:local-dev:cli:workspace:736d0edbc60847138fd356cd383104ff",
+  "mode": "normal",
+  "testOnly": false,
+  "simulatedScenario": true,
+  "inputHashManifest": "ffa194b5fe6ab88ede12c9325b7be7284d22b62ee33f6dd3f515e0dd01725529",
+  "inputHashStored": "ffa194b5fe6ab88ede12c9325b7be7284d22b62ee33f6dd3f515e0dd01725529",
+  "inputHashPosted": "ffa194b5fe6ab88ede12c9325b7be7284d22b62ee33f6dd3f515e0dd01725529",
+  "inputHashMatches": true,
+  "postedInputMatches": true,
+  "postRequest": {
+    "path": "F:\\AGH\\projects\\studyspace\\results\\phase06-product-e2e-2026-10-11T06-50-03.533Z-64a013d0-6cbf-4d87-bbdb-ebdf5d06dd20\\api-boundary-door-equals-passage-post-request.json",
+    "sha256": "8165155996e4f729c2e4a1e6d20867cb8d716ef1d5c4d90c4f977cf6ae57a493",
+    "bytes": 484
+  },
+  "postInput": {
+    "path": "F:\\AGH\\projects\\studyspace\\results\\phase06-product-e2e-2026-10-11T06-50-03.533Z-64a013d0-6cbf-4d87-bbdb-ebdf5d06dd20\\api-boundary-door-equals-passage-post-input.json",
+    "sha256": "ffa194b5fe6ab88ede12c9325b7be7284d22b62ee33f6dd3f515e0dd01725529",
+    "bytes": 600
+  },
+  "expectedBusiness": "pass",
+  "actualBusiness": "pass",
+  "nativeStatus": "completed",
+  "nativeReason": "completed",
+  "model": {
+    "name": "gpt-6-astra",
+    "alias": "gpt-6-astra",
+    "provider": "not-independently-verified",
+    "driverProviderId": "openai",
+    "channel": "ToTokens",
+    "endpoint": "https://totokens.cc/v1",
+    "api": "Responses",
+    "snapshotVersion": null,
+    "providerVerification": "底层实际模型提供方未独立核实",
+    "usage": {
+      "totals": {
+        "input": 23378,
+        "output": 4490,
+        "cacheRead": 37403,
+        "cacheWrite": 0,
+        "reasoning": 3357
+      },
+      "credits": {
+        "amount": 0.879116,
+        "source": "estimated",
+        "complete": true
+      },
+      "reasoningComplete": true,
+      "billingComplete": true,
+      "cost": {
+        "usdMicros": 879116,
+        "source": "estimated",
+        "subscription": false
+      },
+      "context": {
+        "source": "estimated",
+        "tokens": 18575,
+        "window": 160000,
+        "autoCompact": true
+      },
+      "model": {
+        "route": "account-studyspace-astra-api",
+        "id": "gpt-6-astra",
+        "thinking": "medium",
+        "settings": {
+          "thinking": "medium",
+          "contextWindow": 160000
+        },
+        "maxTokens": 128000
+      },
+      "cache": {
+        "hitRate": 0.6153732251855021
+      }
+    },
+    "route": "account-studyspace-astra-api"
+  },
+  "expectedSteps": [
+    "inspect",
+    "search",
+    "check-search",
+    "export",
+    "verify"
+  ],
+  "stepEvents": [
+    {
+      "time": "2026-10-11T06:52:28.143Z",
+      "step": "inspect",
+      "status": "ready",
+      "result": "inspect.json",
+      "execution": "AGH-invoked deterministic CLI",
+      "productSessionId": "agnes:local:local-dev:cli:workspace:736d0edbc60847138fd356cd383104ff"
+    },
+    {
+      "time": "2026-10-11T06:52:38.487Z",
+      "step": "search",
+      "status": "found",
+      "result": "search.json",
+      "execution": "AGH-invoked deterministic CLI",
+      "productSessionId": "agnes:local:local-dev:cli:workspace:736d0edbc60847138fd356cd383104ff"
+    },
+    {
+      "time": "2026-10-11T06:52:59.374Z",
+      "step": "check-search",
+      "status": "pass",
+      "result": "check-search.json",
+      "execution": "AGH-invoked deterministic CLI",
+      "productSessionId": "agnes:local:local-dev:cli:workspace:736d0edbc60847138fd356cd383104ff"
+    },
+    {
+      "time": "2026-10-11T06:53:04.057Z",
+      "step": "export",
+      "status": "pass",
+      "result": "export.json",
+      "execution": "AGH-invoked deterministic CLI",
+      "productSessionId": "agnes:local:local-dev:cli:workspace:736d0edbc60847138fd356cd383104ff"
+    },
+    {
+      "time": "2026-10-11T06:53:08.661Z",
+      "step": "verify",
+      "status": "pass",
+      "result": "verify.json",
+      "execution": "AGH-invoked deterministic CLI",
+      "productSessionId": "agnes:local:local-dev:cli:workspace:736d0edbc60847138fd356cd383104ff"
+    }
+  ],
+  "stepsPresent": true,
+  "nativeEventCount": 131,
+  "nativeCalls": [
+    {
+      "step": "inspect",
+      "seq": 23,
+      "time": "2026-10-11T06:52:27.684Z",
+      "sessionId": "agnes:local:local-dev:cli:workspace:736d0edbc60847138fd356cd383104ff",
+      "toolUseId": "t0-fed03c992f8e17eb32dc101ae3c6d3cf"
+    },
+    {
+      "step": "search",
+      "seq": 43,
+      "time": "2026-10-11T06:52:38.019Z",
+      "sessionId": "agnes:local:local-dev:cli:workspace:736d0edbc60847138fd356cd383104ff",
+      "toolUseId": "t1-f7b78ea72ec8ba396b248160175484ea"
+    },
+    {
+      "step": "check-search",
+      "seq": 64,
+      "time": "2026-10-11T06:52:58.888Z",
+      "sessionId": "agnes:local:local-dev:cli:workspace:736d0edbc60847138fd356cd383104ff",
+      "toolUseId": "t2-d80b24eee1521bb0fb7d499b7d7b453c"
+    },
+    {
+      "step": "export",
+      "seq": 84,
+      "time": "2026-10-11T06:53:03.565Z",
+      "sessionId": "agnes:local:local-dev:cli:workspace:736d0edbc60847138fd356cd383104ff",
+      "toolUseId": "t3-eb067abe00cdb5e15989b44ac8570f1f"
+    },
+    {
+      "step": "verify",
+      "seq": 104,
+      "time": "2026-10-11T06:53:08.166Z",
+      "sessionId": "agnes:local:local-dev:cli:workspace:736d0edbc60847138fd356cd383104ff",
+      "toolUseId": "t4-1c07d7efcbff1104ece24a586c636451"
+    }
+  ],
+  "nativeResults": [
+    {
+      "seq": 29,
+      "toolUseId": "t0-fed03c992f8e17eb32dc101ae3c6d3cf",
+      "isError": false
+    },
+    {
+      "seq": 49,
+      "toolUseId": "t1-f7b78ea72ec8ba396b248160175484ea",
+      "isError": false
+    },
+    {
+      "seq": 70,
+      "toolUseId": "t2-d80b24eee1521bb0fb7d499b7d7b453c",
+      "isError": false
+    },
+    {
+      "seq": 90,
+      "toolUseId": "t3-eb067abe00cdb5e15989b44ac8570f1f",
+      "isError": false
+    },
+    {
+      "seq": 110,
+      "toolUseId": "t4-1c07d7efcbff1104ece24a586c636451",
+      "isError": false
+    }
+  ],
+  "nativePresent": true,
+  "repairFeedback": null,
+  "verify": {
+    "status": "pass",
+    "inputHash": "ffa194b5fe6ab88ede12c9325b7be7284d22b62ee33f6dd3f515e0dd01725529",
+    "inputMatches": true,
+    "layoutMatches": true,
+    "geometry": {
+      "status": "pass",
+      "sha256": "7928735c2df7503b1728fba8677589e105eb5053ca3244d3b3e2016f1c2a2341",
+      "bytes": 9540,
+      "simulatedScenario": true,
+      "reader": "independent-binary-vertices-v1",
+      "toleranceMetres": 0.000001,
+      "issues": [],
+      "layoutValidation": {
+        "status": "pass",
+        "source": "independent-validator",
+        "checks": {
+          "seats": {
+            "status": "pass",
+            "accepted": 2,
+            "targetSeats": 2,
+            "requiredSeats": 2,
+            "semantics": "V1 targetSeats is exact; requiredSeats is a minimum and must not exceed targetSeats"
+          },
+          "geometry": {
+            "status": "pass",
+            "doorKeepout": {
+              "x": 2.4,
+              "z": 0.4,
+              "width": 0.8,
+              "depth": 0.8,
+              "id": "door:keepout",
+              "kind": "door"
+            },
+            "doorKeepoutModel": "conservative rectangular approximation of inward swing; not an exact arc"
+          },
+          "access": {
+            "status": "pass",
+            "seatReports": [
+              {
+                "id": "seat-1",
+                "status": "pass",
+                "reachable": true,
+                "path": [
+                  {
+                    "x": 2.4,
+                    "z": 0.4
+                  },
+                  {
+                    "x": 2.1999999999999997,
+                    "z": 0.4
+                  },
+                  {
+                    "x": 2,
+                    "z": 0.4
+                  },
+                  {
+                    "x": 1.7999999999999998,
+                    "z": 0.4
+                  },
+                  {
+                    "x": 1.5999999999999999,
+                    "z": 0.4
+                  },
+                  {
+                    "x": 1.4,
+                    "z": 0.4
+                  },
+                  {
+                    "x": 1.1999999999999997,
+                    "z": 0.4
+                  },
+                  {
+                    "x": 0.9999999999999998,
+                    "z": 0.4
+                  },
+                  {
+                    "x": 0.7999999999999998,
+                    "z": 0.4
+                  },
+                  {
+                    "x": 0.6,
+                    "z": 0.5500000000000002
+                  }
+                ],
+                "pathLength": 1.85,
+                "visited": 57,
+                "target": {
+                  "x": 0.6,
+                  "z": 0.5500000000000002
+                }
+              },
+              {
+                "id": "seat-2",
+                "status": "pass",
+                "reachable": true,
+                "path": [
+                  {
+                    "x": 2.4,
+                    "z": 0.4
+                  },
+                  {
+                    "x": 2.1999999999999997,
+                    "z": 0.4
+                  },
+                  {
+                    "x": 2,
+                    "z": 0.4
+                  },
+                  {
+                    "x": 1.7999999999999998,
+                    "z": 0.4
+                  },
+                  {
+                    "x": 1.6,
+                    "z": 0.5500000000000002
+                  }
+                ],
+                "pathLength": 0.85,
+                "visited": 17,
+                "target": {
+                  "x": 1.6,
+                  "z": 0.5500000000000002
+                }
+              }
+            ],
+            "gridSize": 0.2,
+            "requiredWidth": 0.8,
+            "pathBodyRadius": 0.4
+          }
+        },
+        "issues": [],
+        "parameters": {
+          "tolerance": 0.000001,
+          "gridSize": 0.2,
+          "passageWidth": 0.8
+        }
+      },
+      "partCount": 30,
+      "triangles": 360,
+      "parts": [
+        {
+          "id": "room:floor",
+          "status": "pass",
+          "expectedCenter": [
+            3,
+            -0.05,
+            2.5
+          ],
+          "expectedSize": [
+            6,
+            0.1,
+            5
+          ],
+          "actualCenter": [
+            3,
+            -0.05,
+            2.5
+          ],
+          "actualSize": [
+            6,
+            0.1,
+            5
+          ]
+        },
+        {
+          "id": "room:south:low",
+          "status": "pass",
+          "expectedCenter": [
+            1,
+            1.4,
+            -0.06
+          ],
+          "expectedSize": [
+            2,
+            2.8,
+            0.12
+          ],
+          "actualCenter": [
+            1,
+            1.4,
+            -0.06
+          ],
+          "actualSize": [
+            2,
+            2.8,
+            0.12
+          ]
+        },
+        {
+          "id": "room:south:high",
+          "status": "pass",
+          "expectedCenter": [
+            4.4,
+            1.4,
+            -0.06
+          ],
+          "expectedSize": [
+            3.2,
+            2.8,
+            0.12
+          ],
+          "actualCenter": [
+            4.4,
+            1.4,
+            -0.06
+          ],
+          "actualSize": [
+            3.1999999999999997,
+            2.8,
+            0.12
+          ]
+        },
+        {
+          "id": "room:south:lintel",
+          "status": "pass",
+          "expectedCenter": [
+            2.4,
+            2.45,
+            -0.06
+          ],
+          "expectedSize": [
+            0.8,
+            0.6999999999999997,
+            0.12
+          ],
+          "actualCenter": [
+            2.4,
+            2.45,
+            -0.06
+          ],
+          "actualSize": [
+            0.7999999999999998,
+            0.6999999999999993,
+            0.12
+          ]
+        },
+        {
+          "id": "room:north:full",
+          "status": "pass",
+          "expectedCenter": [
+            3,
+            1.4,
+            5.06
+          ],
+          "expectedSize": [
+            6,
+            2.8,
+            0.12
+          ],
+          "actualCenter": [
+            3,
+            1.4,
+            5.06
+          ],
+          "actualSize": [
+            6,
+            2.8,
+            0.11999999999999922
+          ]
+        },
+        {
+          "id": "room:west:full",
+          "status": "pass",
+          "expectedCenter": [
+            -0.06,
+            1.4,
+            2.5
+          ],
+          "expectedSize": [
+            0.12,
+            2.8,
+            5
+          ],
+          "actualCenter": [
+            -0.06,
+            1.4,
+            2.5
+          ],
+          "actualSize": [
+            0.12,
+            2.8,
+            5
+          ]
+        },
+        {
+          "id": "room:east:full",
+          "status": "pass",
+          "expectedCenter": [
+            6.06,
+            1.4,
+            2.5
+          ],
+          "expectedSize": [
+            0.12,
+            2.8,
+            5
+          ],
+          "actualCenter": [
+            6.06,
+            1.4,
+            2.5
+          ],
+          "actualSize": [
+            0.11999999999999922,
+            2.8,
+            5
+          ]
+        },
+        {
+          "id": "door:leaf",
+          "status": "pass",
+          "expectedCenter": [
+            2.0175,
+            1.05,
+            0.4
+          ],
+          "expectedSize": [
+            0.035,
+            2.1,
+            0.8
+          ],
+          "actualCenter": [
+            2.0175,
+            1.05,
+            0.4
+          ],
+          "actualSize": [
+            0.03500000000000014,
+            2.1,
+            0.8
+          ]
+        },
+        {
+          "id": "seat-1:table:top",
+          "status": "pass",
+          "expectedCenter": [
+            0.6,
+            0.7275,
+            1.8
+          ],
+          "expectedSize": [
+            1,
+            0.045,
+            0.6
+          ],
+          "actualCenter": [
+            0.6000000000000001,
+            0.7275,
+            1.8
+          ],
+          "actualSize": [
+            1,
+            0.04499999999999993,
+            0.6000000000000001
+          ]
+        },
+        {
+          "id": "seat-1:table:leg0",
+          "status": "pass",
+          "expectedCenter": [
+            0.1275,
+            0.3525,
+            1.5275
+          ],
+          "expectedSize": [
+            0.055,
+            0.705,
+            0.055
+          ],
+          "actualCenter": [
+            0.1275,
+            0.3525,
+            1.5275
+          ],
+          "actualSize": [
+            0.05499999999999999,
+            0.705,
+            0.05500000000000016
+          ]
+        },
+        {
+          "id": "seat-1:table:leg1",
+          "status": "pass",
+          "expectedCenter": [
+            1.0725,
+            0.3525,
+            1.5275
+          ],
+          "expectedSize": [
+            0.055,
+            0.705,
+            0.055
+          ],
+          "actualCenter": [
+            1.0725,
+            0.3525,
+            1.5275
+          ],
+          "actualSize": [
+            0.05500000000000016,
+            0.705,
+            0.05500000000000016
+          ]
+        },
+        {
+          "id": "seat-1:table:leg2",
+          "status": "pass",
+          "expectedCenter": [
+            1.0725,
+            0.3525,
+            2.0725
+          ],
+          "expectedSize": [
+            0.055,
+            0.705,
+            0.055
+          ],
+          "actualCenter": [
+            1.0725,
+            0.3525,
+            2.0725
+          ],
+          "actualSize": [
+            0.05500000000000016,
+            0.705,
+            0.054999999999999716
+          ]
+        },
+        {
+          "id": "seat-1:table:leg3",
+          "status": "pass",
+          "expectedCenter": [
+            0.1275,
+            0.3525,
+            2.0725
+          ],
+          "expectedSize": [
+            0.055,
+            0.705,
+            0.055
+          ],
+          "actualCenter": [
+            0.1275,
+            0.3525,
+            2.0725
+          ],
+          "actualSize": [
+            0.05499999999999999,
+            0.705,
+            0.054999999999999716
+          ]
+        },
+        {
+          "id": "seat-1:chair:seat",
+          "status": "pass",
+          "expectedCenter": [
+            0.6,
+            0.42749999999999994,
+            1.2000000000000002
+          ],
+          "expectedSize": [
+            0.5,
+            0.045,
+            0.5
+          ],
+          "actualCenter": [
+            0.6,
+            0.42749999999999994,
+            1.2000000000000002
+          ],
+          "actualSize": [
+            0.5,
+            0.04500000000000004,
+            0.5
+          ]
+        },
+        {
+          "id": "seat-1:chair:back",
+          "status": "pass",
+          "expectedCenter": [
+            0.6,
+            0.6375,
+            0.9700000000000001
+          ],
+          "expectedSize": [
+            0.5,
+            0.375,
+            0.04
+          ],
+          "actualCenter": [
+            0.6,
+            0.6375,
+            0.9700000000000001
+          ],
+          "actualSize": [
+            0.5,
+            0.375,
+            0.040000000000000036
+          ]
+        },
+        {
+          "id": "seat-1:chair:leg0",
+          "status": "pass",
+          "expectedCenter": [
+            0.3675,
+            0.20249999999999999,
+            0.9675
+          ],
+          "expectedSize": [
+            0.035,
+            0.40499999999999997,
+            0.035
+          ],
+          "actualCenter": [
+            0.3675,
+            0.20249999999999999,
+            0.9675
+          ],
+          "actualSize": [
+            0.03500000000000003,
+            0.40499999999999997,
+            0.03499999999999992
+          ]
+        },
+        {
+          "id": "seat-1:chair:leg1",
+          "status": "pass",
+          "expectedCenter": [
+            0.8325,
+            0.20249999999999999,
+            0.9675
+          ],
+          "expectedSize": [
+            0.035,
+            0.40499999999999997,
+            0.035
+          ],
+          "actualCenter": [
+            0.8325,
+            0.20249999999999999,
+            0.9675
+          ],
+          "actualSize": [
+            0.03499999999999992,
+            0.40499999999999997,
+            0.03499999999999992
+          ]
+        },
+        {
+          "id": "seat-1:chair:leg2",
+          "status": "pass",
+          "expectedCenter": [
+            0.8325,
+            0.20249999999999999,
+            1.4325
+          ],
+          "expectedSize": [
+            0.035,
+            0.40499999999999997,
+            0.035
+          ],
+          "actualCenter": [
+            0.8325,
+            0.20249999999999999,
+            1.4325
+          ],
+          "actualSize": [
+            0.03499999999999992,
+            0.40499999999999997,
+            0.03500000000000014
+          ]
+        },
+        {
+          "id": "seat-1:chair:leg3",
+          "status": "pass",
+          "expectedCenter": [
+            0.3675,
+            0.20249999999999999,
+            1.4325
+          ],
+          "expectedSize": [
+            0.035,
+            0.40499999999999997,
+            0.035
+          ],
+          "actualCenter": [
+            0.3675,
+            0.20249999999999999,
+            1.4325
+          ],
+          "actualSize": [
+            0.03500000000000003,
+            0.40499999999999997,
+            0.03500000000000014
+          ]
+        },
+        {
+          "id": "seat-2:table:top",
+          "status": "pass",
+          "expectedCenter": [
+            1.6,
+            0.7275,
+            1.8
+          ],
+          "expectedSize": [
+            1,
+            0.045,
+            0.6
+          ],
+          "actualCenter": [
+            1.6,
+            0.7275,
+            1.8
+          ],
+          "actualSize": [
+            1,
+            0.04499999999999993,
+            0.6000000000000001
+          ]
+        },
+        {
+          "id": "seat-2:table:leg0",
+          "status": "pass",
+          "expectedCenter": [
+            1.1275000000000002,
+            0.3525,
+            1.5275
+          ],
+          "expectedSize": [
+            0.055,
+            0.705,
+            0.055
+          ],
+          "actualCenter": [
+            1.1275000000000002,
+            0.3525,
+            1.5275
+          ],
+          "actualSize": [
+            0.05500000000000016,
+            0.705,
+            0.05500000000000016
+          ]
+        },
+        {
+          "id": "seat-2:table:leg1",
+          "status": "pass",
+          "expectedCenter": [
+            2.0725000000000002,
+            0.3525,
+            1.5275
+          ],
+          "expectedSize": [
+            0.055,
+            0.705,
+            0.055
+          ],
+          "actualCenter": [
+            2.0725000000000002,
+            0.3525,
+            1.5275
+          ],
+          "actualSize": [
+            0.054999999999999716,
+            0.705,
+            0.05500000000000016
+          ]
+        },
+        {
+          "id": "seat-2:table:leg2",
+          "status": "pass",
+          "expectedCenter": [
+            2.0725000000000002,
+            0.3525,
+            2.0725
+          ],
+          "expectedSize": [
+            0.055,
+            0.705,
+            0.055
+          ],
+          "actualCenter": [
+            2.0725000000000002,
+            0.3525,
+            2.0725
+          ],
+          "actualSize": [
+            0.054999999999999716,
+            0.705,
+            0.054999999999999716
+          ]
+        },
+        {
+          "id": "seat-2:table:leg3",
+          "status": "pass",
+          "expectedCenter": [
+            1.1275000000000002,
+            0.3525,
+            2.0725
+          ],
+          "expectedSize": [
+            0.055,
+            0.705,
+            0.055
+          ],
+          "actualCenter": [
+            1.1275000000000002,
+            0.3525,
+            2.0725
+          ],
+          "actualSize": [
+            0.05500000000000016,
+            0.705,
+            0.054999999999999716
+          ]
+        },
+        {
+          "id": "seat-2:chair:seat",
+          "status": "pass",
+          "expectedCenter": [
+            1.6,
+            0.42749999999999994,
+            1.2000000000000002
+          ],
+          "expectedSize": [
+            0.5,
+            0.045,
+            0.5
+          ],
+          "actualCenter": [
+            1.6,
+            0.42749999999999994,
+            1.2000000000000002
+          ],
+          "actualSize": [
+            0.5,
+            0.04500000000000004,
+            0.5
+          ]
+        },
+        {
+          "id": "seat-2:chair:back",
+          "status": "pass",
+          "expectedCenter": [
+            1.6,
+            0.6375,
+            0.9700000000000001
+          ],
+          "expectedSize": [
+            0.5,
+            0.375,
+            0.04
+          ],
+          "actualCenter": [
+            1.6,
+            0.6375,
+            0.9700000000000001
+          ],
+          "actualSize": [
+            0.5,
+            0.375,
+            0.040000000000000036
+          ]
+        },
+        {
+          "id": "seat-2:chair:leg0",
+          "status": "pass",
+          "expectedCenter": [
+            1.3675000000000002,
+            0.20249999999999999,
+            0.9675
+          ],
+          "expectedSize": [
+            0.035,
+            0.40499999999999997,
+            0.035
+          ],
+          "actualCenter": [
+            1.3675000000000002,
+            0.20249999999999999,
+            0.9675
+          ],
+          "actualSize": [
+            0.03500000000000014,
+            0.40499999999999997,
+            0.03499999999999992
+          ]
+        },
+        {
+          "id": "seat-2:chair:leg1",
+          "status": "pass",
+          "expectedCenter": [
+            1.8325,
+            0.20249999999999999,
+            0.9675
+          ],
+          "expectedSize": [
+            0.035,
+            0.40499999999999997,
+            0.035
+          ],
+          "actualCenter": [
+            1.8325,
+            0.20249999999999999,
+            0.9675
+          ],
+          "actualSize": [
+            0.03500000000000014,
+            0.40499999999999997,
+            0.03499999999999992
+          ]
+        },
+        {
+          "id": "seat-2:chair:leg2",
+          "status": "pass",
+          "expectedCenter": [
+            1.8325,
+            0.20249999999999999,
+            1.4325
+          ],
+          "expectedSize": [
+            0.035,
+            0.40499999999999997,
+            0.035
+          ],
+          "actualCenter": [
+            1.8325,
+            0.20249999999999999,
+            1.4325
+          ],
+          "actualSize": [
+            0.03500000000000014,
+            0.40499999999999997,
+            0.03500000000000014
+          ]
+        },
+        {
+          "id": "seat-2:chair:leg3",
+          "status": "pass",
+          "expectedCenter": [
+            1.3675000000000002,
+            0.20249999999999999,
+            1.4325
+          ],
+          "expectedSize": [
+            0.035,
+            0.40499999999999997,
+            0.035
+          ],
+          "actualCenter": [
+            1.3675000000000002,
+            0.20249999999999999,
+            1.4325
+          ],
+          "actualSize": [
+            0.03500000000000014,
+            0.40499999999999997,
+            0.03500000000000014
+          ]
+        }
+      ],
+      "footprints": [
+        {
+          "id": "seat-1",
+          "kind": "table",
+          "status": "pass",
+          "center": [
+            0.6,
+            1.8
+          ],
+          "size": [
+            1,
+            0.6
+          ]
+        },
+        {
+          "id": "seat-1",
+          "kind": "chair",
+          "status": "pass",
+          "center": [
+            0.6,
+            1.2000000000000002
+          ],
+          "size": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "seat-2",
+          "kind": "table",
+          "status": "pass",
+          "center": [
+            1.6,
+            1.8
+          ],
+          "size": [
+            1,
+            0.6
+          ]
+        },
+        {
+          "id": "seat-2",
+          "kind": "chair",
+          "status": "pass",
+          "center": [
+            1.6,
+            1.2000000000000002
+          ],
+          "size": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "structuralChecks": [
+        {
+          "id": "room:floor",
+          "status": "pass",
+          "expectedCenter": [
+            3,
+            -0.05,
+            2.5
+          ],
+          "expectedSize": [
+            6,
+            0.1,
+            5
+          ],
+          "actualCenter": [
+            3,
+            -0.05,
+            2.5
+          ],
+          "actualSize": [
+            6,
+            0.1,
+            5
+          ]
+        },
+        {
+          "id": "room:south:low",
+          "status": "pass",
+          "expectedCenter": [
+            1,
+            1.4,
+            -0.06
+          ],
+          "expectedSize": [
+            2,
+            2.8,
+            0.12
+          ],
+          "actualCenter": [
+            1,
+            1.4,
+            -0.06
+          ],
+          "actualSize": [
+            2,
+            2.8,
+            0.12
+          ]
+        },
+        {
+          "id": "room:south:high",
+          "status": "pass",
+          "expectedCenter": [
+            4.4,
+            1.4,
+            -0.06
+          ],
+          "expectedSize": [
+            3.2,
+            2.8,
+            0.12
+          ],
+          "actualCenter": [
+            4.4,
+            1.4,
+            -0.06
+          ],
+          "actualSize": [
+            3.1999999999999997,
+            2.8,
+            0.12
+          ]
+        },
+        {
+          "id": "room:south:lintel",
+          "status": "pass",
+          "expectedCenter": [
+            2.4,
+            2.45,
+            -0.06
+          ],
+          "expectedSize": [
+            0.8,
+            0.6999999999999997,
+            0.12
+          ],
+          "actualCenter": [
+            2.4,
+            2.45,
+            -0.06
+          ],
+          "actualSize": [
+            0.7999999999999998,
+            0.6999999999999993,
+            0.12
+          ]
+        },
+        {
+          "id": "room:north:full",
+          "status": "pass",
+          "expectedCenter": [
+            3,
+            1.4,
+            5.06
+          ],
+          "expectedSize": [
+            6,
+            2.8,
+            0.12
+          ],
+          "actualCenter": [
+            3,
+            1.4,
+            5.06
+          ],
+          "actualSize": [
+            6,
+            2.8,
+            0.11999999999999922
+          ]
+        },
+        {
+          "id": "room:west:full",
+          "status": "pass",
+          "expectedCenter": [
+            -0.06,
+            1.4,
+            2.5
+          ],
+          "expectedSize": [
+            0.12,
+            2.8,
+            5
+          ],
+          "actualCenter": [
+            -0.06,
+            1.4,
+            2.5
+          ],
+          "actualSize": [
+            0.12,
+            2.8,
+            5
+          ]
+        },
+        {
+          "id": "room:east:full",
+          "status": "pass",
+          "expectedCenter": [
+            6.06,
+            1.4,
+            2.5
+          ],
+          "expectedSize": [
+            0.12,
+            2.8,
+            5
+          ],
+          "actualCenter": [
+            6.06,
+            1.4,
+            2.5
+          ],
+          "actualSize": [
+            0.11999999999999922,
+            2.8,
+            5
+          ]
+        },
+        {
+          "id": "door:leaf",
+          "status": "pass",
+          "expectedCenter": [
+            2.0175,
+            1.05,
+            0.4
+          ],
+          "expectedSize": [
+            0.035,
+            2.1,
+            0.8
+          ],
+          "actualCenter": [
+            2.0175,
+            1.05,
+            0.4
+          ],
+          "actualSize": [
+            0.03500000000000014,
+            2.1,
+            0.8
+          ]
+        },
+        {
+          "id": "door:opening",
+          "status": "pass",
+          "min": [
+            2,
+            0,
+            -0.12
+          ],
+          "max": [
+            2.8,
+            2.1,
+            0
+          ],
+          "intruders": []
+        },
+        {
+          "id": "seat-1:vertical",
+          "status": "pass",
+          "tableTop": 0.75,
+          "expectedTableTop": 0.75,
+          "tableGround": 0,
+          "chairGround": 0
+        },
+        {
+          "id": "seat-2:vertical",
+          "status": "pass",
+          "tableTop": 0.75,
+          "expectedTableTop": 0.75,
+          "tableGround": 0,
+          "chairGround": 0
+        }
+      ]
+    },
+    "layout": {
+      "status": "pass",
+      "source": "independent-validator",
+      "checks": {
+        "seats": {
+          "status": "pass",
+          "accepted": 2,
+          "targetSeats": 2,
+          "requiredSeats": 2,
+          "semantics": "V1 targetSeats is exact; requiredSeats is a minimum and must not exceed targetSeats"
+        },
+        "geometry": {
+          "status": "pass",
+          "doorKeepout": {
+            "x": 2.4,
+            "z": 0.4,
+            "width": 0.8,
+            "depth": 0.8,
+            "id": "door:keepout",
+            "kind": "door"
+          },
+          "doorKeepoutModel": "conservative rectangular approximation of inward swing; not an exact arc"
+        },
+        "access": {
+          "status": "pass",
+          "seatReports": [
+            {
+              "id": "seat-1",
+              "status": "pass",
+              "reachable": true,
+              "path": [
+                {
+                  "x": 2.4,
+                  "z": 0.4
+                },
+                {
+                  "x": 2.1999999999999997,
+                  "z": 0.4
+                },
+                {
+                  "x": 2,
+                  "z": 0.4
+                },
+                {
+                  "x": 1.7999999999999998,
+                  "z": 0.4
+                },
+                {
+                  "x": 1.5999999999999999,
+                  "z": 0.4
+                },
+                {
+                  "x": 1.4,
+                  "z": 0.4
+                },
+                {
+                  "x": 1.1999999999999997,
+                  "z": 0.4
+                },
+                {
+                  "x": 0.9999999999999998,
+                  "z": 0.4
+                },
+                {
+                  "x": 0.7999999999999998,
+                  "z": 0.4
+                },
+                {
+                  "x": 0.6,
+                  "z": 0.5500000000000002
+                }
+              ],
+              "pathLength": 1.85,
+              "visited": 57,
+              "target": {
+                "x": 0.6,
+                "z": 0.5500000000000002
+              }
+            },
+            {
+              "id": "seat-2",
+              "status": "pass",
+              "reachable": true,
+              "path": [
+                {
+                  "x": 2.4,
+                  "z": 0.4
+                },
+                {
+                  "x": 2.1999999999999997,
+                  "z": 0.4
+                },
+                {
+                  "x": 2,
+                  "z": 0.4
+                },
+                {
+                  "x": 1.7999999999999998,
+                  "z": 0.4
+                },
+                {
+                  "x": 1.6,
+                  "z": 0.5500000000000002
+                }
+              ],
+              "pathLength": 0.85,
+              "visited": 17,
+              "target": {
+                "x": 1.6,
+                "z": 0.5500000000000002
+              }
+            }
+          ],
+          "gridSize": 0.2,
+          "requiredWidth": 0.8,
+          "pathBodyRadius": 0.4
+        }
+      },
+      "issues": [],
+      "parameters": {
+        "tolerance": 0.000001,
+        "gridSize": 0.2,
+        "passageWidth": 0.8
+      }
+    },
+    "official": {
+      "uri": "scene.glb",
+      "mimeType": "model/gltf-binary",
+      "validatorVersion": "2.0.0-dev.3.10",
+      "validatedAt": "2026-10-11T06:53:08.651Z",
+      "issues": {
+        "numErrors": 0,
+        "numWarnings": 0,
+        "numInfos": 1,
+        "numHints": 0,
+        "messages": [
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/3"
+          }
+        ],
+        "truncated": false
+      },
+      "info": {
+        "version": "2.0",
+        "generator": "studyspace phase03 original parametric geometry",
+        "resources": [
+          {
+            "pointer": "/buffers/0",
+            "mimeType": "application/gltf-buffer",
+            "storage": "glb",
+            "byteLength": 648
+          }
+        ],
+        "animationCount": 0,
+        "materialCount": 6,
+        "hasMorphTargets": false,
+        "hasSkins": false,
+        "hasTextures": false,
+        "hasDefaultScene": true,
+        "drawCallCount": 6,
+        "totalVertexCount": 144,
+        "totalTriangleCount": 72,
+        "maxUVs": 0,
+        "maxInfluences": 0,
+        "maxAttributes": 2
+      }
+    },
+    "hashes": [
+      {
+        "name": "editable.json",
+        "pass": true
+      },
+      {
+        "name": "scene.glb",
+        "pass": true
+      },
+      {
+        "name": "plan.svg",
+        "pass": true
+      },
+      {
+        "name": "geometry-report.json",
+        "pass": true
+      },
+      {
+        "name": "gltf-validator-report.json",
+        "pass": true
+      }
+    ],
+    "scope": "deterministic business artifact verification; not proof of product SDK integration"
+  },
+  "search": {
+    "found": true,
+    "status": "found",
+    "attempts": 232,
+    "budget": 5000,
+    "maxMs": 5000,
+    "elapsedMs": 2.479300000000002,
+    "layout": {
+      "layoutId": "search-fixture",
+      "seats": [
+        {
+          "id": "seat-1",
+          "x": 0.6,
+          "z": 1.8,
+          "orientation": 0
+        },
+        {
+          "id": "seat-2",
+          "x": 1.6,
+          "z": 1.8,
+          "orientation": 0
+        }
+      ]
+    },
+    "validation": {
+      "status": "pass",
+      "source": "independent-validator",
+      "checks": {
+        "seats": {
+          "status": "pass",
+          "accepted": 2,
+          "targetSeats": 2,
+          "requiredSeats": 2,
+          "semantics": "V1 targetSeats is exact; requiredSeats is a minimum and must not exceed targetSeats"
+        },
+        "geometry": {
+          "status": "pass",
+          "doorKeepout": {
+            "x": 2.4,
+            "z": 0.4,
+            "width": 0.8,
+            "depth": 0.8,
+            "id": "door:keepout",
+            "kind": "door"
+          },
+          "doorKeepoutModel": "conservative rectangular approximation of inward swing; not an exact arc"
+        },
+        "access": {
+          "status": "pass",
+          "seatReports": [
+            {
+              "id": "seat-1",
+              "status": "pass",
+              "reachable": true,
+              "path": [
+                {
+                  "x": 2.4,
+                  "z": 0.4
+                },
+                {
+                  "x": 2.1999999999999997,
+                  "z": 0.4
+                },
+                {
+                  "x": 2,
+                  "z": 0.4
+                },
+                {
+                  "x": 1.7999999999999998,
+                  "z": 0.4
+                },
+                {
+                  "x": 1.5999999999999999,
+                  "z": 0.4
+                },
+                {
+                  "x": 1.4,
+                  "z": 0.4
+                },
+                {
+                  "x": 1.1999999999999997,
+                  "z": 0.4
+                },
+                {
+                  "x": 0.9999999999999998,
+                  "z": 0.4
+                },
+                {
+                  "x": 0.7999999999999998,
+                  "z": 0.4
+                },
+                {
+                  "x": 0.6,
+                  "z": 0.5500000000000002
+                }
+              ],
+              "pathLength": 1.85,
+              "visited": 57,
+              "target": {
+                "x": 0.6,
+                "z": 0.5500000000000002
+              }
+            },
+            {
+              "id": "seat-2",
+              "status": "pass",
+              "reachable": true,
+              "path": [
+                {
+                  "x": 2.4,
+                  "z": 0.4
+                },
+                {
+                  "x": 2.1999999999999997,
+                  "z": 0.4
+                },
+                {
+                  "x": 2,
+                  "z": 0.4
+                },
+                {
+                  "x": 1.7999999999999998,
+                  "z": 0.4
+                },
+                {
+                  "x": 1.6,
+                  "z": 0.5500000000000002
+                }
+              ],
+              "pathLength": 0.85,
+              "visited": 17,
+              "target": {
+                "x": 1.6,
+                "z": 0.5500000000000002
+              }
+            }
+          ],
+          "gridSize": 0.2,
+          "requiredWidth": 0.8,
+          "pathBodyRadius": 0.4
+        }
+      },
+      "issues": [],
+      "parameters": {
+        "tolerance": 0.000001,
+        "gridSize": 0.2,
+        "passageWidth": 0.8
+      }
+    },
+    "termination": "validated candidate found",
+    "baseline": {
+      "found": true,
+      "status": "found",
+      "attempts": 366,
+      "budget": 5000,
+      "maxMs": 5000,
+      "elapsedMs": 5.709600000000002,
+      "layout": {
+        "layoutId": "fixed-grid-baseline",
+        "seats": [
+          {
+            "id": "baseline-seat-1",
+            "x": 4.6,
+            "z": 0.6,
+            "orientation": 90
+          },
+          {
+            "id": "baseline-seat-2",
+            "x": 1.8,
+            "z": 1.4,
+            "orientation": 90
+          }
+        ]
+      },
+      "validation": {
+        "status": "pass",
+        "source": "independent-validator",
+        "checks": {
+          "seats": {
+            "status": "pass",
+            "accepted": 2,
+            "targetSeats": 2,
+            "requiredSeats": 2,
+            "semantics": "V1 targetSeats is exact; requiredSeats is a minimum and must not exceed targetSeats"
+          },
+          "geometry": {
+            "status": "pass",
+            "doorKeepout": {
+              "x": 2.4,
+              "z": 0.4,
+              "width": 0.8,
+              "depth": 0.8,
+              "id": "door:keepout",
+              "kind": "door"
+            },
+            "doorKeepoutModel": "conservative rectangular approximation of inward swing; not an exact arc"
+          },
+          "access": {
+            "status": "pass",
+            "seatReports": [
+              {
+                "id": "baseline-seat-1",
+                "status": "pass",
+                "reachable": true,
+                "path": [
+                  {
+                    "x": 2.4,
+                    "z": 0.4
+                  },
+                  {
+                    "x": 2.6,
+                    "z": 0.4
+                  },
+                  {
+                    "x": 2.8,
+                    "z": 0.4
+                  },
+                  {
+                    "x": 3,
+                    "z": 0.4
+                  },
+                  {
+                    "x": 3.2,
+                    "z": 0.4
+                  },
+                  {
+                    "x": 3.3499999999999996,
+                    "z": 0.6
+                  }
+                ],
+                "pathLength": 1.0499999999999998,
+                "visited": 15,
+                "target": {
+                  "x": 3.3499999999999996,
+                  "z": 0.6
+                }
+              },
+              {
+                "id": "baseline-seat-2",
+                "status": "pass",
+                "reachable": true,
+                "path": [
+                  {
+                    "x": 2.4,
+                    "z": 0.4
+                  },
+                  {
+                    "x": 2.1999999999999997,
+                    "z": 0.4
+                  },
+                  {
+                    "x": 2,
+                    "z": 0.4
+                  },
+                  {
+                    "x": 1.7999999999999998,
+                    "z": 0.4
+                  },
+                  {
+                    "x": 1.5999999999999999,
+                    "z": 0.4
+                  },
+                  {
+                    "x": 1.4,
+                    "z": 0.4
+                  },
+                  {
+                    "x": 1.1999999999999997,
+                    "z": 0.4
+                  },
+                  {
+                    "x": 0.9999999999999998,
+                    "z": 0.4
+                  },
+                  {
+                    "x": 0.7999999999999998,
+                    "z": 0.4
+                  },
+                  {
+                    "x": 0.5999999999999999,
+                    "z": 0.4
+                  },
+                  {
+                    "x": 0.3999999999999999,
+                    "z": 0.4
+                  },
+                  {
+                    "x": 0.3999999999999999,
+                    "z": 0.6000000000000001
+                  },
+                  {
+                    "x": 0.3999999999999999,
+                    "z": 0.8
+                  },
+                  {
+                    "x": 0.3999999999999999,
+                    "z": 1
+                  },
+                  {
+                    "x": 0.3999999999999999,
+                    "z": 1.2000000000000002
+                  },
+                  {
+                    "x": 0.5500000000000002,
+                    "z": 1.4
+                  }
+                ],
+                "pathLength": 3.0500000000000007,
+                "visited": 100,
+                "target": {
+                  "x": 0.5500000000000002,
+                  "z": 1.4
+                }
+              }
+            ],
+            "gridSize": 0.2,
+            "requiredWidth": 0.8,
+            "pathBodyRadius": 0.4
+          }
+        },
+        "issues": [],
+        "parameters": {
+          "tolerance": 0.000001,
+          "gridSize": 0.2,
+          "passageWidth": 0.8
+        }
+      },
+      "termination": "validated candidate found"
+    },
+    "inputHash": "ffa194b5fe6ab88ede12c9325b7be7284d22b62ee33f6dd3f515e0dd01725529",
+    "adjustment": null
+  },
+  "assets": [
+    {
+      "name": "scene.glb",
+      "httpStatus": 200,
+      "contentType": "model/gltf-binary",
+      "missing": false,
+      "bytes": 9540,
+      "sha256": "7928735c2df7503b1728fba8677589e105eb5053ca3244d3b3e2016f1c2a2341",
+      "glbValid": true
+    },
+    {
+      "name": "editable.json",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "missing": false,
+      "bytes": 1361,
+      "sha256": "e1aefa2a54a56ed3336e07237709d8bf5e5c439867cd0103f0562baab1bd8e61",
+      "jsonValid": true
+    },
+    {
+      "name": "geometry-report.json",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "missing": false,
+      "bytes": 20123,
+      "sha256": "17c737cd672a6750b4cc27a379c3e71a5c65b91b19e2fdcc79931bab96751238",
+      "geometryStatus": "pass",
+      "geometryValid": true
+    }
+  ],
+  "assetOutcome": true,
+  "assertions": {
+    "session": true,
+    "model": true,
+    "mode": true,
+    "testMarker": true,
+    "inputUnchanged": true,
+    "expectedStatus": true,
+    "normalOrRepairCompleted": true,
+    "stepSet": true,
+    "nativeCallEvidence": true,
+    "repairFailureFeedback": true,
+    "independentFinalPass": true,
+    "assets": true
+  }
+}

@@ -1,0 +1,2 @@
+{"time":"2026-10-11T07:07:06.124Z","step":"inspect","status":"ready","result":"inspect.json","execution":"AGH-invoked deterministic CLI","productSessionId":"agnes:local:local-dev:cli:workspace:7f7fa22dfb1047c4a95357a1942aa83c"}
+{"time":"2026-10-11T07:07:11.670Z","step":"search","status":"budget-exhausted-or-candidates-ended","result":"search.json","execution":"AGH-invoked deterministic CLI","productSessionId":"agnes:local:local-dev:cli:workspace:7f7fa22dfb1047c4a95357a1942aa83c"}

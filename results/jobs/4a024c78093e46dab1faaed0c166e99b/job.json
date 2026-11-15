@@ -1,0 +1,81 @@
+{
+  "jobId": "4a024c78093e46dab1faaed0c166e99b",
+  "sessionKey": "agnes:local:local-dev:cli:workspace:4a024c78093e46dab1faaed0c166e99b",
+  "sessionId": "agnes:local:local-dev:cli:workspace:4a024c78093e46dab1faaed0c166e99b",
+  "createdAt": "2026-10-11T00:23:40.742Z",
+  "inputHash": "5ce36c05fcc67d786de2d632c55c224d33428e879984ba968bef839cf1408a15",
+  "mode": "normal",
+  "simulatedScenario": true,
+  "userRequest": "请在不改变房间、门和固定家具约束的前提下，优先生成可通行、座位编号清晰的自习布局。",
+  "supportedConstraints": [
+    "room",
+    "door",
+    "obstacles",
+    "seatTemplate",
+    "targetSeats",
+    "passageWidth",
+    "orientations"
+  ],
+  "unsupportedRequests": [],
+  "model": {
+    "name": "gpt-6-astra",
+    "alias": "gpt-6-astra",
+    "provider": "ToTokens",
+    "channel": "AGH host configured route",
+    "endpoint": "https://totokens.cc/v1",
+    "api": "Responses",
+    "snapshotVersion": null,
+    "usage": {
+      "totals": {
+        "input": 29447,
+        "output": 1327,
+        "cacheRead": 64000,
+        "cacheWrite": 0,
+        "reasoning": 317
+      },
+      "credits": {
+        "amount": 0.816465,
+        "source": "estimated",
+        "complete": true
+      },
+      "reasoningComplete": true,
+      "billingComplete": true,
+      "cost": {
+        "usdMicros": 816465,
+        "source": "estimated",
+        "subscription": false
+      },
+      "context": {
+        "source": "estimated",
+        "tokens": 27443,
+        "window": 160000,
+        "autoCompact": true
+      },
+      "model": {
+        "route": "account-studyspace-astra-api",
+        "id": "gpt-6-astra",
+        "thinking": "medium",
+        "settings": {
+          "thinking": "medium",
+          "contextWindow": 160000
+        },
+        "maxTokens": 128000
+      },
+      "cache": {
+        "hitRate": 0.6848801994713581
+      }
+    }
+  },
+  "connection": {
+    "status": "turn-ended",
+    "sessionId": "agnes:local:local-dev:cli:workspace:4a024c78093e46dab1faaed0c166e99b"
+  },
+  "native": {
+    "status": "completed",
+    "reason": "completed",
+    "stopReason": "end_turn"
+  },
+  "business": {
+    "status": "pass"
+  }
+}

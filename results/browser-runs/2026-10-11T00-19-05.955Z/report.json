@@ -1,0 +1,15 @@
+{
+  "stamp": "2026-10-11T00-19-05.955Z",
+  "browser": "msedge",
+  "checks": [],
+  "errors": [
+    {
+      "type": "test",
+      "message": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4319/\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:4319/\", waiting until \"networkidle\"\u001b[22m\n\n    at F:\\AGH\\projects\\studyspace\\tests\\workbench-browser.mjs:19:31"
+    }
+  ],
+  "screenshots": [],
+  "jobId": null,
+  "finishedAt": "2026-10-11T00:19:06.794Z",
+  "pass": false
+}

@@ -1,0 +1,63 @@
+{
+  "room": {
+    "width": 6,
+    "depth": 5
+  },
+  "door": {
+    "wall": "east",
+    "offset": 2,
+    "width": 1.3,
+    "swing": "inward",
+    "hinge": "low"
+  },
+  "obstacles": [
+    {
+      "id": "corner-cabinet",
+      "x": 5.55,
+      "z": 4.55,
+      "width": 0.5,
+      "depth": 0.5,
+      "height": 1.8
+    },
+    {
+      "id": "柜子",
+      "x": 3,
+      "z": 2.5,
+      "width": 1,
+      "depth": 0.5,
+      "height": 1.8
+    },
+    {
+      "id": "课桌",
+      "x": 3,
+      "z": 2.5,
+      "width": 1,
+      "depth": 0.5,
+      "height": 1.8
+    }
+  ],
+  "seatTemplate": {
+    "tableWidth": 1,
+    "tableDepth": 0.6,
+    "tableHeight": 0.75,
+    "chairWidth": 0.5,
+    "chairDepth": 0.5,
+    "chairClearance": 0.6,
+    "approachWidth": 0.5
+  },
+  "targetSeats": 6,
+  "requiredSeats": 6,
+  "passageWidth": 0.7,
+  "gridSize": 0.2,
+  "tolerance": 0.000001,
+  "seed": "workbench-1791992002203",
+  "searchBudget": {
+    "maxAttempts": 12000
+  },
+  "simulatedScenario": true,
+  "scenarioLabel": "模拟场景—6座开放布局",
+  "orientations": [
+    90
+  ],
+  "userRequest": "模拟场景。请保留房间、门、柜体、六座目标及0.8米通道约束，检查草稿并在反馈后搜索、导出和独立验收。"
+}

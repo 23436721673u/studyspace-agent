@@ -1,0 +1,10 @@
+{
+  "package": "ffmpeg-static@5.2.0",
+  "attempts": [
+    {"status":"timeout","timeoutMs":120000,"processGroupKilled":true,"partialBytes":3326853,"partialPreservedAt":".tmp/ffmpeg-install-timeout-partial.exe"},
+    {"status":"failed","error":"connect ETIMEDOUT 20.205.243.166:443"},
+    {"status":"not-executed","reason":"third installer call rejected; no further GitHub installer retries"}
+  ],
+  "metadataQuery": {"command":"pnpm view","status":"failed","reason":"spawnSync npm ENOENT","fallback":"direct GET official registry.npmjs.org metadata"},
+  "installedSuccessfully": false
+}

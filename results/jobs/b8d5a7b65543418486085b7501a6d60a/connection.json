@@ -1,0 +1,653 @@
+{
+  "status": "turn-ended",
+  "sessionKey": "agnes:local:local-dev:cli:workspace:b8d5a7b65543418486085b7501a6d60a",
+  "sessionId": "agnes:local:local-dev:cli:workspace:b8d5a7b65543418486085b7501a6d60a",
+  "config": {
+    "configured": true,
+    "profile": "local-dev",
+    "revision": 1,
+    "provider": {
+      "id": "openai",
+      "baseUrl": "https://totokens.cc/v1",
+      "model": "gpt-6-astra",
+      "route": "account-studyspace-astra-api",
+      "credentialConfigured": true
+    }
+  },
+  "creationAttempted": true,
+  "promptHash": "f8f6818d4f2251665f89be10af1f091176a81c9a92ba2250341bbb1a50d6e114",
+  "turnResult": {
+    "stopReason": "end_turn",
+    "reason": "completed",
+    "lastSeq": 126,
+    "credits": {
+      "used": 0.19088,
+      "source": "estimated"
+    }
+  },
+  "usage": {
+    "totals": {
+      "input": 23023,
+      "output": 1161,
+      "cacheRead": 57856,
+      "cacheWrite": 0,
+      "reasoning": 191
+    },
+    "credits": {
+      "amount": 0.663247,
+      "source": "estimated",
+      "complete": true
+    },
+    "reasoningComplete": true,
+    "billingComplete": true,
+    "cost": {
+      "usdMicros": 663247,
+      "source": "estimated",
+      "subscription": false
+    },
+    "context": {
+      "source": "estimated",
+      "tokens": 19634,
+      "window": 160000,
+      "autoCompact": true
+    },
+    "model": {
+      "route": "account-studyspace-astra-api",
+      "id": "gpt-6-astra",
+      "thinking": "medium",
+      "settings": {
+        "thinking": "medium",
+        "contextWindow": 160000
+      },
+      "maxTokens": 128000
+    },
+    "cache": {
+      "hitRate": 0.7153401995573635
+    }
+  },
+  "turns": [
+    {
+      "id": "turn:1",
+      "turn": 1,
+      "startSeq": 11,
+      "startedAt": "2026-10-11T01:10:07.829Z",
+      "status": "completed",
+      "nodeIds": [
+        "01M4M8546N6A3YE3S2X9PJJ3Y3",
+        "01M4M8547472T2QWGBVKXJ6QN3",
+        "01M4M854776ZW3A5D6FY2K9FX4",
+        "01M4M858FS0HK9WKK549GDK9J8",
+        "01M4M85B2ZEHYXXV6KCAVWRS3Y",
+        "01M4M85B2ZEHYXXV6KCAVWRS3Z",
+        "01M4M85B38MBFPXRQKKD36A831",
+        "01M4M85BPSDG5X60ESGGEKD4FE",
+        "01M4M85EQ0YTYMX0J9NNG6XZBB",
+        "01M4M85EQ0YTYMX0J9NNG6XZBC",
+        "01M4M85EQ0YTYMX0J9NNG6XZBD",
+        "01M4M85EQ8KHGJXW4QAFXXDCBF",
+        "01M4M85FB8RA223W8HY47GBTM1",
+        "01M4M85GZXE82N3TQXA855QQZP",
+        "01M4M85KE3HXCKP3NEJFHPSWP9",
+        "01M4M85KE3HXCKP3NEJFHPSWPA",
+        "01M4M85KEDQZJN4Z5768Z47RFH",
+        "01M4M85M295M0SP0JEDMFRCHX6",
+        "01M4M85QBRTV8ANHS9BBDAW57B",
+        "01M4M85QBRTV8ANHS9BBDAW57C",
+        "01M4M85QBRTV8ANHS9BBDAW57D",
+        "01M4M85QBZ0KXZ2H8HBQES86F0",
+        "01M4M85R0C9258NBEMJK920ZTY",
+        "01M4M85SS01MRM5033P2J8C38X",
+        "01M4M85VZM1T7BJV84MFQJP04M",
+        "01M4M85VZM1T7BJV84MFQJP04N",
+        "01M4M85VZYQCTX37F9S1KR9XWG",
+        "01M4M85WMERZ0ADT0JRSWXMQSC",
+        "01M4M860R4BNR013GKY0AV4BFJ",
+        "01M4M8692BD92FHCSHRHNMFV4A"
+      ],
+      "usage": {
+        "totals": {
+          "input": 23023,
+          "output": 1161,
+          "cacheRead": 57856,
+          "cacheWrite": 0,
+          "reasoning": 191
+        },
+        "credits": {
+          "amount": 0.663247,
+          "source": "estimated",
+          "complete": true
+        },
+        "cost": {
+          "usdMicros": 663247,
+          "source": "estimated",
+          "subscription": false
+        },
+        "reasoningComplete": true,
+        "billingComplete": true,
+        "calls": [
+          {
+            "id": "e-145a64067eb5990139c08eae3901da96",
+            "seq": 24,
+            "purpose": "inference",
+            "model": "gpt-6-astra",
+            "creditSource": "estimated",
+            "tokens": {
+              "input": 10654,
+              "output": 224,
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "reasoning": 83
+            },
+            "credits": 0.22988,
+            "billing": {
+              "usdMicros": 229880,
+              "source": "estimated",
+              "subscription": false
+            },
+            "timing": {
+              "ttftMs": 4369,
+              "durationMs": 7031
+            }
+          },
+          {
+            "id": "e-e51133676f467207d778815c42f6127e",
+            "seq": 43,
+            "purpose": "inference",
+            "model": "gpt-6-astra",
+            "creditSource": "estimated",
+            "tokens": {
+              "input": 1431,
+              "output": 90,
+              "cacheRead": 9728,
+              "cacheWrite": 0,
+              "reasoning": 8
+            },
+            "credits": 0.054826,
+            "billing": {
+              "usdMicros": 54826,
+              "source": "estimated",
+              "subscription": false
+            },
+            "timing": {
+              "ttftMs": 1782,
+              "durationMs": 3074
+            }
+          },
+          {
+            "id": "e-9aa22d517f82e2e9dd17a28ffa30a23c",
+            "seq": 63,
+            "purpose": "inference",
+            "model": "gpt-6-astra",
+            "creditSource": "estimated",
+            "tokens": {
+              "input": 1905,
+              "output": 125,
+              "cacheRead": 10752,
+              "cacheWrite": 0,
+              "reasoning": 0
+            },
+            "credits": 0.068979,
+            "billing": {
+              "usdMicros": 68979,
+              "source": "estimated",
+              "subscription": false
+            },
+            "timing": {
+              "ttftMs": 1681,
+              "durationMs": 4183
+            }
+          },
+          {
+            "id": "e-b7a60bb9c48674c0b83659049fb79126",
+            "seq": 82,
+            "purpose": "inference",
+            "model": "gpt-6-astra",
+            "creditSource": "estimated",
+            "tokens": {
+              "input": 1706,
+              "output": 80,
+              "cacheRead": 11776,
+              "cacheWrite": 0,
+              "reasoning": 0
+            },
+            "credits": 0.063672,
+            "billing": {
+              "usdMicros": 63672,
+              "source": "estimated",
+              "subscription": false
+            },
+            "timing": {
+              "ttftMs": 2405,
+              "durationMs": 3371
+            }
+          },
+          {
+            "id": "e-6ac5740fadc5308557404650fa2bf9a9",
+            "seq": 102,
+            "purpose": "inference",
+            "model": "gpt-6-astra",
+            "creditSource": "estimated",
+            "tokens": {
+              "input": 1013,
+              "output": 122,
+              "cacheRead": 12800,
+              "cacheWrite": 0,
+              "reasoning": 0
+            },
+            "credits": 0.05501,
+            "billing": {
+              "usdMicros": 55010,
+              "source": "estimated",
+              "subscription": false
+            },
+            "timing": {
+              "ttftMs": 1807,
+              "durationMs": 4067
+            }
+          },
+          {
+            "id": "e-34a2491dbab9e7c732a94fa4fa7929ab",
+            "seq": 122,
+            "purpose": "inference",
+            "model": "gpt-6-astra",
+            "creditSource": "estimated",
+            "tokens": {
+              "input": 6314,
+              "output": 520,
+              "cacheRead": 12800,
+              "cacheWrite": 0,
+              "reasoning": 100
+            },
+            "credits": 0.19088,
+            "billing": {
+              "usdMicros": 190880,
+              "source": "estimated",
+              "subscription": false
+            },
+            "timing": {
+              "ttftMs": 4210,
+              "durationMs": 12729
+            }
+          }
+        ]
+      },
+      "inherited": false,
+      "forkable": true,
+      "trace": {
+        "id": "turn:1",
+        "kind": "turn",
+        "name": "Turn 1",
+        "status": "completed",
+        "startSeq": 11,
+        "startedAt": "2026-10-11T01:10:07.829Z",
+        "children": [
+          {
+            "id": "span:step:1:1",
+            "kind": "step",
+            "name": "Step 1",
+            "status": "completed",
+            "startSeq": 16,
+            "startedAt": "2026-10-11T01:10:07.847Z",
+            "children": [
+              {
+                "id": "span:generation:e-145a64067eb5990139c08eae3901da96",
+                "kind": "generation",
+                "name": "gpt-6-astra",
+                "status": "completed",
+                "startSeq": 19,
+                "startedAt": "2026-10-11T01:10:07.847Z",
+                "children": [
+                  {
+                    "id": "span:tool:t0-d64306857b92a32a2c0ea98ca577c686",
+                    "kind": "tool",
+                    "name": "shell",
+                    "status": "completed",
+                    "startSeq": 23,
+                    "startedAt": "2026-10-11T01:10:14.879Z",
+                    "children": [
+                      {
+                        "id": "span:approval:r-9c6791e59b6e9d24b565413b870ea037",
+                        "kind": "approval",
+                        "name": "approval",
+                        "status": "completed",
+                        "startSeq": 26,
+                        "startedAt": "2026-10-11T01:10:14.888Z",
+                        "children": [],
+                        "endSeq": 27,
+                        "endedAt": "2026-10-11T01:10:14.888Z",
+                        "durationMs": 0
+                      }
+                    ],
+                    "toolUseId": "t0-d64306857b92a32a2c0ea98ca577c686",
+                    "nodeIds": [
+                      "01M4M85B2ZEHYXXV6KCAVWRS3Y"
+                    ],
+                    "effectId": "e-9b58f1e6cf699458170d0ebe2a979fb1",
+                    "endSeq": 29,
+                    "endedAt": "2026-10-11T01:10:15.501Z",
+                    "durationMs": 622
+                  }
+                ],
+                "effectId": "e-145a64067eb5990139c08eae3901da96",
+                "purpose": "inference",
+                "nodeIds": [
+                  "01M4M858FS0HK9WKK549GDK9J8"
+                ],
+                "model": "gpt-6-astra",
+                "callSeq": 24,
+                "ttftMs": 4369,
+                "endSeq": 24,
+                "endedAt": "2026-10-11T01:10:14.879Z",
+                "durationMs": 7031
+              }
+            ],
+            "endSeq": 33,
+            "endedAt": "2026-10-11T01:10:15.503Z",
+            "durationMs": 7656
+          },
+          {
+            "id": "span:step:1:2",
+            "kind": "step",
+            "name": "Step 2",
+            "status": "completed",
+            "startSeq": 37,
+            "startedAt": "2026-10-11T01:10:15.516Z",
+            "children": [
+              {
+                "id": "span:generation:e-e51133676f467207d778815c42f6127e",
+                "kind": "generation",
+                "name": "gpt-6-astra",
+                "status": "completed",
+                "startSeq": 39,
+                "startedAt": "2026-10-11T01:10:15.516Z",
+                "children": [
+                  {
+                    "id": "span:tool:t1-d3d65405e9bb080359ef9277a4074f09",
+                    "kind": "tool",
+                    "name": "shell",
+                    "status": "completed",
+                    "startSeq": 42,
+                    "startedAt": "2026-10-11T01:10:18.592Z",
+                    "children": [
+                      {
+                        "id": "span:approval:r-e0faaabf17c552b24639cbc74ed66d70",
+                        "kind": "approval",
+                        "name": "approval",
+                        "status": "completed",
+                        "startSeq": 45,
+                        "startedAt": "2026-10-11T01:10:18.600Z",
+                        "children": [],
+                        "endSeq": 46,
+                        "endedAt": "2026-10-11T01:10:18.600Z",
+                        "durationMs": 0
+                      }
+                    ],
+                    "toolUseId": "t1-d3d65405e9bb080359ef9277a4074f09",
+                    "nodeIds": [
+                      "01M4M85EQ0YTYMX0J9NNG6XZBC"
+                    ],
+                    "effectId": "e-5dc2f467eff91c516ca56246c806688c",
+                    "endSeq": 48,
+                    "endedAt": "2026-10-11T01:10:19.229Z",
+                    "durationMs": 637
+                  }
+                ],
+                "effectId": "e-e51133676f467207d778815c42f6127e",
+                "purpose": "inference",
+                "nodeIds": [
+                  "01M4M85EQ0YTYMX0J9NNG6XZBB"
+                ],
+                "model": "gpt-6-astra",
+                "callSeq": 43,
+                "ttftMs": 1782,
+                "endSeq": 43,
+                "endedAt": "2026-10-11T01:10:18.592Z",
+                "durationMs": 3074
+              }
+            ],
+            "endSeq": 52,
+            "endedAt": "2026-10-11T01:10:19.231Z",
+            "durationMs": 3715
+          },
+          {
+            "id": "span:step:1:3",
+            "kind": "step",
+            "name": "Step 3",
+            "status": "completed",
+            "startSeq": 56,
+            "startedAt": "2026-10-11T01:10:19.243Z",
+            "children": [
+              {
+                "id": "span:generation:e-9aa22d517f82e2e9dd17a28ffa30a23c",
+                "kind": "generation",
+                "name": "gpt-6-astra",
+                "status": "completed",
+                "startSeq": 58,
+                "startedAt": "2026-10-11T01:10:19.243Z",
+                "children": [
+                  {
+                    "id": "span:tool:t2-dc15706a8058c41e9c7193e698ee1354",
+                    "kind": "tool",
+                    "name": "shell",
+                    "status": "completed",
+                    "startSeq": 62,
+                    "startedAt": "2026-10-11T01:10:23.427Z",
+                    "children": [
+                      {
+                        "id": "span:approval:r-990a9e62f960955696e7910c109fe162",
+                        "kind": "approval",
+                        "name": "approval",
+                        "status": "completed",
+                        "startSeq": 65,
+                        "startedAt": "2026-10-11T01:10:23.437Z",
+                        "children": [],
+                        "endSeq": 66,
+                        "endedAt": "2026-10-11T01:10:23.438Z",
+                        "durationMs": 1
+                      }
+                    ],
+                    "toolUseId": "t2-dc15706a8058c41e9c7193e698ee1354",
+                    "nodeIds": [
+                      "01M4M85KE3HXCKP3NEJFHPSWP9"
+                    ],
+                    "effectId": "e-8a6fb9f5afc35f114f6bed708d13a5b1",
+                    "endSeq": 68,
+                    "endedAt": "2026-10-11T01:10:24.061Z",
+                    "durationMs": 634
+                  }
+                ],
+                "effectId": "e-9aa22d517f82e2e9dd17a28ffa30a23c",
+                "purpose": "inference",
+                "nodeIds": [
+                  "01M4M85GZXE82N3TQXA855QQZP"
+                ],
+                "model": "gpt-6-astra",
+                "callSeq": 63,
+                "ttftMs": 1681,
+                "endSeq": 63,
+                "endedAt": "2026-10-11T01:10:23.427Z",
+                "durationMs": 4183
+              }
+            ],
+            "endSeq": 72,
+            "endedAt": "2026-10-11T01:10:24.063Z",
+            "durationMs": 4820
+          },
+          {
+            "id": "span:step:1:4",
+            "kind": "step",
+            "name": "Step 4",
+            "status": "completed",
+            "startSeq": 76,
+            "startedAt": "2026-10-11T01:10:24.075Z",
+            "children": [
+              {
+                "id": "span:generation:e-b7a60bb9c48674c0b83659049fb79126",
+                "kind": "generation",
+                "name": "gpt-6-astra",
+                "status": "completed",
+                "startSeq": 78,
+                "startedAt": "2026-10-11T01:10:24.075Z",
+                "children": [
+                  {
+                    "id": "span:tool:t3-0dd33e7b44ae69024190c71b556dec4a",
+                    "kind": "tool",
+                    "name": "shell",
+                    "status": "completed",
+                    "startSeq": 81,
+                    "startedAt": "2026-10-11T01:10:27.448Z",
+                    "children": [
+                      {
+                        "id": "span:approval:r-a3202d5dc3ca2a362c16a50a028b1e07",
+                        "kind": "approval",
+                        "name": "approval",
+                        "status": "completed",
+                        "startSeq": 84,
+                        "startedAt": "2026-10-11T01:10:27.455Z",
+                        "children": [],
+                        "endSeq": 85,
+                        "endedAt": "2026-10-11T01:10:27.455Z",
+                        "durationMs": 0
+                      }
+                    ],
+                    "toolUseId": "t3-0dd33e7b44ae69024190c71b556dec4a",
+                    "nodeIds": [
+                      "01M4M85QBRTV8ANHS9BBDAW57C"
+                    ],
+                    "effectId": "e-66186a62c84d19be904c72575f165ac3",
+                    "endSeq": 87,
+                    "endedAt": "2026-10-11T01:10:28.097Z",
+                    "durationMs": 649
+                  }
+                ],
+                "effectId": "e-b7a60bb9c48674c0b83659049fb79126",
+                "purpose": "inference",
+                "nodeIds": [
+                  "01M4M85QBRTV8ANHS9BBDAW57B"
+                ],
+                "model": "gpt-6-astra",
+                "callSeq": 82,
+                "ttftMs": 2405,
+                "endSeq": 82,
+                "endedAt": "2026-10-11T01:10:27.448Z",
+                "durationMs": 3371
+              }
+            ],
+            "endSeq": 91,
+            "endedAt": "2026-10-11T01:10:28.098Z",
+            "durationMs": 4023
+          },
+          {
+            "id": "span:step:1:5",
+            "kind": "step",
+            "name": "Step 5",
+            "status": "completed",
+            "startSeq": 95,
+            "startedAt": "2026-10-11T01:10:28.112Z",
+            "children": [
+              {
+                "id": "span:generation:e-6ac5740fadc5308557404650fa2bf9a9",
+                "kind": "generation",
+                "name": "gpt-6-astra",
+                "status": "completed",
+                "startSeq": 97,
+                "startedAt": "2026-10-11T01:10:28.112Z",
+                "children": [
+                  {
+                    "id": "span:tool:t4-3835208361186b74042823185bde9e1d",
+                    "kind": "tool",
+                    "name": "shell",
+                    "status": "completed",
+                    "startSeq": 101,
+                    "startedAt": "2026-10-11T01:10:32.180Z",
+                    "children": [
+                      {
+                        "id": "span:approval:r-b626700244f2874fae914cac829a9ead",
+                        "kind": "approval",
+                        "name": "approval",
+                        "status": "completed",
+                        "startSeq": 104,
+                        "startedAt": "2026-10-11T01:10:32.190Z",
+                        "children": [],
+                        "endSeq": 105,
+                        "endedAt": "2026-10-11T01:10:32.190Z",
+                        "durationMs": 0
+                      }
+                    ],
+                    "toolUseId": "t4-3835208361186b74042823185bde9e1d",
+                    "nodeIds": [
+                      "01M4M85VZM1T7BJV84MFQJP04M"
+                    ],
+                    "effectId": "e-bb744a0e158fdca25a49fe86d581248c",
+                    "endSeq": 107,
+                    "endedAt": "2026-10-11T01:10:32.833Z",
+                    "durationMs": 653
+                  }
+                ],
+                "effectId": "e-6ac5740fadc5308557404650fa2bf9a9",
+                "purpose": "inference",
+                "nodeIds": [
+                  "01M4M85SS01MRM5033P2J8C38X"
+                ],
+                "model": "gpt-6-astra",
+                "callSeq": 102,
+                "ttftMs": 1807,
+                "endSeq": 102,
+                "endedAt": "2026-10-11T01:10:32.180Z",
+                "durationMs": 4067
+              }
+            ],
+            "endSeq": 111,
+            "endedAt": "2026-10-11T01:10:32.835Z",
+            "durationMs": 4723
+          },
+          {
+            "id": "span:step:1:6",
+            "kind": "step",
+            "name": "Step 6",
+            "status": "completed",
+            "startSeq": 115,
+            "startedAt": "2026-10-11T01:10:32.849Z",
+            "children": [
+              {
+                "id": "span:generation:e-34a2491dbab9e7c732a94fa4fa7929ab",
+                "kind": "generation",
+                "name": "gpt-6-astra",
+                "status": "completed",
+                "startSeq": 117,
+                "startedAt": "2026-10-11T01:10:32.849Z",
+                "children": [],
+                "effectId": "e-34a2491dbab9e7c732a94fa4fa7929ab",
+                "purpose": "inference",
+                "nodeIds": [
+                  "01M4M860R4BNR013GKY0AV4BFJ"
+                ],
+                "model": "gpt-6-astra",
+                "callSeq": 122,
+                "ttftMs": 4210,
+                "endSeq": 122,
+                "endedAt": "2026-10-11T01:10:45.579Z",
+                "durationMs": 12729
+              }
+            ],
+            "endSeq": 124,
+            "endedAt": "2026-10-11T01:10:45.579Z",
+            "durationMs": 12730
+          }
+        ],
+        "endSeq": 126,
+        "endedAt": "2026-10-11T01:10:45.585Z",
+        "durationMs": 37756
+      },
+      "finalModel": "gpt-6-astra",
+      "endSeq": 126,
+      "endedAt": "2026-10-11T01:10:45.585Z",
+      "durationMs": 37756,
+      "reason": "completed",
+      "finalAssistantId": "01M4M860R4BNR013GKY0AV4BFJ"
+    }
+  ],
+  "nativeStatus": "completed",
+  "nativeReason": "completed",
+  "businessStatus": "pass"
+}

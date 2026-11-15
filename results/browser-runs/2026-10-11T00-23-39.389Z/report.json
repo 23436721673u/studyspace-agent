@@ -1,0 +1,169 @@
+{
+  "stamp": "2026-10-11T00-23-39.389Z",
+  "browser": "msedge",
+  "checks": [
+    {
+      "name": "external local server available",
+      "pass": true,
+      "detail": {
+        "ownership": "external",
+        "base": "http://127.0.0.1:4319",
+        "startedBy": "control host",
+        "responsibility": "HTTP infrastructure only; browser button invokes the product AGH workflow",
+        "spawnedByTest": false,
+        "stoppedByTest": false
+      }
+    },
+    {
+      "name": "workbench loads",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "initial canvas rendered",
+      "pass": true,
+      "detail": {
+        "width": 714,
+        "height": 470
+      }
+    },
+    {
+      "name": "edit invalidates old result",
+      "pass": true,
+      "detail": "参数已修改，请重新生成并验收。"
+    },
+    {
+      "name": "generate remains enabled after edit",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "generate starts a real 32-hex job",
+      "pass": true,
+      "detail": "4a024c78093e46dab1faaed0c166e99b"
+    },
+    {
+      "name": "new AGH task is completed and business-pass",
+      "pass": true,
+      "detail": {
+        "business": "pass",
+        "native": "completed / turn-ended",
+        "jobId": "4a024c78093e46dab1faaed0c166e99b"
+      }
+    },
+    {
+      "name": "real result shows numbered seats and paths",
+      "pass": true,
+      "detail": {
+        "seats": 6,
+        "seatText": "seat-1 · pass · 路径 3.96m\nseat-2 · pass · 路径 2.76m\nseat-3 · pass · 路径 1.56m\nseat-4 · pass · 路径 1.26m\nseat-5 · pass · 路径 2.46m\nseat-6 · pass · 路径 3.66m"
+      }
+    },
+    {
+      "name": "real result shows independent access checks",
+      "pass": true,
+      "detail": "最终资产复核：pass\n几何部件 74 · 三角形 888 · GLB校验错误 0（来自真实validator报告）\n开门区域 / 通行 / 可达性\npass / pass / 6/6 座通过"
+    },
+    {
+      "name": "all six displayed downloads return HTTP 200",
+      "pass": true,
+      "detail": [
+        {
+          "name": "scene.glb 下载",
+          "status": 200
+        },
+        {
+          "name": "plan.svg 下载",
+          "status": 200
+        },
+        {
+          "name": "editable.json 下载",
+          "status": 200
+        },
+        {
+          "name": "geometry-report.json 下载",
+          "status": 200
+        },
+        {
+          "name": "verify.json 下载",
+          "status": 200
+        },
+        {
+          "name": "search.json 下载",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "name": "refresh resumes the same job from localStorage",
+      "pass": true,
+      "detail": {
+        "beforeRefresh": "4a024c78093e46dab1faaed0c166e99b",
+        "afterRefresh": "4a024c78093e46dab1faaed0c166e99b"
+      }
+    },
+    {
+      "name": "GLB viewer auto-loads real job asset",
+      "pass": true,
+      "detail": "已从GLB二进制读取 74 个部件 / 888 个三角形 · 单位m · scene.glb"
+    },
+    {
+      "name": "editing after completion invalidates old acceptance",
+      "pass": true,
+      "detail": {
+        "business": "未验证",
+        "checks": "参数已修改，请重新生成并验收。"
+      }
+    }
+  ],
+  "errors": [
+    {
+      "type": "console",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    }
+  ],
+  "screenshots": [
+    "01-initial.png",
+    "02-invalidated.png",
+    "03-task-terminal.png",
+    "04-viewer-glb.png",
+    "05-after-edit.png"
+  ],
+  "jobId": "4a024c78093e46dab1faaed0c166e99b",
+  "server": {
+    "ownership": "external",
+    "base": "http://127.0.0.1:4319",
+    "startedBy": "control host",
+    "responsibility": "HTTP infrastructure only; browser button invokes the product AGH workflow",
+    "spawnedByTest": false,
+    "stoppedByTest": false
+  },
+  "downloads": [
+    {
+      "name": "scene.glb 下载",
+      "status": 200
+    },
+    {
+      "name": "plan.svg 下载",
+      "status": 200
+    },
+    {
+      "name": "editable.json 下载",
+      "status": 200
+    },
+    {
+      "name": "geometry-report.json 下载",
+      "status": 200
+    },
+    {
+      "name": "verify.json 下载",
+      "status": 200
+    },
+    {
+      "name": "search.json 下载",
+      "status": 200
+    }
+  ],
+  "finishedAt": "2026-10-11T00:24:21.389Z",
+  "pass": false
+}

@@ -1,0 +1,12 @@
+{
+  "status": "adapter-error",
+  "sessionKey": "agnes:local:local-dev:cli:workspace:e88c39f3af354641a3a6b29d05057a43",
+  "sessionId": "agnes:local:local-dev:cli:workspace:e88c39f3af354641a3a6b29d05057a43",
+  "creationAttempted": true,
+  "error": {
+    "name": "ReferenceError",
+    "message": "createHash is not defined",
+    "code": null,
+    "category": "adapter-or-tool"
+  }
+}

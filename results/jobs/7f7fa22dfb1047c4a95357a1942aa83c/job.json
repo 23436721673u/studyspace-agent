@@ -1,0 +1,87 @@
+{
+  "jobId": "7f7fa22dfb1047c4a95357a1942aa83c",
+  "sessionKey": "agnes:local:local-dev:cli:workspace:7f7fa22dfb1047c4a95357a1942aa83c",
+  "sessionId": "agnes:local:local-dev:cli:workspace:7f7fa22dfb1047c4a95357a1942aa83c",
+  "createdAt": "2026-10-11T07:06:57.797Z",
+  "inputHash": "1ca1ebcbc62b9691444cfab118746da05f7b364599f8c17f550e10b68d8d8c7a",
+  "mode": "normal",
+  "testOnly": false,
+  "simulatedScenario": true,
+  "userRequest": "",
+  "supportedConstraints": [
+    "room",
+    "door",
+    "obstacles",
+    "seatTemplate",
+    "targetSeats",
+    "requiredSeats",
+    "passageWidth",
+    "orientations"
+  ],
+  "unsupportedRequests": [],
+  "model": {
+    "name": "gpt-6-astra",
+    "alias": "gpt-6-astra",
+    "provider": "not-independently-verified",
+    "driverProviderId": "openai",
+    "channel": "ToTokens",
+    "endpoint": "https://totokens.cc/v1",
+    "api": "Responses",
+    "snapshotVersion": null,
+    "providerVerification": "底层实际模型提供方未独立核实",
+    "usage": {
+      "totals": {
+        "input": 11755,
+        "output": 488,
+        "cacheRead": 20992,
+        "cacheWrite": 0,
+        "reasoning": 0
+      },
+      "credits": {
+        "amount": 0.31368399999999996,
+        "source": "estimated",
+        "complete": true
+      },
+      "reasoningComplete": true,
+      "billingComplete": true,
+      "cost": {
+        "usdMicros": 313684,
+        "source": "estimated",
+        "subscription": false
+      },
+      "context": {
+        "source": "estimated",
+        "tokens": 11629,
+        "window": 160000,
+        "autoCompact": true
+      },
+      "model": {
+        "route": "account-studyspace-astra-api",
+        "id": "gpt-6-astra",
+        "thinking": "medium",
+        "settings": {
+          "thinking": "medium",
+          "contextWindow": 160000
+        },
+        "maxTokens": 128000
+      },
+      "cache": {
+        "hitRate": 0.6410358200751214
+      }
+    },
+    "route": "account-studyspace-astra-api"
+  },
+  "connection": {
+    "status": "turn-ended",
+    "sessionId": "agnes:local:local-dev:cli:workspace:7f7fa22dfb1047c4a95357a1942aa83c"
+  },
+  "native": {
+    "status": "completed",
+    "reason": "completed",
+    "stopReason": "end_turn"
+  },
+  "business": {
+    "status": "constraints-not-satisfied",
+    "reason": "finite-search-not-found-within-budget"
+  }
+}

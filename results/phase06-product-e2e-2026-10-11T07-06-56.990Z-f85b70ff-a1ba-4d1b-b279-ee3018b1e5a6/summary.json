@@ -1,0 +1,74 @@
+{
+  "runId": "2026-10-11T07-06-56.990Z-f85b70ff-a1ba-4d1b-b279-ee3018b1e5a6",
+  "createdAt": "2026-10-11T07:07:23.301Z",
+  "simulatedScenario": true,
+  "selectedCases": [
+    "api-valid-budget-unfound",
+    "api-illegal-input-rejected"
+  ],
+  "apiPort": 4398,
+  "node": "v24.19.0",
+  "expectedModels": {
+    "name": "gpt-6-astra",
+    "endpoint": "https://totokens.cc/v1",
+    "api": "Responses"
+  },
+  "total": 2,
+  "rows": [
+    {
+      "name": "api-valid-budget-unfound",
+      "jobId": "7f7fa22dfb1047c4a95357a1942aa83c",
+      "sessionId": "agnes:local:local-dev:cli:workspace:7f7fa22dfb1047c4a95357a1942aa83c",
+      "mode": "normal",
+      "expectedBusiness": "constraints-not-satisfied",
+      "actualBusiness": "constraints-not-satisfied",
+      "assertions": {
+        "session": true,
+        "model": true,
+        "mode": true,
+        "testMarker": true,
+        "inputUnchanged": true,
+        "expectedStatus": true,
+        "classificationConsistent": true,
+        "finiteSearchRule": true,
+        "schemaFailureRule": true,
+        "incompleteRule": true,
+        "normalOrRepairCompleted": true,
+        "stepSet": true,
+        "nativeCallEvidence": true,
+        "repairFailureFeedback": true,
+        "independentFinalPass": true,
+        "boundedSearchNotFound": true,
+        "assets": true,
+        "recoveryClassification": true
+      },
+      "reportPath": "F:\\AGH\\projects\\studyspace\\results\\phase06-product-e2e-2026-10-11T07-06-56.990Z-f85b70ff-a1ba-4d1b-b279-ee3018b1e5a6\\api-valid-budget-unfound.json"
+    },
+    {
+      "name": "api-illegal-input-rejected",
+      "assertions": {
+        "rejectedAtSchema": true
+      },
+      "httpStatus": 422
+    }
+  ],
+  "browserErrors": [],
+  "apiStderr": "",
+  "fatalError": null,
+  "codeHashes": {
+    "workbench.html": "1af80d08009d5a96d8d443639ec7ac499e5edba037d88ce2e5dad60cc7938d57",
+    "src/task-api.mjs": "150afd9d54ce0ff5db6d4f57b7bd0c3434c2a19b199b09b9a27a574c9b2e4fc6",
+    "src/agh-runner.mjs": "e0b1592efb546475fd522f8582577364d917a6dce3839e7652700bbe1bb78039",
+    "src/schema.mjs": "d35510d0acebf42a8f5c259544751a81b01552caab2557d780e113ac54a97260",
+    "src/search.mjs": "09f57fc568a8df41c35ac400ddc3a0eaeb178940ba51999efa2c14c7222024be",
+    "src/baseline.mjs": "de0705d1a92b07e766273d4b2c0de8486a5e1274f86983e31ab0f52822896437",
+    "src/validator.mjs": "76daa886d4f3697644cce7e32b8a32a2ae603dfb40169ee6e43e10818b367d15",
+    "src/asset-check.mjs": "30424ee5da66fe735161448aa53f7f5c10f18de2ee9a288df60d454acb7d8651",
+    "src/glb.mjs": "21f4b47b410766be8d49cf5e53b375ce2bae72f375a8e72f4af2e45b620a6769",
+    "tests/phase06-product-e2e.mjs": "8974ea8b0ba0919b9d02d11f40a4fc2dfe76a6393dbd4d3bbffb0f9a0429ec0f"
+  },
+  "screenshots": [],
+  "passed": 2,
+  "failed": 0,
+  "status": "pass"
+}

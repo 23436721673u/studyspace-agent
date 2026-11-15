@@ -1,0 +1,21 @@
+{
+  "runId": "2026-10-10T05-32-51.890Z-c345dc11-efed-4abc-9aaa-0dbf3acf8866",
+  "simulatedScenario": true,
+  "tool": {
+    "kind": "deterministic-code",
+    "name": "studyspace-computation"
+  },
+  "codeVersion": "phase-02-v3",
+  "kind": "baseline",
+  "elapsedMs": 16.029899999999998,
+  "hashes": {
+    "input": "ac026188c92ae2f5f4536233655bdad0fa01b1737156d301d1b032504aa8cb62",
+    "normalized": "14b55660d137939522909899cc5e4fb8e45f07c2a7c42d7a02000b7b659e4120",
+    "layout": "7d41a1ed04b092cc47c45baefe47bf36208d2f5aceea6d127accbc9f8a79cfa8",
+    "result": "5525e793e7ba00ef62b599566bc882908e4171d729996eb996db1846e3e448d4"
+  },
+  "sourceFiles": {
+    "input": "tests\\sample-6-seat.json",
+    "layout": null
+  }
+}

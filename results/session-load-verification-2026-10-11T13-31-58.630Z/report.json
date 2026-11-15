@@ -1,0 +1,409 @@
+{
+  "out": "results/session-load-verification-2026-10-11T13-31-58.630Z",
+  "runnerSha256": "a5564d937f755a1890394b3e96903d31150290810da67276b3cbdf7810a5ec03",
+  "rows": [
+    {
+      "mode": "normal",
+      "jobId": "c13f1131a17f4160be0654a4d08ee475",
+      "job": {
+        "jobId": "c13f1131a17f4160be0654a4d08ee475",
+        "sessionKey": "agnes:local:local-dev:cli:workspace:c13f1131a17f4160be0654a4d08ee475",
+        "sessionId": "agnes:local:local-dev:cli:workspace:c13f1131a17f4160be0654a4d08ee475",
+        "createdAt": "2026-10-11T13:31:58.655Z",
+        "inputHash": "08d76a116183653608840068061c1942a4c6779fd19f7a3d6f3e50d3c1fa2350",
+        "mode": "normal",
+        "testOnly": false,
+        "simulatedScenario": true,
+        "userRequest": "模拟场景。请保留房间、门、柜体、六座目标及0.8米通道约束，检查草稿并在反馈后搜索、导出和独立验收。",
+        "supportedConstraints": [
+          "room",
+          "door",
+          "obstacles",
+          "seatTemplate",
+          "targetSeats",
+          "requiredSeats",
+          "passageWidth",
+          "orientations"
+        ],
+        "unsupportedRequests": [],
+        "model": {
+          "name": "gpt-6-astra",
+          "alias": "gpt-6-astra",
+          "provider": "not-independently-verified",
+          "driverProviderId": "openai",
+          "channel": "ToTokens",
+          "endpoint": "https://totokens.cc/v1",
+          "api": "Responses",
+          "snapshotVersion": null,
+          "providerVerification": "底层实际模型提供方未独立核实",
+          "usage": {
+            "totals": {
+              "input": 48194,
+              "output": 1715,
+              "cacheRead": 84394,
+              "cacheWrite": 0,
+              "reasoning": 637
+            },
+            "credits": {
+              "amount": 1.261293,
+              "source": "estimated",
+              "complete": true
+            },
+            "reasoningComplete": true,
+            "billingComplete": true,
+            "cost": {
+              "usdMicros": 1261293,
+              "source": "estimated",
+              "subscription": false
+            },
+            "context": {
+              "source": "estimated",
+              "tokens": 25844,
+              "window": 160000,
+              "autoCompact": true
+            },
+            "model": {
+              "route": "account-studyspace-astra-api",
+              "id": "gpt-6-astra",
+              "thinking": "medium",
+              "settings": {
+                "thinking": "medium",
+                "contextWindow": 160000
+              },
+              "maxTokens": 128000
+            },
+            "cache": {
+              "hitRate": 0.6365131082752586
+            }
+          },
+          "route": "account-studyspace-astra-api"
+        },
+        "connection": {
+          "status": "turn-ended",
+          "sessionId": "agnes:local:local-dev:cli:workspace:c13f1131a17f4160be0654a4d08ee475"
+        },
+        "native": {
+          "status": "completed",
+          "reason": "completed",
+          "stopReason": "end_turn"
+        },
+        "business": {
+          "status": "pass",
+          "reason": "independent-verification-pass"
+        }
+      },
+      "connectionStatus": "turn-ended",
+      "steps": [
+        {
+          "step": "inspect",
+          "status": "ready"
+        },
+        {
+          "step": "search",
+          "status": "found"
+        },
+        {
+          "step": "check-search",
+          "status": "pass"
+        },
+        {
+          "step": "export",
+          "status": "pass"
+        },
+        {
+          "step": "verify",
+          "status": "pass"
+        }
+      ],
+      "calls": [
+        {
+          "seq": 23,
+          "toolUseId": "t0-85a8b5174e9a35015fdb47f530c2e2a5",
+          "name": "shell",
+          "args": {
+            "command": "& 'F:\\AGH\\tools\\node\\node.exe' 'F:\\AGH\\projects\\studyspace\\bin\\job.mjs' inspect c13f1131a17f4160be0654a4d08ee475",
+            "cwd": "F:\\AGH\\projects\\studyspace"
+          }
+        },
+        {
+          "seq": 43,
+          "toolUseId": "t1-85c946553145e5a2bf02431b3f5864cf",
+          "name": "shell",
+          "args": {
+            "command": "& 'F:\\AGH\\tools\\node\\node.exe' 'F:\\AGH\\projects\\studyspace\\bin\\job.mjs' search c13f1131a17f4160be0654a4d08ee475",
+            "cwd": "F:\\AGH\\projects\\studyspace"
+          }
+        },
+        {
+          "seq": 63,
+          "toolUseId": "t2-00e3693c9bbfefde1ab75c4097e4dbe5",
+          "name": "shell",
+          "args": {
+            "command": "& 'F:\\AGH\\tools\\node\\node.exe' 'F:\\AGH\\projects\\studyspace\\bin\\job.mjs' check-search c13f1131a17f4160be0654a4d08ee475",
+            "cwd": "F:\\AGH\\projects\\studyspace"
+          }
+        },
+        {
+          "seq": 83,
+          "toolUseId": "t3-90ff422a0bcc08f90bd7036635e35276",
+          "name": "shell",
+          "args": {
+            "command": "& 'F:\\AGH\\tools\\node\\node.exe' 'F:\\AGH\\projects\\studyspace\\bin\\job.mjs' export c13f1131a17f4160be0654a4d08ee475",
+            "cwd": "F:\\AGH\\projects\\studyspace"
+          }
+        },
+        {
+          "seq": 103,
+          "toolUseId": "t4-9525bfb80c5fadadea40f6911ee6c3eb",
+          "name": "shell",
+          "args": {
+            "command": "& 'F:\\AGH\\tools\\node\\node.exe' 'F:\\AGH\\projects\\studyspace\\bin\\job.mjs' verify c13f1131a17f4160be0654a4d08ee475",
+            "cwd": "F:\\AGH\\projects\\studyspace"
+          }
+        }
+      ],
+      "results": [
+        {
+          "seq": 29,
+          "toolUseId": "t0-85a8b5174e9a35015fdb47f530c2e2a5"
+        },
+        {
+          "seq": 49,
+          "toolUseId": "t1-85c946553145e5a2bf02431b3f5864cf"
+        },
+        {
+          "seq": 69,
+          "toolUseId": "t2-00e3693c9bbfefde1ab75c4097e4dbe5"
+        },
+        {
+          "seq": 89,
+          "toolUseId": "t3-90ff422a0bcc08f90bd7036635e35276"
+        },
+        {
+          "seq": 109,
+          "toolUseId": "t4-9525bfb80c5fadadea40f6911ee6c3eb"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "mode": "repair-test",
+      "jobId": "d9351dff81b14bdc8929d7a731d7262f",
+      "job": {
+        "jobId": "d9351dff81b14bdc8929d7a731d7262f",
+        "sessionKey": "agnes:local:local-dev:cli:workspace:d9351dff81b14bdc8929d7a731d7262f",
+        "sessionId": "agnes:local:local-dev:cli:workspace:d9351dff81b14bdc8929d7a731d7262f",
+        "createdAt": "2026-10-11T13:33:02.163Z",
+        "inputHash": "08d76a116183653608840068061c1942a4c6779fd19f7a3d6f3e50d3c1fa2350",
+        "mode": "repair-test",
+        "testOnly": true,
+        "simulatedScenario": true,
+        "userRequest": "模拟场景。请保留房间、门、柜体、六座目标及0.8米通道约束，检查草稿并在反馈后搜索、导出和独立验收。",
+        "supportedConstraints": [
+          "room",
+          "door",
+          "obstacles",
+          "seatTemplate",
+          "targetSeats",
+          "requiredSeats",
+          "passageWidth",
+          "orientations"
+        ],
+        "unsupportedRequests": [],
+        "model": {
+          "name": "gpt-6-astra",
+          "alias": "gpt-6-astra",
+          "provider": "not-independently-verified",
+          "driverProviderId": "openai",
+          "channel": "ToTokens",
+          "endpoint": "https://totokens.cc/v1",
+          "api": "Responses",
+          "snapshotVersion": null,
+          "providerVerification": "底层实际模型提供方未独立核实",
+          "usage": {
+            "totals": {
+              "input": 42773,
+              "output": 1967,
+              "cacheRead": 70002,
+              "cacheWrite": 0,
+              "reasoning": 754
+            },
+            "credits": {
+              "amount": 1.142989,
+              "source": "estimated",
+              "complete": true
+            },
+            "reasoningComplete": true,
+            "billingComplete": true,
+            "cost": {
+              "usdMicros": 1142989,
+              "source": "estimated",
+              "subscription": false
+            },
+            "context": {
+              "source": "estimated",
+              "tokens": 31594,
+              "window": 160000,
+              "autoCompact": true
+            },
+            "model": {
+              "route": "account-studyspace-astra-api",
+              "id": "gpt-6-astra",
+              "thinking": "medium",
+              "settings": {
+                "thinking": "medium",
+                "contextWindow": 160000
+              },
+              "maxTokens": 128000
+            },
+            "cache": {
+              "hitRate": 0.6207226778984704
+            }
+          },
+          "route": "account-studyspace-astra-api"
+        },
+        "connection": {
+          "status": "turn-ended",
+          "sessionId": "agnes:local:local-dev:cli:workspace:d9351dff81b14bdc8929d7a731d7262f"
+        },
+        "native": {
+          "status": "completed",
+          "reason": "completed",
+          "stopReason": "end_turn"
+        },
+        "business": {
+          "status": "pass",
+          "reason": "independent-verification-pass"
+        }
+      },
+      "connectionStatus": "turn-ended",
+      "steps": [
+        {
+          "step": "inspect",
+          "status": "ready"
+        },
+        {
+          "step": "draft",
+          "status": "test-injection"
+        },
+        {
+          "step": "check-draft",
+          "status": "fail"
+        },
+        {
+          "step": "search",
+          "status": "found"
+        },
+        {
+          "step": "check-search",
+          "status": "pass"
+        },
+        {
+          "step": "export",
+          "status": "pass"
+        },
+        {
+          "step": "verify",
+          "status": "pass"
+        }
+      ],
+      "calls": [
+        {
+          "seq": 23,
+          "toolUseId": "t0-a55a8fa1e1f41cff82d065a17ffe8dff",
+          "name": "shell",
+          "args": {
+            "command": "& 'F:\\AGH\\tools\\node\\node.exe' 'F:\\AGH\\projects\\studyspace\\bin\\job.mjs' inspect d9351dff81b14bdc8929d7a731d7262f",
+            "cwd": "F:\\AGH\\projects\\studyspace"
+          }
+        },
+        {
+          "seq": 43,
+          "toolUseId": "t1-6c55c870ed6f67288e57284d85d1f16e",
+          "name": "shell",
+          "args": {
+            "command": "& 'F:\\AGH\\tools\\node\\node.exe' 'F:\\AGH\\projects\\studyspace\\bin\\job.mjs' draft d9351dff81b14bdc8929d7a731d7262f",
+            "cwd": "F:\\AGH\\projects\\studyspace"
+          }
+        },
+        {
+          "seq": 62,
+          "toolUseId": "t2-d085fde610519bf59e9a8bda9d4f0dc7",
+          "name": "shell",
+          "args": {
+            "command": "& 'F:\\AGH\\tools\\node\\node.exe' 'F:\\AGH\\projects\\studyspace\\bin\\job.mjs' check-draft d9351dff81b14bdc8929d7a731d7262f",
+            "cwd": "F:\\AGH\\projects\\studyspace"
+          }
+        },
+        {
+          "seq": 82,
+          "toolUseId": "t3-1c45001b81a0fcbcd0e088ac23adebdf",
+          "name": "shell",
+          "args": {
+            "command": "& 'F:\\AGH\\tools\\node\\node.exe' 'F:\\AGH\\projects\\studyspace\\bin\\job.mjs' search d9351dff81b14bdc8929d7a731d7262f",
+            "cwd": "F:\\AGH\\projects\\studyspace"
+          }
+        },
+        {
+          "seq": 102,
+          "toolUseId": "t4-26a970513413866e0b354f8723b46348",
+          "name": "shell",
+          "args": {
+            "command": "& 'F:\\AGH\\tools\\node\\node.exe' 'F:\\AGH\\projects\\studyspace\\bin\\job.mjs' check-search d9351dff81b14bdc8929d7a731d7262f",
+            "cwd": "F:\\AGH\\projects\\studyspace"
+          }
+        },
+        {
+          "seq": 122,
+          "toolUseId": "t5-afe06ba646174d694a34fab8894c82db",
+          "name": "shell",
+          "args": {
+            "command": "& 'F:\\AGH\\tools\\node\\node.exe' 'F:\\AGH\\projects\\studyspace\\bin\\job.mjs' export d9351dff81b14bdc8929d7a731d7262f",
+            "cwd": "F:\\AGH\\projects\\studyspace"
+          }
+        },
+        {
+          "seq": 142,
+          "toolUseId": "t6-31f2c4f0aed82d222a00faf7884f9be8",
+          "name": "shell",
+          "args": {
+            "command": "& 'F:\\AGH\\tools\\node\\node.exe' 'F:\\AGH\\projects\\studyspace\\bin\\job.mjs' verify d9351dff81b14bdc8929d7a731d7262f",
+            "cwd": "F:\\AGH\\projects\\studyspace"
+          }
+        }
+      ],
+      "results": [
+        {
+          "seq": 29,
+          "toolUseId": "t0-a55a8fa1e1f41cff82d065a17ffe8dff"
+        },
+        {
+          "seq": 49,
+          "toolUseId": "t1-6c55c870ed6f67288e57284d85d1f16e"
+        },
+        {
+          "seq": 68,
+          "toolUseId": "t2-d085fde610519bf59e9a8bda9d4f0dc7"
+        },
+        {
+          "seq": 88,
+          "toolUseId": "t3-1c45001b81a0fcbcd0e088ac23adebdf"
+        },
+        {
+          "seq": 108,
+          "toolUseId": "t4-26a970513413866e0b354f8723b46348"
+        },
+        {
+          "seq": 128,
+          "toolUseId": "t5-afe06ba646174d694a34fab8894c82db"
+        },
+        {
+          "seq": 148,
+          "toolUseId": "t6-31f2c4f0aed82d222a00faf7884f9be8"
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "pass": true
+}

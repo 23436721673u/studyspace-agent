@@ -1,0 +1,41 @@
+{
+  "document": "一间好自习产品模型使用清单",
+  "scope": "产品运行中的模型；宿主/驱动标识与模型提供方分开记录",
+  "modelName": "gpt-6-astra",
+  "alias": "gpt-6-astra",
+  "provider": null,
+  "providerVerification": "not-independently-verified",
+  "channel": "ToTokens",
+  "endpoint": "https://totokens.cc/v1",
+  "api": "Responses",
+  "versionIdentifier": null,
+  "versionNote": "宿主任务记录未提供不可变模型快照版本；不推断",
+  "aghDriverProviderId": "openai",
+  "aghDriverProviderIdMeaning": "AGH驱动标识，不是底层模型提供方证明",
+  "route": "account-studyspace-astra-api",
+  "stages": [
+    "产品AGH会话中的需求理解与步骤规划",
+    "步骤执行中的模型编排与反馈；布局搜索、固定行列基线、几何验收及资产检查由确定性项目代码执行"
+  ],
+  "callMethod": "工作台POST /api/jobs创建真实产品任务；产品适配器通过AGH SDK会话调用配置模型，AGH任务内调用受限项目shell工具。原生账本与job文件保留任务ID、调用、结果、状态及usage。",
+  "evidenceJobs": [
+    {"jobId":"c13f1131a17f4160be0654a4d08ee475","case":"模拟场景正常六座","business":"pass","native":"completed","usageSource":"job.json原生字段；credits/cost标记estimated"},
+    {"jobId":"de7f292bb1294c1fb871f4220bfe6741","case":"模拟场景正常工作台任务","business":"pass","native":"completed","usageSource":"job.json原生字段；credits/cost标记estimated"},
+    {"jobId":"d9351dff81b14bdc8929d7a731d7262f","case":"模拟场景repair-test故障注入后修复","business":"pass","native":"completed","usageSource":"job.json原生字段；credits/cost标记estimated"},
+    {"jobId":"9837e4c89ff347e195df9222d7812ae1","case":"模拟场景测试故障注入后修复任务","business":"pass","usageSource":"job.json原生字段；credits/cost标记estimated","videoCaveat":"故障注入明确为测试；一镜到底旧视频strict pass=false及26次取消保留，不据此宣称新版录像完整成功"},
+    {"jobId":"736d0edbc60847138fd356cd383104ff","case":"模拟场景门宽边界","business":"pass","native":"completed","usageSource":"job.json原生字段；credits/cost标记estimated"},
+    {"jobId":"a0b411ae22004f068b985da31ae78c00","case":"模拟场景新版录像期间连接异常","business":"connection-unknown","native":"unknown","usageSource":"job.json/connection原生字段；不得改写为通过"},
+    {"jobId":"6919b380ebcb414e888417fc822368a7","case":"模拟场景录像结束后完成的任务","business":"pass","native":"completed","usageSource":"job.json原生字段；不得声称录像现场完成"},
+    {"jobId":"7f7fa22dfb1047c4a95357a1942aa83c","case":"模拟场景预算内未找到","business":"constraints-not-satisfied","native":"completed","usageSource":"job.json原生字段；credits/cost标记estimated"}
+  ],
+  "historicalFailures": [
+    {"jobId":"cc4d792f8ecd48b38a48432046988007","case":"新会话绑定失败历史","status":"failed","countsAsPassedExample":false,"note":"保留原始失败；不据此声称成功模型调用或已完成业务验收"}
+  ],
+  "evidenceLocation": "results/jobs/<jobId>/保留输入、模型元数据、原生用量及工具结果；打包选取的官方脱敏JSONL与manifest位于evidence/agh-exports/。本清单不改写原始事件或任务状态。",
+  "usageCaveat": "宿主原生usage字段依各job保留；estimated用量/费用不等于ToTokens账单、实际扣费或结算金额。",
+  "credentialHandling": "API密钥仅由AGH安全配置提供，不写入源码、材料或导出的产品任务字段。",
+  "rulesConflict": "据队长转述，赛务已确认允许使用第三方模型，且只要有AGH核心参与即可；本项目实际使用gpt-6-astra与AGH核心执行证据，未调用Agnes模型。该转述不构成赛务审核或资格认证通过。", 
+  "aghModelScope": "AGH核心参与已实际记录；AGH不等同Agnes模型，未调用Agnes模型。", 
+  "eventConfirmationSource": "队长转述；未提供官方书面文件，不扩展为官方认证。",
+  "simulatedDataOnly": true
+}
